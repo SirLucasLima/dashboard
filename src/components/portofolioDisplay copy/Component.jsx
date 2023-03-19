@@ -1,5 +1,5 @@
 import { Container } from "./styles"
-import { Icon } from "../icon/Icon"
+import { Icon } from "../icons/icon/Icon"
 
 export function Component(){
   return(
