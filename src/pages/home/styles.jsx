@@ -5,4 +5,8 @@ export const Container = styled.div`
   height: 100vh;
   background-color: ${({theme}) => theme.bg};
   color: ${({theme}) => theme.whitesmoke};
+
+  display: grid;
+  grid-gap: 2.4rem;
+  
 `

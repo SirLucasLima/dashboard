@@ -6,13 +6,57 @@ export const Container = styled.div`
   border-radius: 24px;
 
   overflow: hidden;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
 
+  background-color: ${({theme}) => theme.bgSoft};
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+
+  &:hover{
+    background-color: ${({theme}) => theme.purple};
+    
+    img {
+      opacity: .5;
+    }
+
+    .readmore {
+      opacity: 1;
+    }
+  }
   
-  img {
-    width: 24.8rem;
-    height: 28.8rem;
+  > img {
+    width: 100%;
+    height: 100%;
 
     object-fit: scale-down;
   }
+
+  > .readmore {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+    padding: 2.4rem 0;
+
+    top: 0;
+    left: 0;
+
+    z-index: 999;
+
+    span {
+      color: ${({theme}) => theme.textColor};
+      font-weight: 400;
+      font-size: 2.8rem;
+      line-height: 3.5rem;
+    }
+  }
+
+  
+
 `
