@@ -8,5 +8,4 @@ export const Container = styled.div`
 
   display: grid;
   grid-gap: 2.4rem;
-  
 `
