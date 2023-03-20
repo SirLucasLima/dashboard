@@ -16,10 +16,6 @@ export const Container = styled.div`
   &:hover{
     background-color: ${({theme}) => theme.purple};
     
-    img {
-      opacity: .5;
-    }
-
     .readmore {
       opacity: 1;
     }
@@ -33,7 +29,7 @@ export const Container = styled.div`
   }
 
   > .readmore {
-    opacity: 0;
+    opacity: 0.5;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -52,7 +48,7 @@ export const Container = styled.div`
     span {
       color: ${({theme}) => theme.textColor};
       font-weight: 400;
-      font-size: 2.8rem;
+      font-size: 1.8rem;
       line-height: 3.5rem;
     }
   }

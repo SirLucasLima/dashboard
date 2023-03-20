@@ -15,6 +15,10 @@ export const Container = styled.div`
     justify-content: space-between;
 
     height: 8rem;
+    
+    > span, h1, i {
+      cursor: pointer;
+    }
 
     > .title {
       display: flex;
@@ -25,6 +29,7 @@ export const Container = styled.div`
         font-size: 3rem;
         color: ${({theme}) => theme.textColor};
       }
+
     }
   }
 
