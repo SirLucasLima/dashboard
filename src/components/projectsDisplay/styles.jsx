@@ -5,9 +5,9 @@ export const Container = styled.div`
   height: 39.2rem;
   border-radius: 24px;
 
-  background-color: ${({theme}) => theme.bgSoft};
-
   padding: 0 2.4rem;
+
+  background-color: ${({theme}) => theme.bgSoft};
 
   .header {
     display: flex;
@@ -33,7 +33,6 @@ export const Container = styled.div`
         font-size: 3rem;
         color: ${({theme}) => theme.textColor};
       }
-
     }
   }
 

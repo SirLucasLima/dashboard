@@ -1,13 +1,13 @@
 import { Container } from "./styles"
 
-import { Name } from "../../components/name/Name"
-import { Icons } from "../../components/icons/Icons"
 import { Photo } from "../../components/photo/Photo"
-import { ProjectsDisplay } from "../../components/projectsDisplay/ProjectsDisplay"
+import { Socials } from "../../components/socials/Socials"
+import { Name } from "../../components/name/Name"
 import { Map } from "../../components/map/Map"
+import { ProjectsDisplay } from "../../components/projectsDisplay/ProjectsDisplay"
 import { Banner } from "../../components/banner/Banner"
-import { About } from "../../components/about/About"
 import { Cards } from "../../components/cards/Cards"
+import { About } from "../../components/about/About"
 
 export function Home(){
   return(
@@ -16,7 +16,7 @@ export function Home(){
         <div className="header">
           <div className="photoIcons">
             <Photo />
-            <Icons />
+            <Socials />
           </div>
           <div className="nameMap">
             <Name />

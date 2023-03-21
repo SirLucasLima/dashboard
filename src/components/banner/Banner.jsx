@@ -8,6 +8,7 @@ export function Banner(){
       </h1>
       <button>
         Hire me
+        <i className="ri-service-line" />
       </button>
     </Container>
   )
