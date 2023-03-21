@@ -18,6 +18,10 @@ export const Container = styled.div`
     
     > span, h1, i {
       cursor: pointer;
+
+      &:hover{
+        filter: brightness(0.8);
+      }
     }
 
     > .title {

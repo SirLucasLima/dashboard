@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 38.4rem;
-  border-radius: 24px;
+  width: 79.2rem;
+  height: 18.3rem;
 
-  background-color: ${({theme}) => theme.bgSoft};
+  display: flex;
+  gap: 2.4rem;
 `

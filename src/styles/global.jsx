@@ -13,10 +13,28 @@ export default createGlobalStyle`
     font-size: 62.5%;
   }
 
+  body {
+    background-color: ${({theme}) => theme.bg};
+    color: ${({theme}) => theme.rose};
+    -webkit-font-smoothing: antialised;
+  }
+
   a {
     cursor: pointer;
     text-decoration: none;
     text-align: center;
+    transition: filter 0.2s;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: filter 0.2s;
+    outline: none;
+    border: none;
+  }
+
+  button:hover, a:hover {
+    filter: brightness(0.9);
   }
 
   span {

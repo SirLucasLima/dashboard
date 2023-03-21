@@ -14,8 +14,22 @@ export const Container = styled.div`
   cursor: pointer;
 
   &:hover{
-    background-color: ${({theme}) => theme.purple};
-    
+    &:nth-child(1){
+    background-color: ${({theme}) => theme.rose};
+    }
+
+    &:nth-child(2){
+      background-color: ${({theme}) => theme.yellow};
+
+      span {
+       color: ${({theme}) => theme.bgSoft};
+      }
+    }
+
+    &:nth-child(3){
+      background-color: ${({theme}) => theme.green};
+    }
+
     .readmore {
       opacity: 1;
     }

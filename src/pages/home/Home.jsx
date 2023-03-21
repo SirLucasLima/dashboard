@@ -7,6 +7,7 @@ import { ProjectsDisplay } from "../../components/projectsDisplay/ProjectsDispla
 import { Map } from "../../components/map/Map"
 import { Banner } from "../../components/banner/Banner"
 import { About } from "../../components/about/About"
+import { Cards } from "../../components/cards/Cards"
 
 export function Home(){
   return(
@@ -26,8 +27,8 @@ export function Home(){
       </div>
       <div className="right">
         <Banner />
+        <Cards />
         <About />
-        <Banner />
       </div>
     </Container>
   )

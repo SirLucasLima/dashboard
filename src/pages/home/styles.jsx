@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: ${({theme}) => theme.bg};
   color: ${({theme}) => theme.whitesmoke};
 
   display: flex;
@@ -42,6 +41,7 @@ export const Container = styled.div`
 
     display: flex;
     flex-direction: column;
+    justify-content: start;
     gap: 2.4rem;
   }
 `
