@@ -1,7 +1,6 @@
 import { Container } from "./styles"
-import { Icon } from "../icon/Icon"
 
-export function Component(){
+export function Card(){
   return(
     <Container>
       

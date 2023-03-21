@@ -5,6 +5,8 @@ import { Icons } from "../../components/icons/Icons"
 import { Photo } from "../../components/photo/Photo"
 import { ProjectsDisplay } from "../../components/projectsDisplay/ProjectsDisplay"
 import { Map } from "../../components/map/Map"
+import { Banner } from "../../components/banner/Banner"
+import { About } from "../../components/about/About"
 
 export function Home(){
   return(
@@ -23,7 +25,9 @@ export function Home(){
         <ProjectsDisplay />
       </div>
       <div className="right">
-
+        <Banner />
+        <About />
+        <Banner />
       </div>
     </Container>
   )
