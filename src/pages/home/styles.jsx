@@ -6,6 +6,42 @@ export const Container = styled.div`
   background-color: ${({theme}) => theme.bg};
   color: ${({theme}) => theme.whitesmoke};
 
-  display: grid;
-  grid-gap: 2.4rem;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+
+  > .left {
+    width: 79.2rem;
+    height: 91.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    .header {
+      display: flex;
+      gap: 2.4rem;
+      .photoIcons {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+      
+      .nameMap {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+      }
+    }
+  }
+
+  > .right {
+    width: 79.2rem;
+    height: 91.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
 `

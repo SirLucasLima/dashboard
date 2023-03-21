@@ -9,8 +9,22 @@ import { Map } from "../../components/map/Map"
 export function Home(){
   return(
     <Container>
-      <ProjectsDisplay />
-      <Map />
+      <div className="left">
+        <div className="header">
+          <div className="photoIcons">
+            <Photo />
+            <Icons />
+          </div>
+          <div className="nameMap">
+            <Name />
+            <Map />
+          </div>
+        </div>
+        <ProjectsDisplay />
+      </div>
+      <div className="right">
+
+      </div>
     </Container>
   )
 }
