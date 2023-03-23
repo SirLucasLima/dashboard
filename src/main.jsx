@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles, { darkTheme } from './styles/global'
 
-import { Home } from './pages/home/Home'
+import { AppRoutes } from './routes/app.routes'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={ darkTheme }>
-      <Home />
       <GlobalStyles />
+      <AppRoutes />
     </ThemeProvider>
   </React.StrictMode>,
 )
