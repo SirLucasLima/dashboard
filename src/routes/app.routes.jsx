@@ -8,7 +8,7 @@ export function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="/portfolio" element={<Portofolio />}/>
+        <Route path="/portofolio" element={<Portofolio />}/>
       </Routes>
     </BrowserRouter>
   )

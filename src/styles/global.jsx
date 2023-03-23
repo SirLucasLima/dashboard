@@ -37,10 +37,11 @@ export default createGlobalStyle`
     filter: brightness(0.9);
   }
 
-  span {
+  span, input {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3.6rem;
+    outline: none;
 
     color: ${({theme}) => theme.textColorSoft};
   }
@@ -48,6 +49,7 @@ export default createGlobalStyle`
   h1 {
     font-weight: 700;
     font-size: 2.4rem;
+    line-height: 3rem;
 
     color: ${({theme}) => theme.textColor};
   }
