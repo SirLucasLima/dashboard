@@ -24,8 +24,7 @@ export const Container = styled.div`
       align-items: center;
 
       i {
-        font-size: 2.4rem;
-        color: ${({theme}) => theme.textColorSoft};
+        text-shadow: 0px 4px 4px #7C05F2;
       }
 
       &:hover{
@@ -34,23 +33,12 @@ export const Container = styled.div`
     }
   }
 
-  .text {
+  .textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
 
     gap: 3.6rem;
-
-    p {
-      font-weight: 400;
-      font-size: 2.4rem;
-      line-height: 3.6rem;
-  
-      text-align: justify;
-      text-indent: 4rem;
-  
-      color: ${({theme}) => theme.textColorSoft};
-    }
   }
 `

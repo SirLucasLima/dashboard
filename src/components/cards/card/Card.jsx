@@ -5,7 +5,7 @@ export function Card({xp, description}){
     <Container>
       <h1>{xp}</h1>
       <div className="p">
-        <p>{description}</p>
+        <h3>{description}</h3>
       </div>
     </Container>
   )

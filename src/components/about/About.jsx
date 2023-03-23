@@ -10,7 +10,7 @@ export function About(){
           <i className="ri-file-download-line" />
         </div>
       </div>
-      <div className="text">
+      <div className="textarea">
         <p>
           Well, I'm a full-stack javascript developer, I'm always looking to keep up to date with the market, so I'm currently dedicating efforts to Next.JS and Nest.JS technologies. 
         </p>

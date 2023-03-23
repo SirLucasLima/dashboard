@@ -28,8 +28,7 @@ export const Container = styled.div`
     border-radius: 24px;
 
     i {
-      font-size: 2.4rem;
-      color: ${({theme}) => theme.textColorSoft};
+      text-shadow: 0px 4px 4px #7C05F2;
     }
 
     input {

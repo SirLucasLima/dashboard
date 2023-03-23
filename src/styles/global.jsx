@@ -39,7 +39,7 @@ export default createGlobalStyle`
 
   span, input {
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 3.6rem;
     outline: none;
 
@@ -48,9 +48,26 @@ export default createGlobalStyle`
   
   h1 {
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 3rem;
 
+    color: ${({theme}) => theme.textColor};
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+
+    text-align: justify;
+    text-indent: 4rem;
+
+    color: ${({theme}) => theme.textColorSoft};
+  }
+
+  i {
+    font-size: 2rem;
+    line-height: 3rem;
     color: ${({theme}) => theme.textColor};
   }
 `

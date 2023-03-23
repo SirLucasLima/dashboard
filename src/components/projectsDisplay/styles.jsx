@@ -30,7 +30,7 @@ export const Container = styled.div`
       align-items: center;
 
       i {
-        font-size: 3rem;
+        font-size: 2rem;
         color: ${({theme}) => theme.textColor};
       }
     }

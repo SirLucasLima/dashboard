@@ -39,7 +39,7 @@ export const Container = styled.div`
     background-color: ${({theme}) => theme.purple};
 
     i {
-      font-size: 2.4rem;
+      font-size: 2rem;
       color: ${({theme}) => theme.rose};
 
       -moz-animation: pulse 2s infinite linear;
@@ -49,29 +49,29 @@ export const Container = styled.div`
     }
 
     @-webkit-keyframes pulse {
-      0% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      0% { opacity: 1; font-size: 2rem; color: ${({theme}) => theme.yellow}}
       50% { opacity: 0; color: ${({theme}) => theme.rose}}
-      100% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      100% { opacity: 1; font-size: 3rem; color: ${({theme}) => theme.yellow}}
     }
     @-moz-keyframes pulse {
-      0% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      0% { opacity: 1; font-size: 2rem; color: ${({theme}) => theme.yellow}}
       50% { opacity: 0; color: ${({theme}) => theme.rose}}
-      100% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      100% { opacity: 1; font-size: 3rem; color: ${({theme}) => theme.yellow}}
     }
     @-o-keyframes pulse {
-      0% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      0% { opacity: 1; font-size: 2rem; color: ${({theme}) => theme.yellow}}
       50% { opacity: 0; color: ${({theme}) => theme.rose}}
-      100% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      100% { opacity: 1; font-size: 3rem; color: ${({theme}) => theme.yellow}}
     }
     @-ms-keyframes pulse {
-      0% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      0% { opacity: 1; font-size: 2rem; color: ${({theme}) => theme.yellow}}
       50% { opacity: 0; color: ${({theme}) => theme.rose}}
-      100% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      100% { opacity: 1; font-size: 3rem; color: ${({theme}) => theme.yellow}}
     }
     @keyframes pulse {
-      0% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      0% { opacity: 1; font-size: 2rem; color: ${({theme}) => theme.yellow}}
       50% { opacity: 0; color: ${({theme}) => theme.rose}}
-      100% { opacity: 1; color: ${({theme}) => theme.yellow}}
+      100% { opacity: 1; font-size: 3rem; color: ${({theme}) => theme.yellow}}
     }
   }
 `

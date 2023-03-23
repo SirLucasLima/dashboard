@@ -38,7 +38,10 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: flex-start;
 
-    p {
+    text-align: center;
+    text-indent: 0;
+
+    h3 {
       font-weight: 700;
       font-size: 1.8rem;
       line-height: 2.2rem;
