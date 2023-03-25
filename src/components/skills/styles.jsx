@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 65.3rem;
   height: 80.8rem;
+  padding: 0 2.4rem;
+
+  border-radius: 24px;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-
+  flex-wrap: wrap;
+  align-content: flex-start;
   gap: 2.4rem;
 
   overflow-y: scroll;
@@ -17,4 +18,6 @@ export const Container = styled.div`
   &::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
   }
+
+  background-color: ${({theme}) => theme.bgSoft};
 `

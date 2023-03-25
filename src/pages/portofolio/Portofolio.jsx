@@ -1,8 +1,9 @@
 import { Container } from "./styles"
 
-import { Logos } from "../../components/logos/Logos"
-import { PortofolioProjects } from "../../components/portofolioProjects/PortofolioProjects"
 import { PortofolioTitle } from "../../components/portofolioTitle/PortofolioTitle"
+import { PortofolioProjects } from "../../components/portofolioProjects/PortofolioProjects"
+import { SkillsTitle } from "../../components/skillsTitle/SkillsTitle"
+import { Skills } from "../../components/skills/Skills"
 
 export function Portofolio(){
   return(
@@ -12,7 +13,8 @@ export function Portofolio(){
         <PortofolioProjects />
       </div>
       <div className="right">
-        <Logos />
+        <SkillsTitle />
+        <Skills />
       </div>
     </Container>
   )

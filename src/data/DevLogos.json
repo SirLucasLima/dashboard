@@ -20,8 +20,8 @@
     "title": "Styled Componets"
   },
   {
-    "img": "/src/assets/logosDev/vsCode.png",
-    "title": "VS Code"
+    "img": "/src/assets/logosDev/tailwind.png",
+    "title": "TailwindCSS"
   },
   {
     "img": "/src/assets/logosDev/nodejs.png",
@@ -38,5 +38,9 @@
   {
     "img": "/src/assets/logosDev/sql.png",
     "title": "SQL.JS"
+  },
+  {
+    "img": "/src/assets/logosDev/vsCode.png",
+    "title": "VS Code"
   }
 ]

@@ -2,13 +2,13 @@ import { Container } from "./styles"
 
 import UiLogos from "../../data/UiLogos.json"
 import DevLogos from "../../data/DevLogos.json"
-import { Logo } from "./logo/Logo"
+import { Skill } from "./skill/Skill"
 
-export function Logos(){
+export function Skills(){
   return(
     <Container>
       {DevLogos.map((item, index) => (
-        <Logo 
+        <Skill 
           key={index}
           img={item.img}
           title={item.title}

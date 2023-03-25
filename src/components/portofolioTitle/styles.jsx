@@ -13,7 +13,27 @@ export const Container = styled.div`
 
   background-color: ${({theme}) => theme.bgSoft};
 
-  .input {
+  > .title {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+
+    i {
+      font-size: 2rem;
+      color: ${({theme}) => theme.textColor};
+    }
+    
+    h1, i {
+      cursor: pointer;
+  
+      &:hover{
+        filter: brightness(0.8);
+      }
+    }
+  }
+
+
+  > .input {
     width: 51.7rem;
     height: 4.8rem;
 
