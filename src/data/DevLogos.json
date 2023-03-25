@@ -1,0 +1,42 @@
+[
+  {
+    "img": "/src/assets/js.png",
+    "title": "JavaScript"
+  },
+  {
+    "img": "/src/assets/ts.png",
+    "title": "TypeScript"
+  },
+  {
+    "img": "/src/assets/react.png",
+    "title": "React.JS"
+  },
+  {
+    "img": "/src/assets/nextjs.png",
+    "title": "Next.JS"
+  },
+  {
+    "img": "/src/assets/styledComponents.png",
+    "title": "Styled Componets"
+  },
+  {
+    "img": "/src/assets/vsCode.png",
+    "title": "VS Code"
+  },
+  {
+    "img": "/src/assets/nodejs.png",
+    "title": "Node.JS"
+  },
+  {
+    "img": "/src/assets/knexjs.png",
+    "title": "Knex.JS"
+  },
+  {
+    "img": "/src/assets/nestjs.png",
+    "title": "Nest.JS"
+  },
+  {
+    "img": "/src/assets/sql.png",
+    "title": "SQL.JS"
+  }
+]

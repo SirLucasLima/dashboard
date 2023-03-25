@@ -1,0 +1,18 @@
+[
+  {
+    "img": "/src/assets/figma.png",
+    "title": "Figma"
+  },
+  {
+    "img": "/src/assets/illustrator.png",
+    "title": "Illustrator"
+  },
+  {
+    "img": "/src/assets/photoshop.png",
+    "title": "Photoshop"
+  },
+  {
+    "img": "/src/assets/corel.png",
+    "title": "Corel Draw"
+  }
+]
