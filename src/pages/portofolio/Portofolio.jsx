@@ -1,6 +1,8 @@
+import { Container } from "./styles"
+
+import { Logos } from "../../components/logos/Logos"
 import { PortofolioProjects } from "../../components/portofolioProjects/PortofolioProjects"
 import { PortofolioTitle } from "../../components/portofolioTitle/PortofolioTitle"
-import { Container } from "./styles"
 
 export function Portofolio(){
   return(
@@ -10,7 +12,7 @@ export function Portofolio(){
         <PortofolioProjects />
       </div>
       <div className="right">
-
+        <Logos />
       </div>
     </Container>
   )

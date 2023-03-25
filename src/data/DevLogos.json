@@ -1,42 +1,42 @@
 [
   {
-    "img": "/src/assets/js.png",
+    "img": "/src/assets/logosDev/js.png",
     "title": "JavaScript"
   },
   {
-    "img": "/src/assets/ts.png",
+    "img": "/src/assets/logosDev/ts.png",
     "title": "TypeScript"
   },
   {
-    "img": "/src/assets/react.png",
+    "img": "/src/assets/logosDev/react.png",
     "title": "React.JS"
   },
   {
-    "img": "/src/assets/nextjs.png",
+    "img": "/src/assets/logosDev/nextjs.png",
     "title": "Next.JS"
   },
   {
-    "img": "/src/assets/styledComponents.png",
+    "img": "/src/assets/logosDev/styledComponents.png",
     "title": "Styled Componets"
   },
   {
-    "img": "/src/assets/vsCode.png",
+    "img": "/src/assets/logosDev/vsCode.png",
     "title": "VS Code"
   },
   {
-    "img": "/src/assets/nodejs.png",
+    "img": "/src/assets/logosDev/nodejs.png",
     "title": "Node.JS"
   },
   {
-    "img": "/src/assets/knexjs.png",
+    "img": "/src/assets/logosDev/knexjs.png",
     "title": "Knex.JS"
   },
   {
-    "img": "/src/assets/nestjs.png",
+    "img": "/src/assets/logosDev/nestjs.png",
     "title": "Nest.JS"
   },
   {
-    "img": "/src/assets/sql.png",
+    "img": "/src/assets/logosDev/sql.png",
     "title": "SQL.JS"
   }
 ]
