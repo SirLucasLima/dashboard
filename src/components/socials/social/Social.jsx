@@ -1,10 +1,12 @@
 import { Container } from "./styles"
 import 'remixicon/fonts/remixicon.css'
 
-export function Social({icon}){
+export function Social({icon, link}){
   return(
     <Container> 
-      <i className={icon} />
+      <a href={link}>
+        <i className={icon} />
+      </a>
     </Container>
   )
 }
