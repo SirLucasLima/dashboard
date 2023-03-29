@@ -12,10 +12,13 @@ export function About(){
       </div>
       <div className="textarea">
         <p>
-          Well, I'm a full-stack javascript developer, I'm always looking to keep up to date with the market, so I'm currently dedicating efforts to Next.JS and Nest.JS technologies. 
+          As a Full-Stack JavaScript developer with a background as a designer, I bring a unique perspective and skill set to my work. 
         </p>
         <p>
-          Although my focus is development, I'm also a UX/UI designer, I've worked in that area and I keep updating myself, because I believe that makes me a more complete developer.
+          I am proficient in using design tools like Illustrator, Photoshop and Figma to create wireframes and prototypes that help bring ideas to life. While my efforts are dedicated to development, this experience allows me to work closely with designers to ensure their vision is implemented effectively.
+        </p>
+        <p>
+          My development skills include building web applications using technologies such as React, NextJ, TailWind and Styled Components, and working with databases and server-side technologies such as Node.js, Nest.js, Knex.js Express, SQLite and MongoDB (Restfull API).
         </p>
       </div>
     </Container>

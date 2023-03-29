@@ -39,6 +39,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: start;
 
-    gap: 3.6rem;
+    height: 28.8rem;
+    gap: .8rem;
+    overflow: scroll;
   }
 `
