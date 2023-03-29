@@ -7,6 +7,7 @@ import { ProjectDisplay } from "./projectDisplay/projectDisplay"
 
 import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
+import { Link } from "react-router-dom"
 
 
 export function ProjectsDisplay(){
@@ -21,9 +22,11 @@ export function ProjectsDisplay(){
           <h1>{!skill ? "Dev Portofolio" : "Ui Portofolio"}</h1>
           <i className="ri-arrow-right-s-line" onClick={toggle}/>
         </div>
-        <span>
-          See All
-        </span>
+        <a href="/portofolio">
+          <Link to="/portofolio">
+            <span>See All</span>
+          </Link>
+        </a>
       </div>
       <div className="display">
         {mapping?.map((item, index) => (

@@ -37,7 +37,7 @@ export default createGlobalStyle`
     filter: brightness(0.9);
   }
 
-  span, input {
+  span, input{
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 3.6rem;
