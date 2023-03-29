@@ -17,7 +17,7 @@ export function PortofolioProjects(){
         <PortofolioProject 
           key={index}
           title={item.title}
-          links={item.links.behance}
+          links={item.links.frontend}
           icons={item.icons}
           description={item.description}
         />
