@@ -1,6 +1,7 @@
 import { Container } from "./styles"
+import 'remixicon/fonts/remixicon.css'
 
-export function PortofolioProject({title}){
+export function PortofolioProject({title, links, icons, description}){
   return(
     <Container>
       <div className="img">
@@ -10,14 +11,8 @@ export function PortofolioProject({title}){
         <div className="title">
           <h1>{title}</h1>
           <div className="links">
-            <a href="/" data-hover="Deploy">
+            <a href={links} data-hover="Deploy">
               <i className="ri-global-line"/>
-            </a>
-            <a href="/" data-hover="Front End">
-              <i className="ri-terminal-window-line" />
-            </a>
-            <a href="/" data-hover="Back End">
-              <i className="ri-terminal-box-line" />
             </a>
           </div>
         </div>

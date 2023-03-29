@@ -2,46 +2,50 @@
   {
     "img": "/src/assets/display.png",
     "title": "AirBnb Clone",
-    "deploy": "https://github.com/sirlucaslima",
-    "frontend": "https://github.com/sirlucaslima",
-    "backend": "https://github.com/sirlucaslima",
-    "behance": "https://github.com/sirlucaslima",
+    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
+    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
   },
   {
     "img": "/src/assets/display.png",
-    "title": "FraLi Social",
-    "deploy": "https://github.com/sirlucaslima",
-    "frontend": "https://github.com/sirlucaslima",
-    "backend": "https://github.com/sirlucaslima",
-    "behance": "https://github.com/sirlucaslima",
+    "title": "AirBnb Clone",
+    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
+    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
   },
   {
     "img": "/src/assets/display.png",
-    "title": "Rocket Notes",
-    "deploy": "https://github.com/sirlucaslima",
-    "frontend": "https://github.com/sirlucaslima",
-    "backend": "https://github.com/sirlucaslima",
-    "behance": "https://github.com/sirlucaslima",
+    "title": "AirBnb Clone",
+    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
+    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
   },
   {
     "img": "/src/assets/display.png",
-    "title": "Metaversus",
-    "deploy": "https://github.com/sirlucaslima",
-    "frontend": "https://github.com/sirlucaslima",
-    "backend": "https://github.com/sirlucaslima",
-    "behance": "https://github.com/sirlucaslima",
+    "title": "AirBnb Clone",
+    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
+    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
   },
   {
     "img": "/src/assets/display.png",
-    "title": "Setup Client",
-    "deploy": "https://github.com/sirlucaslima",
-    "frontend": "https://github.com/sirlucaslima",
-    "backend": "https://github.com/sirlucaslima",
-    "behance": "https://github.com/sirlucaslima",
+    "title": "AirBnb Clone",
+    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
+    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
-  }  
+  },
+  {
+    "img": "/src/assets/display.png",
+    "title": "AirBnb Clone",
+    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
+    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
+  },
+  {
+    "img": "/src/assets/display.png",
+    "title": "AirBnb Clone",
+    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
+    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
+  }
 ]

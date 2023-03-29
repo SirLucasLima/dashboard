@@ -1,9 +1,9 @@
 import { Container } from "./styles"
 import 'remixicon/fonts/remixicon.css'
 
+import { ProjectDisplay } from "./projectDisplay/projectDisplay"
 import UI from "../../data/UiProjects.json"
 import DEV from "../../data/DevProjects.json"
-import { ProjectDisplay } from "./projectDisplay/projectDisplay"
 
 import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
