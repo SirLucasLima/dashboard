@@ -10,13 +10,13 @@ export function PortofolioProject(){
         <div className="title">
           <h1>AirBnb Clone</h1>
           <div className="links">
-            <a href="/">
-              <i className="ri-global-line" />
+            <a href="/" data-hover="Deploy">
+              <i className="ri-global-line"/>
             </a>
-            <a href="/">
+            <a href="/" data-hover="Front End">
               <i className="ri-terminal-window-line" />
             </a>
-            <a href="/">
+            <a href="/" data-hover="Back End">
               <i className="ri-terminal-box-line" />
             </a>
           </div>

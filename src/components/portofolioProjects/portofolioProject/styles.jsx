@@ -14,9 +14,7 @@ export const Container = styled.div`
 
   background-color: ${({theme}) => theme.bgSoft};
 
-  &:hover {
-    opacity: .9;
-  }
+  
 
   > .img {
     width: 24rem;
@@ -52,10 +50,62 @@ export const Container = styled.div`
       .links {
         display: flex;
         gap: 2.4rem;
+
+        a {
+          position: relative;
+
+          &:before {
+            content: attr(data-hover);
+            visibility: hidden;
+            opacity: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 3.6rem;
+            outline: none;
+            word-break: keep-all;
+
+            color: ${({theme}) => theme.bg};
+
+            border-radius: 24px;
+            padding: .8rem;
+
+            position: absolute;
+            z-index: 1;
+            left: -2.4rem;
+            top: 4rem;
+          }
+          
+          &:hover:before {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          &:nth-child(1):before {
+            background-color: ${({theme}) => theme.rose};
+          }
+          
+          &:nth-child(2):before {
+            background-color: ${({theme}) => theme.yellow};
+          }
+          
+          &:nth-child(3):before {
+            background-color: ${({theme}) => theme.green};
+          }
+        }
         
-       i {
-        text-shadow: 0px 4px 4px #7C05F2;
-       }
+        i {
+          text-shadow: 0px 4px 4px #7C05F2;
+
+          &:hover {
+            opacity: .9;
+          }
+        }
       }
     }
 
