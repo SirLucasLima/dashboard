@@ -39,7 +39,8 @@ export const Container = styled.div`
   .display {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     gap: 2.4rem;
+
+    overflow-x: scroll;
   }
 `

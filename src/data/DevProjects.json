@@ -1,17 +1,47 @@
 [
   {
     "img": "/src/assets/display.png",
-    "title": "display",
-    "link": ""
+    "title": "AirBnb Clone",
+    "deploy": "https://github.com/sirlucaslima",
+    "frontend": "https://github.com/sirlucaslima",
+    "backend": "https://github.com/sirlucaslima",
+    "behance": "https://github.com/sirlucaslima",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
   },
   {
     "img": "/src/assets/display.png",
-    "title": "display1",
-    "link": ""
+    "title": "FraLi Social",
+    "deploy": "https://github.com/sirlucaslima",
+    "frontend": "https://github.com/sirlucaslima",
+    "backend": "https://github.com/sirlucaslima",
+    "behance": "https://github.com/sirlucaslima",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
   },
   {
     "img": "/src/assets/display.png",
-    "title": "display2",
-    "link": ""
-  }
+    "title": "Rocket Notes",
+    "deploy": "https://github.com/sirlucaslima",
+    "frontend": "https://github.com/sirlucaslima",
+    "backend": "https://github.com/sirlucaslima",
+    "behance": "https://github.com/sirlucaslima",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
+  },
+  {
+    "img": "/src/assets/display.png",
+    "title": "Metaversus",
+    "deploy": "https://github.com/sirlucaslima",
+    "frontend": "https://github.com/sirlucaslima",
+    "backend": "https://github.com/sirlucaslima",
+    "behance": "https://github.com/sirlucaslima",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
+  },
+  {
+    "img": "/src/assets/display.png",
+    "title": "Setup Client",
+    "deploy": "https://github.com/sirlucaslima",
+    "frontend": "https://github.com/sirlucaslima",
+    "backend": "https://github.com/sirlucaslima",
+    "behance": "https://github.com/sirlucaslima",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
+  }  
 ]

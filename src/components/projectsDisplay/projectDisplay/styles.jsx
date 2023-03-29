@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 24.8rem;
+  min-width: 24.8rem;
   height: 28.8rem;
   border-radius: 24px;
 
@@ -14,11 +14,11 @@ export const Container = styled.div`
   cursor: pointer;
 
   &:hover{
-    &:nth-child(1){
+    &:nth-child(3n-2){
     background-color: ${({theme}) => theme.rose};
     }
 
-    &:nth-child(2){
+    &:nth-child(3n-1){
       background-color: ${({theme}) => theme.yellow};
 
       span {
@@ -26,7 +26,7 @@ export const Container = styled.div`
       }
     }
 
-    &:nth-child(3){
+    &:nth-child(3n-3){
       background-color: ${({theme}) => theme.green};
     }
 
@@ -66,7 +66,4 @@ export const Container = styled.div`
       line-height: 3.5rem;
     }
   }
-
-  
-
 `
