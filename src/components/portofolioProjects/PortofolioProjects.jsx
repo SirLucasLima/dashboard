@@ -13,7 +13,7 @@ export function PortofolioProjects(){
 
   return(
     <Container>
-      {DEV.map((item, index) => (
+      {mapping.map((item, index) => (
         <PortofolioProject 
           key={index}
           title={item.title}
