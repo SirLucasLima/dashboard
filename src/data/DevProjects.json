@@ -2,50 +2,7 @@
   {
     "img": "/src/assets/display.png",
     "title": "AirBnb Clone",
-    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
-    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
-  },
-  {
-    "img": "/src/assets/display.png",
-    "title": "AirBnb Clone",
-    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
-    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
-  },
-  {
-    "img": "/src/assets/display.png",
-    "title": "AirBnb Clone",
-    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
-    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
-  },
-  {
-    "img": "/src/assets/display.png",
-    "title": "AirBnb Clone",
-    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
-    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
-  },
-  {
-    "img": "/src/assets/display.png",
-    "title": "AirBnb Clone",
-    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
-    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
-  },
-  {
-    "img": "/src/assets/display.png",
-    "title": "AirBnb Clone",
-    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
-    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
-    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
-  },
-  {
-    "img": "/src/assets/display.png",
-    "title": "AirBnb Clone",
-    "links": {"deploy": "https://github.com/sirlucaslima", "frontend": "https://github.com/sirlucaslima", "backend": "https://github.com/sirlucaslima", "behance": "https://github.com/sirlucaslima"},
-    "icon": {"deploy": "ri-global-line", "frontend": "ri-terminal-window-line", "backend": "ri-terminal-box-line", "behance": "ri-behance-line"},
+    "links": {"deploy": "https://web.whatsapp.com", "frontend": "https://app.rocketseat.com.br/dashboard", "backend": "https://github.com/sirlucaslima", "behance": "https://www.behance.net/"},
     "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit magnam odio, sequi aperiam ex, tenetur adipisci consectetur est aliquid recusandae molestias laboriosam fugit quae, eius id fugiat explicabo! Corrupti autem expedita"
   }
 ]

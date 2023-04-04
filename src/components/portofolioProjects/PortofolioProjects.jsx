@@ -17,9 +17,11 @@ export function PortofolioProjects(){
         <PortofolioProject 
           key={index}
           title={item.title}
-          links={item.links.deploy}
-          icons={item.icons}
           description={item.description}
+          backend={item.links.backend}
+          frontend={item.links.frontend}
+          deploy={item.links.deploy}
+          behance={item.links.behance}
         />
       ))}
     </Container>
