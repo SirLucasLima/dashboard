@@ -76,7 +76,7 @@ export const Container = styled.div`
             padding: .8rem;
 
             position: absolute;
-            z-index: 1;
+            z-index: 99;
             left: -2.4rem;
             top: 4rem;
           }
@@ -87,6 +87,7 @@ export const Container = styled.div`
           }
 
           &:nth-child(1):before {
+            color: ${({theme}) => theme.textColor};
             background-color: ${({theme}) => theme.rose};
           }
           
@@ -95,15 +96,13 @@ export const Container = styled.div`
           }
           
           &:nth-child(3):before {
+            color: ${({theme}) => theme.textColor};
             background-color: ${({theme}) => theme.green};
           }
-        }
-        
-        i {
-          text-shadow: 0px 4px 4px #7C05F2;
-
-          &:hover {
-            opacity: .9;
+          
+          &:nth-child(4):before {
+            color: ${({theme}) => theme.textColor};
+            background-color: ${({theme}) => theme.purple};
           }
         }
       }

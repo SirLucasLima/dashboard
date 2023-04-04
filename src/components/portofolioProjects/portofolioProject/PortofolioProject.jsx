@@ -11,6 +11,11 @@ export function PortofolioProject({title, deploy, frontend, backend, behance, de
         <div className="title">
           <h1>{title}</h1>
           <div className="links">
+            {(behance ? 
+              <a href={behance} data-hover="Design">
+                <i className="ri-behance-line"/>
+              </a> : ""
+            )}
             {(deploy ? 
               <a href={deploy} data-hover="Deploy">
                 <i className="ri-global-line"/>
@@ -24,11 +29,6 @@ export function PortofolioProject({title, deploy, frontend, backend, behance, de
             {(backend ? 
               <a href={backend} data-hover="Back End">
                 <i className="ri-terminal-box-line"/>
-              </a> : ""
-            )}
-            {(behance ? 
-              <a href={behance} data-hover="Behance">
-                <i className="ri-behance-line"/>
               </a> : ""
             )}
           </div>
