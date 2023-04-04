@@ -41,15 +41,11 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    padding-left: .8rem;
+    padding-left: 1.6rem;
     gap: 1.6rem;
 
     border: 1px solid ${({theme}) => theme.links};
     border-radius: 24px;
-
-    i {
-      text-shadow: 0px 4px 4px #7C05F2;
-    }
 
     input {
       width: 100%;
