@@ -1,13 +1,19 @@
 import { Container } from "./styles"
-
-import UiLogos from "../../data/UiLogos.json"
-import DevLogos from "../../data/DevLogos.json"
 import { Skill } from "./skill/Skill"
 
+import DEV from "../../data/DevSkills.json"
+import UI from "../../data/UiSkills.json"
+
+import { useContext } from "react";
+import { SkillContext } from "../../context/SkillContext";
+
 export function Skills(){
+    const { skill } = useContext(SkillContext)
+    const  mapping = (skill ? UI : DEV)
+    
   return(
     <Container>
-      {DevLogos.map((item, index) => (
+      {mapping?.map((item, index) => (
         <Skill 
           key={index}
           img={item.img}
