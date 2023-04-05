@@ -1,5 +1,6 @@
 import { Container } from "./styles"
 import 'remixicon/fonts/remixicon.css'
+import { Link } from "react-router-dom"
 
 import { ProjectDisplay } from "./projectDisplay/projectDisplay"
 import UI from "../../data/UiProjects.json"
@@ -7,8 +8,6 @@ import DEV from "../../data/DevProjects.json"
 
 import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
-import { Link } from "react-router-dom"
-
 
 export function ProjectsDisplay(){
   const { skill, toggle } = useContext(SkillContext)

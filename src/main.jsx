@@ -6,14 +6,17 @@ import GlobalStyles, { darkTheme } from './styles/global'
 
 import { AppRoutes } from './routes/app.routes'
 import { SkillContextProvider } from './context/SkillContext'
+import { SearchContextProvider } from './context/SearchContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <SkillContextProvider>
-      <ThemeProvider theme={ darkTheme }>
-        <GlobalStyles />
-        <AppRoutes />
-      </ThemeProvider>
+      <SearchContextProvider>
+        <ThemeProvider theme={ darkTheme }>
+          <GlobalStyles />
+          <AppRoutes />
+        </ThemeProvider>
+      </SearchContextProvider>
     </SkillContextProvider>
   </React.StrictMode>,
 )

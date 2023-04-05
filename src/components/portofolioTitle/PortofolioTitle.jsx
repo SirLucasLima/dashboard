@@ -2,9 +2,11 @@ import { Container } from "./styles"
 
 import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
+import { SearchContext } from "../../context/SearchContext";
 
-export function PortofolioTitle({title, ...rest}){
+export function PortofolioTitle(){
   const { skill, toggle } = useContext(SkillContext)
+  const { setSearch } = useContext(SearchContext)
 
   return(
     <Container>
@@ -15,7 +17,7 @@ export function PortofolioTitle({title, ...rest}){
       </div>
       <div className="input">
        <i className="ri-filter-2-line" />
-        <input {...rest} />
+        <input onChange={(e) => setSearch(e.target.value)} />
       </div>
     </Container>
   )
