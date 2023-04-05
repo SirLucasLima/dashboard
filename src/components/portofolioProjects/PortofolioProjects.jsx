@@ -19,7 +19,7 @@ export function PortofolioProjects(){
         .filter((item) => {
         return search.toLowerCase() === '' 
           ? item 
-          : item.title.toLowerCase().includes(search)
+          : item.title.toLowerCase().includes(search) || item.description.toLowerCase().includes(search) 
       })
         .map((item, index) => (
           <PortofolioProject 
