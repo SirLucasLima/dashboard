@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import { useState } from "react"
 import { createContext } from "react"
 
@@ -7,8 +6,8 @@ export const SearchContextProvider = ({ children }) => {
   const [ search, setSearch ] = useState('')
 
   return(
-    <SkillContext.Provider value={{search, setSearch}}>
+    <SearchContext.Provider value={{search, setSearch}}>
       {children}
-    </SkillContext.Provider>
+    </SearchContext.Provider>
   )
 }
