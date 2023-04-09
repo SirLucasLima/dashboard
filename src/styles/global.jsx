@@ -57,7 +57,7 @@ export default createGlobalStyle`
   p {
     font-weight: 400;
     font-size: 1.8rem;
-    line-height: 3.6rem;
+    line-height: 2.4rem;
 
     text-align: justify;
     text-indent: 4rem;
