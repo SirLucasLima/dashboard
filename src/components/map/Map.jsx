@@ -1,5 +1,5 @@
 import { Container } from "./styles"
-import Map from "../../assets/map.png"
+import City from "../../assets/map.png"
 
 export function Map(){
   return(
@@ -8,7 +8,7 @@ export function Map(){
         <span>Based In:</span>
       </div>
       <div className="map">
-        <img src={Map} alt="" />
+        <img src={City} alt="" />
       </div>
     </Container>
   )
