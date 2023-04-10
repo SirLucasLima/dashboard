@@ -2,8 +2,8 @@ import { Container } from "./styles"
 import 'remixicon/fonts/remixicon.css'
 
 import { ProjectDisplay } from "./projectDisplay/projectDisplay"
-import UI from "../../data/UiProjects"
-import DEV from "../../data/DevProjects"
+import { UiProjects } from "../../data/UiProjects"
+import { DevProjects } from "../../data/DevProjects"
 
 import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"
 
 export function ProjectsDisplay(){
   const { skill, toggle } = useContext(SkillContext)
-  const  mapping = (skill ? UI : DEV)
+  const  mapping = (skill ? UiProjects : DevProjects)
 
   return(
     <Container>

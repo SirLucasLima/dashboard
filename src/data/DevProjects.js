@@ -1,6 +1,6 @@
 import display from "../assets/display.png"
 
-export const UiProjects = [
+export const DevProjects = [
   {
     "img": display,
     "title": "Brand Identity - Pousada Casa Rosa",

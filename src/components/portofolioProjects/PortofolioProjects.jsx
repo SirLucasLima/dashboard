@@ -1,8 +1,8 @@
 import { Container } from "./styles"
 import { PortofolioProject } from "./portofolioProject/PortofolioProject"
 
-import UI from "../../data/UiProjects"
-import DEV from "../../data/DevProjects"
+import { UiProjects } from "../../data/UiProjects"
+import { DevProjects } from "../../data/DevProjects"
 
 import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
@@ -10,7 +10,7 @@ import { SearchContext } from "../../context/SearchContext";
 
 export function PortofolioProjects(){
   const { skill } = useContext(SkillContext)
-  const  mapping = (skill ? UI : DEV)
+  const  mapping = (skill ? UiProjects : DevProjects)
   const { search } = useContext(SearchContext)
 
   return(

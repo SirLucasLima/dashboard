@@ -1,15 +1,15 @@
 import { Container } from "./styles"
 import { Skill } from "./skill/Skill"
 
-import DEV from "../../data/DevSkills.json"
-import UI from "../../data/UiSkills.json"
+import { DevSkills } from "../../data/DevSkills" 
+import { UiSkills } from "../../data/UiSkills"
 
 import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
 
 export function Skills(){
     const { skill } = useContext(SkillContext)
-    const  mapping = (skill ? UI : DEV)
+    const  mapping = (skill ? UiSkills : DevSkills)
     
   return(
     <Container>

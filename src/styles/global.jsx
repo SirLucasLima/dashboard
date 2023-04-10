@@ -38,6 +38,7 @@ export default createGlobalStyle`
   }
 
   span, input{
+    text-align: center;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 3.6rem;
