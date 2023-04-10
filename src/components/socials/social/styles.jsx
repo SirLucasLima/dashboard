@@ -8,17 +8,18 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   cursor: pointer;
 
   background-color: ${({theme}) => theme.link};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
-  &:hover:nth-child(1) {
-    background-color: #0E76A8;
+  &:hover:nth-child(1) { //linkedin color
+    background-color: #0E76A8; 
   }
 
-  &:hover:nth-child(2) {
+  &:hover:nth-child(2) { //github color
     background-color: white;
 
     i {
@@ -26,7 +27,7 @@ export const Container = styled.div`
     }
   }
 
-  &:hover:nth-child(3) {
+  &:hover:nth-child(3) { //instagram gradient color 
     background: #f09433; 
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 

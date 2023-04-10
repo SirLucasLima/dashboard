@@ -22,6 +22,8 @@ export default createGlobalStyle`
   a {
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    align-items: center;
     text-align: center;
     transition: filter 0.2s;
   }
