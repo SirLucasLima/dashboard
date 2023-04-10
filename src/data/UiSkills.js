@@ -1,4 +1,4 @@
-[
+export const UiSkills = [
   {
     "img": "/src/assets/logosUI/figma.png",
     "title": "Figma"
