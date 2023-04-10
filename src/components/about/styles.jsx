@@ -23,10 +23,6 @@ export const Container = styled.div`
       gap: .8rem;
       align-items: center;
 
-      i {
-        text-shadow: 0px 4px 4px #7C05F2;
-      }
-
       &:hover{
         filter: brightness(0.8);
       }
