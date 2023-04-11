@@ -1,5 +1,5 @@
 import { Container } from "./styles"
-import Pic from "../../assets/photo.svg"
+import Pic from "../../assets/MeEmoji.webp"
 
 export function ProfilePic(){
   return(
