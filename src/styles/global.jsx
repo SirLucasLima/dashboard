@@ -73,6 +73,14 @@ export default createGlobalStyle`
     line-height: 3rem;
     color: ${({theme}) => theme.textColor};
   }
+
+  h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: ${({theme}) => theme.bgSoft};
+  }
 `
 
 export const darkTheme = {

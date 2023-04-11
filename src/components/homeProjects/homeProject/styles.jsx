@@ -13,6 +13,14 @@ export const Container = styled.div`
 
   cursor: pointer;
 
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:active:after {
+    transform: scale(0.98);
+  }
+
   &:hover{
     &:nth-child(3n-2){
     background-color: ${({theme}) => theme.rose};
@@ -30,6 +38,10 @@ export const Container = styled.div`
       background-color: ${({theme}) => theme.green};
     }
 
+    > img {
+      opacity: 0.2;
+    }
+
     .readmore {
       opacity: 1;
     }
@@ -39,16 +51,15 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
 
-    object-fit: scale-down;
+    object-fit: cover;
   }
 
   > .readmore {
-    opacity: 0.5;
+    opacity: 0;
     position: absolute;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     width: 100%;
     height: 100%;

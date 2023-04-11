@@ -1,5 +1,5 @@
 import { Container } from "./styles"
-import { PortofolioProject } from "./portofolioProject/PortofolioProject"
+import { Project } from "./project/Project";
 
 import { UiProjects } from "../../data/UiProjects"
 import { DevProjects } from "../../data/DevProjects"
@@ -22,7 +22,7 @@ export function Projects(){
           : item.title.toLowerCase().includes(search) || item.description.toLowerCase().includes(search) 
       })
         .map((item, index) => (
-          <PortofolioProject 
+          <Project 
             key={index}
             title={item.title}
             description={item.description}

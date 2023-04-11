@@ -14,6 +14,14 @@ export const Container = styled.div`
 
   background-color: ${({theme}) => theme.link};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:active:after {
+    transform: scale(0.98);
+  }
   
   &:hover:nth-child(1) { //linkedin color
     background-color: #0E76A8; 

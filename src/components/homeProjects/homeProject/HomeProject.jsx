@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom"
 import { Container } from "./styles"
 
 export function HomeProject({img, title}){
   return(
-    <Container>
-      <img src={img} alt={title} />
-      <div className="readmore">
-        <span>Read More</span>
-        <span>{title}</span>
-      </div>
-    </Container>
+    <Link to={"/portofolio"}>
+      <Container>
+        <img src={img} alt={title} />
+        <div className="readmore">
+          <h3>{title}</h3>
+        </div>
+      </Container>
+    </Link>
   )
 }

@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 
-export function XpCards({xp, description}){
+export function XpCard({xp, description}){
   return(
     <Container>
       <h1>{xp}</h1>
