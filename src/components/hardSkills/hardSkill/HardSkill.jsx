@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 
-export function Skill({img, title}){
+export function HardSkill({img, title}){
   return(
     <Container>
       <div className="img">

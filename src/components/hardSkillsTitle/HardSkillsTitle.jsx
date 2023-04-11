@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 
-export function SkillsTitle(){
+export function HardSkillsTitle(){
   return(
     <Container>
       <h1>Hard Skills</h1>

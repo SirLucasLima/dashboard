@@ -1,9 +1,9 @@
 import { Container } from "./styles"
 
 import XP from "../../data/Experience.json"
-import { Card } from "./card/Card"
+import { Card } from "./xpCards/XpCard"
 
-export function Cards(){
+export function XpCards(){
   return(
     <Container>
       {XP.map((item, index) => (

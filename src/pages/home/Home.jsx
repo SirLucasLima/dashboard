@@ -1,12 +1,12 @@
 import { Container } from "./styles"
 
-import { Photo } from "../../components/photo/Photo"
+import { ProfilePic } from "../../components/profilePic/ProfilePic"
 import { Socials } from "../../components/socials/Socials"
 import { Name } from "../../components/name/Name"
-import { Map } from "../../components/map/Map"
-import { ProjectsDisplay } from "../../components/projectsDisplay/ProjectsDisplay"
+import { City } from "../../components/city/City"
+import { Projects } from "../../components/projects/Projects"
 import { Banner } from "../../components/banner/Banner"
-import { Cards } from "../../components/cards/Cards"
+import { XpCards } from "../../components/xpCards/XpCards"
 import { About } from "../../components/about/About"
 
 export function Home(){
@@ -15,19 +15,19 @@ export function Home(){
       <div className="left">
         <div className="header">
           <div className="photoIcons">
-            <Photo />
+            <ProfilePic />
             <Socials />
           </div>
           <div className="nameMap">
             <Name />
-            <Map />
+            <City />
           </div>
         </div>
-        <ProjectsDisplay />
+        <Projects />
       </div>
       <div className="right">
         <Banner />
-        <Cards />
+        <XpCards />
         <About />
       </div>
     </Container>

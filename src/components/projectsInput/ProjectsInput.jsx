@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
 import { SearchContext } from "../../context/SearchContext";
 
-export function PortofolioTitle({...rest}){
+export function ProjectsInput({...rest}){
   const { skill, toggle } = useContext(SkillContext)
   const { setSearch } = useContext(SearchContext)
 

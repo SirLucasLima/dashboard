@@ -1,7 +1,7 @@
 import { Container } from "./styles"
 import Pic from "../../assets/photo.svg"
 
-export function Photo(){
+export function ProfilePic(){
   return(
     <Container>
       <img src={Pic} alt="" />

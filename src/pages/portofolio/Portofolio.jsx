@@ -1,20 +1,20 @@
 import { Container } from "./styles"
 
-import { PortofolioTitle } from "../../components/portofolioTitle/PortofolioTitle"
-import { PortofolioProjects } from "../../components/portofolioProjects/PortofolioProjects"
-import { SkillsTitle } from "../../components/skillsTitle/SkillsTitle"
-import { Skills } from "../../components/skills/Skills"
+import { ProjectsInput } from "../../components/projectsInput/ProjectsInput"
+import { Projects } from "../../components/projects/Projects"
+import { HardSkillsTitle } from "../../components/hardSkillsTitle/HardSkillsTitle"
+import { HardSkills } from "../../components/hardSkills/HardSkills"
 
 export function Portofolio(){
   return(
     <Container>
       <div className="left">
-        <PortofolioTitle title={"Dev Portofolio"} placeholder={"Search by Title"}/>
-        <PortofolioProjects />
+        <ProjectsInput title={"Dev Portofolio"} placeholder={"Search by Title"}/>
+        <Projects />
       </div>
       <div className="right">
-        <SkillsTitle />
-        <Skills />
+        <HardSkillsTitle />
+        <HardSkills />
       </div>
     </Container>
   )

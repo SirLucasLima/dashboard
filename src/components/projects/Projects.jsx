@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { SkillContext } from "../../context/SkillContext";
 import { SearchContext } from "../../context/SearchContext";
 
-export function PortofolioProjects(){
+export function Projects(){
   const { skill } = useContext(SkillContext)
   const  mapping = (skill ? UiProjects : DevProjects)
   const { search } = useContext(SearchContext)

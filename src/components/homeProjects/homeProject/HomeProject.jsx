@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 
-export function ProjectDisplay({img, title}){
+export function HomeProject({img, title}){
   return(
     <Container>
       <img src={img} alt={title} />

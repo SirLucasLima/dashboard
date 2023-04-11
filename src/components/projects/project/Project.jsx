@@ -1,7 +1,7 @@
 import { Container } from "./styles"
 import 'remixicon/fonts/remixicon.css'
 
-export function PortofolioProject({title, deploy, frontend, backend, behance, description}){
+export function Project({title, deploy, frontend, backend, behance, description}){
   return(
     <Container>
       <div className="img">

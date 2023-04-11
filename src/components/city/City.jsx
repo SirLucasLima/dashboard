@@ -1,7 +1,7 @@
 import { Container } from "./styles"
 import City from "../../assets/map.png"
 
-export function Map(){
+export function City(){
   return(
     <Container>
       <div className="header">
