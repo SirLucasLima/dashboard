@@ -14,7 +14,7 @@ export function ProjectsInput({...rest}){
 
   //select handle togle
   const options = [
-    {value: 'DevProjects', text: '💻 Dev Projects '},
+    {value: 'DevProjects', text: '🧑🏽‍💻 Dev Projects '},
     {value: 'UiProjects', text: '🧑🏽‍🎨 UI Projects '}
   ]
   const [selected, setSelected] = useState(options[0].value)
