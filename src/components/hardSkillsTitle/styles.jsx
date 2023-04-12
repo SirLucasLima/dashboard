@@ -11,6 +11,12 @@ export const Container = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
+  position: relative;
 
   background-color: ${({theme}) => theme.bgSoft};
+
+  a {
+    position: absolute;
+    right: 2.4rem;
+  }
 `

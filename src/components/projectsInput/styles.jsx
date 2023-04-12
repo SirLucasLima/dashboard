@@ -13,44 +13,61 @@ export const Container = styled.div`
 
   background-color: ${({theme}) => theme.bgSoft};
 
-  > .title {
-    width: 24.8rem;
-    height: 4.8rem;
-    overflow: hidden;
-
+  > .left {
     display: flex;
     align-items: center;
-    padding: 0 1.6rem;
-    gap: 1.6rem;
+    gap: 2.4rem;
 
-    border-radius: 24px;
-    background-color: ${({theme}) => theme.bgSoft};
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    a {
+      &:active {
+        transform: scale(0.98);
+      }
 
-    cursor: pointer;
-    &:hover{
-      filter: brightness(0.8);
+      &:active:after {
+        transform: scale(0.98);
+      }
     }
-    
-    select {
-      cursor: pointer;
-      border: none;
-      outline: none;
-      padding-right: 2rem;
-      width: 100%;
-      height: 100%;
+
+    .title {
+      width: 24.8rem;
+      height: 4.8rem;
+      overflow: hidden;
+
+      display: flex;
+      align-items: center;
+      padding: 0 1.6rem;
+      gap: 1.6rem;
+
+      border-radius: 24px;
       background-color: ${({theme}) => theme.bgSoft};
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      cursor: pointer;
+      &:hover{
+        filter: brightness(0.8);
+      }
       
-      option {
-        appearance: none;
+      select {
+        cursor: pointer;
         border: none;
         outline: none;
-        cursor: pointer;
+        padding-right: 2rem;
+        width: 100%;
+        height: 100%;
         background-color: ${({theme}) => theme.bgSoft};
-        color: ${({theme}) => theme.textColor};
+        
+        option {
+          appearance: none;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: ${({theme}) => theme.bgSoft};
+          color: ${({theme}) => theme.textColor};
+        }
       }
     }
   }
+
 
   > .input {
     width: 24.8rem;
