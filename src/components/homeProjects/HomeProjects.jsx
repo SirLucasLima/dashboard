@@ -2,8 +2,8 @@ import { Container } from "./styles"
 import 'remixicon/fonts/remixicon.css'
 
 import { HomeProject } from "./homeProject/HomeProject"
-import { UiProjects } from "../../data/UiProjects"
 import { DevProjects } from "../../data/DevProjects"
+import { UiProjects } from "../../data/UiProjects"
 
 import { useContext, useState } from "react";
 import { SkillContext } from "../../context/SkillContext";
@@ -13,7 +13,7 @@ import { Link } from "react-router-dom"
 export function HomeProjects(){
   //handle togle between UI and DEV
   const { skill, toggle } = useContext(SkillContext)
-  const  mapping = (skill ? UiProjects : DevProjects)
+  const  mapping = (skill ? DevProjects : UiProjects)
 
   //select handle togle
   const options = [
@@ -23,7 +23,7 @@ export function HomeProjects(){
   const [selected, setSelected] = useState(options[0].value)
   const handleChange = event => {
     setSelected(event.target.value)
-    toggle
+    toggle()
   }
 
   return(

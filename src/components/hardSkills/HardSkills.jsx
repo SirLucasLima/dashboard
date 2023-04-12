@@ -9,7 +9,7 @@ import { SkillContext } from "../../context/SkillContext";
 
 export function HardSkills(){
     const { skill } = useContext(SkillContext)
-    const  mapping = (skill ? UiSkills : DevSkills)
+    const  mapping = (skill ? DevSkills : UiSkills)
     
   return(
     <Container>

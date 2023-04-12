@@ -20,7 +20,7 @@ export function ProjectsInput({...rest}){
   const [selected, setSelected] = useState(options[0].value)
   const handleChange = event => {
     setSelected(event.target.value)
-    toggle
+    toggle()
   }
 
   return(

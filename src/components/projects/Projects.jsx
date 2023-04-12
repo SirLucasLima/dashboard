@@ -9,8 +9,10 @@ import { SkillContext } from "../../context/SkillContext";
 import { SearchContext } from "../../context/SearchContext";
 
 export function Projects(){
+  //handle togle between UI and DEV
   const { skill } = useContext(SkillContext)
-  const  mapping = (skill ? UiProjects : DevProjects)
+  const  mapping = (skill ? DevProjects : UiProjects)
+
   const { search } = useContext(SearchContext)
 
   return(

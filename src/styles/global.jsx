@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
+  //-------------- glogal
   *{
     margin: 0;
     padding: 0;
@@ -8,11 +9,33 @@ export default createGlobalStyle`
     font-family: 'Quicksand', sans-serif;
     color: ${({theme}) => theme.rose};
   }
-  
+
+  //-------------- root
   :root{
     font-size: 62.5%;
   }
 
+  //-------------- scrollbar google
+    ::-webkit-scrollbar {
+      background: transparent;
+      width: .8rem
+    }
+
+    ::-webkit-scrollbar-track, ::-webkit-scrollbar-button, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner, ::-webkit-resizer {
+      background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: ${({theme}) => theme.bg};
+      border-radius: 24px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${({theme}) => theme.yellow};
+    }
+
+  //-------------- body and tags
+  
   body {
     background-color: ${({theme}) => theme.bg};
     color: ${({theme}) => theme.rose};
