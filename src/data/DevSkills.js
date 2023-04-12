@@ -29,7 +29,7 @@ export const DevSkills = [
   },
   {
     "img": StyledComponets,
-    "title": "StyledComponets"
+    "title": "Styled Componets"
   },
   {
     "img": TailwindCSS,
@@ -40,12 +40,12 @@ export const DevSkills = [
     "title": "Node.JS"
   },
   {
-    "img": KnexJS,
-    "title": "Knex.JS"
-  },
-  {
     "img": NestJS,
     "title": "Nest.JS"
+  },
+  {
+    "img": KnexJS,
+    "title": "Knex.JS"
   },
   {
     "img": SqlDB,
