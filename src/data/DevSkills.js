@@ -9,6 +9,7 @@ import KnexJS from "../assets/logosDev/knexjs.png"
 import NestJS from "../assets/logosDev/nestjs.png"
 import SqlDB from "../assets/logosDev/sql.png"
 import VSCode from "../assets/logosDev/vsCode.png"
+import Git from "../assets/logosDev/git.png"
 
 export const DevSkills = [
   {
@@ -54,5 +55,9 @@ export const DevSkills = [
   {
     "img": VSCode,
     "title": "VS Code"
+  },
+  {
+    "img": Git,
+    "title": "Git & GitHub"
   }
 ]
