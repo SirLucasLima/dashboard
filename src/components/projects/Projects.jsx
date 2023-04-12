@@ -21,7 +21,7 @@ export function Projects(){
         .filter((item) => {
         return search.toLowerCase() === '' 
           ? item 
-          : item.title.toLowerCase().includes(search) || item.description.toLowerCase().includes(search) 
+          : item.title.toLowerCase().includes(search) || item.description.toLowerCase().includes(search) || item.techs.toLowerCase().includes(search) 
       })
         .map((item, index) => (
           <Project 
@@ -32,7 +32,7 @@ export function Projects(){
             behance={item.links.behance}
             title={item.title}
             description={item.description}
-            techs={item.techs.join(", ")}
+            techs={item.techs}
           />
       ))}
     </Container>

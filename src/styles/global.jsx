@@ -16,26 +16,25 @@ export default createGlobalStyle`
   }
 
   //-------------- scrollbar google
-    ::-webkit-scrollbar {
-      background: transparent;
-      width: .8rem
-    }
+  ::-webkit-scrollbar {
+    background: transparent;
+    width: .8rem
+  }
 
-    ::-webkit-scrollbar-track, ::-webkit-scrollbar-button, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner, ::-webkit-resizer {
-      background: transparent;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-      background: ${({theme}) => theme.bg};
-      border-radius: 24px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-      background: ${({theme}) => theme.yellow};
-    }
+  ::-webkit-scrollbar-track, ::-webkit-scrollbar-button, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner, ::-webkit-resizer {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: ${({theme}) => theme.bg};
+    border-radius: 24px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: ${({theme}) => theme.yellow};
+  }
 
   //-------------- body and tags
-  
   body {
     background-color: ${({theme}) => theme.bg};
     color: ${({theme}) => theme.rose};
@@ -105,6 +104,7 @@ export default createGlobalStyle`
   }
 `
 
+//-------------- theme color
 export const darkTheme = {
   purple: '#7C05F2',
   rose: '#FE6D79',

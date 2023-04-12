@@ -9,7 +9,7 @@ export function Portofolio(){
   return(
     <Container>
       <div className="left">
-        <ProjectsInput title={"Dev Portofolio"} placeholder={"Search Project"}/>
+        <ProjectsInput title={"Dev Portofolio"} placeholder={"Search by..."}/>
         <Projects />
       </div>
       <div className="right">
