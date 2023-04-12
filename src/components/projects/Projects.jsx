@@ -24,12 +24,13 @@ export function Projects(){
         .map((item, index) => (
           <Project 
             key={index}
-            title={item.title}
-            description={item.description}
             backend={item.links.backend}
             frontend={item.links.frontend}
             deploy={item.links.deploy}
             behance={item.links.behance}
+            title={item.title}
+            description={item.description}
+            techs={item.techs.join(", ")}
           />
       ))}
     </Container>
