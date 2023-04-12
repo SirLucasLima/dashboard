@@ -14,27 +14,46 @@ export const Container = styled.div`
   background-color: ${({theme}) => theme.bgSoft};
 
   > .title {
-    display: flex;
-    gap: 2.4rem;
-    align-items: center;
+    width: 24.8rem;
+    height: 4.8rem;
+    overflow: hidden;
 
-    i {
-      font-size: 2rem;
-      color: ${({theme}) => theme.textColor};
+    display: flex;
+    align-items: center;
+    padding: 0 1.6rem;
+    gap: 1.6rem;
+
+    border-radius: 24px;
+    background-color: ${({theme}) => theme.bgSoft};
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+    &:hover{
+      filter: brightness(0.8);
     }
     
-    h1, i {
+    select {
       cursor: pointer;
-  
-      &:hover{
-        filter: brightness(0.8);
+      border: none;
+      outline: none;
+      padding-right: 2rem;
+      width: 100%;
+      height: 100%;
+      background-color: ${({theme}) => theme.bgSoft};
+      
+      option {
+        appearance: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: ${({theme}) => theme.bgSoft};
+        color: ${({theme}) => theme.textColor};
       }
     }
   }
 
-
   > .input {
-    width: 51.7rem;
+    width: 24.8rem;
     height: 4.8rem;
 
     display: flex;

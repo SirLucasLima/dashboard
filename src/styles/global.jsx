@@ -40,7 +40,6 @@ export default createGlobalStyle`
   }
 
   span, input{
-    text-align: center;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 3.6rem;
@@ -69,7 +68,7 @@ export default createGlobalStyle`
   }
 
   i {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 3rem;
     color: ${({theme}) => theme.textColor};
   }
