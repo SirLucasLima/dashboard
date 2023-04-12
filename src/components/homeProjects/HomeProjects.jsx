@@ -5,26 +5,40 @@ import { HomeProject } from "./homeProject/HomeProject"
 import { UiProjects } from "../../data/UiProjects"
 import { DevProjects } from "../../data/DevProjects"
 
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { SkillContext } from "../../context/SkillContext";
 import { Link } from "react-router-dom"
 
 
 export function HomeProjects(){
+  //handle togle between UI and DEV
   const { skill, toggle } = useContext(SkillContext)
   const  mapping = (skill ? UiProjects : DevProjects)
+
+  //select handle togle
   const options = [
-    {value: 'Dev Projects', text: ''}
+    {value: 'DevProjects', text: '💻 Dev Projects '},
+    {value: 'UiProjects', text: '🧑🏽‍🎨 UI Projects '}
   ]
+  const [selected, setSelected] = useState(options[0].value)
+  const handleChange = event => {
+    setSelected(event.target.value)
+    toggle
+  }
 
   return(
     <Container>
       <div className="header">
         <div className="title">
-          <i className="ri-arrow-left-s-line" onClick={toggle}/>
-
-          <h1>{!skill ? "Dev Portofolio" : "Ui Portofolio"}</h1>
-          <i className="ri-arrow-right-s-line" onClick={toggle}/>
+          <select value={selected} onChange={handleChange}>
+            {options.map(option => (
+              <option key={option.value} value={option.value}>
+                <h1>
+                  {option.text}
+                </h1>
+              </option>
+            ))}
+          </select>
         </div>
         <a href="/portofolio">
           <Link to="/portofolio">

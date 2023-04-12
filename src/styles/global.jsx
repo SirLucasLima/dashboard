@@ -49,7 +49,7 @@ export default createGlobalStyle`
     color: ${({theme}) => theme.textColorSoft};
   }
   
-  h1 {
+  h1, select {
     font-weight: 700;
     font-size: 2rem;
     line-height: 3rem;
@@ -69,7 +69,7 @@ export default createGlobalStyle`
   }
 
   i {
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 3rem;
     color: ${({theme}) => theme.textColor};
   }

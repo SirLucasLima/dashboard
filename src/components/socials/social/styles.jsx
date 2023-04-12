@@ -44,7 +44,7 @@ export const Container = styled.div`
   }
 
   i {
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: ${({theme}) => theme.textColor};
   }
 `
