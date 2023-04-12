@@ -33,18 +33,14 @@ export function HomeProjects(){
           <select value={selected} onChange={handleChange}>
             {options.map(option => (
               <option key={option.value} value={option.value}>
-                <h1>
-                  {option.text}
-                </h1>
+                {option.text}
               </option>
             ))}
           </select>
         </div>
-        <a href="/portofolio">
-          <Link to="/portofolio">
-            <span>See All</span>
-          </Link>
-        </a>
+        <Link to="/portofolio">
+          <span>See All</span>
+        </Link>
       </div>
       <div className="display">
         {mapping?.map((item, index) => (
