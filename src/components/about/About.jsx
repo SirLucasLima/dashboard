@@ -1,4 +1,5 @@
 import { Container } from "./styles"
+import Gramado from "../../assets/map.png"
 
 export function About(){
   return(
@@ -7,7 +8,9 @@ export function About(){
         <h1>About</h1>
         <div className="resume">
           <span>Resume</span>
-          <i className="ri-file-download-line" />
+          <a href={Gramado} download>
+            <i className="ri-file-download-line" />
+          </a>
         </div>
       </div>
       <div className="textarea">
