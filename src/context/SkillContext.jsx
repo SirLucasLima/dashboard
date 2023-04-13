@@ -4,6 +4,7 @@ import { createContext } from "react"
 
 export const SkillContext = createContext()
 export const SkillContextProvider = ({ children }) => {
+  //togle skill map
   const [ skill, setSkill ] = useState(JSON.parse(localStorage.getItem("skill")) || false)
 
   const toggle = () => {
@@ -14,6 +15,8 @@ export const SkillContextProvider = ({ children }) => {
     localStorage.setItem("skill", skill)
   }, [skill])
 
+
+  //toggle skill select
   const options = [
     {value: 'DevProjects', text: '🧑🏽‍💻 Dev Projects '},
     {value: 'UiProjects', text: '🧑🏽‍🎨 UI Projects '}
@@ -25,7 +28,6 @@ export const SkillContextProvider = ({ children }) => {
     setSelected(event.target.value)
     toggle()
   }
-
 
   return(
     <SkillContext.Provider value={{skill, options, selected, setSelected, handleChange}}>
