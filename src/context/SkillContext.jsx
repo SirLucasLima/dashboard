@@ -14,8 +14,21 @@ export const SkillContextProvider = ({ children }) => {
     localStorage.setItem("skill", skill)
   }, [skill])
 
+  const options = [
+    {value: 'DevProjects', text: '🧑🏽‍💻 Dev Projects '},
+    {value: 'UiProjects', text: '🧑🏽‍🎨 UI Projects '}
+  ]
+
+  const [selected, setSelected] = useState(options[0].value)
+
+  const handleChange = event => {
+    setSelected(event.target.value)
+    toggle()
+  }
+
+
   return(
-    <SkillContext.Provider value={{skill, toggle}}>
+    <SkillContext.Provider value={{skill, options, selected, setSelected, handleChange}}>
       {children}
     </SkillContext.Provider>
   )

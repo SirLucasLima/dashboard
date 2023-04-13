@@ -9,20 +9,11 @@ import { Link } from "react-router-dom";
 
 export function ProjectsInput({...rest}){
   //handle togle between UI and DEV
-  const { toggle } = useContext(SkillContext)
+  const { options, selected, handleChange } = useContext(SkillContext)
+
   const { setSearch } = useContext(SearchContext)
 
-  //select handle togle
-  const options = [
-    {value: 'DevProjects', text: '🧑🏽‍💻 Dev Projects '},
-    {value: 'UiProjects', text: '🧑🏽‍🎨 UI Projects '}
-  ]
-  const [selected, setSelected] = useState(options[0].value)
-  const handleChange = event => {
-    setSelected(event.target.value)
-    toggle()
-  }
-
+ 
   return(
     <Container>
       <div className="left">

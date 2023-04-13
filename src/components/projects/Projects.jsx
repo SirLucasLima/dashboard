@@ -10,10 +10,11 @@ import { SearchContext } from "../../context/SearchContext";
 
 export function Projects(){
   //handle togle between UI and DEV
-  const { skill } = useContext(SkillContext)
+  const { skill, selected, handleChange } = useContext(SkillContext)
   const  mapping = (skill ? DevProjects : UiProjects)
 
   const { search } = useContext(SearchContext)
+
 
   return(
     <Container>
