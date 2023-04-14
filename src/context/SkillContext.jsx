@@ -22,7 +22,7 @@ export const SkillContextProvider = ({ children }) => {
     {value: 'UiProjects', text: '🧑🏽‍🎨 UI Projects '}
   ]
 
-  const [selected, setSelected] = useState(options[0].value)
+  const [selected, setSelected] = useState(skill ? options[0].value : options[1].value )
 
   const handleChange = event => {
     setSelected(event.target.value)

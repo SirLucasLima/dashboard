@@ -5,16 +5,21 @@ export const Container = styled.div`
   height: 39.2rem;
   border-radius: 24px;
 
-  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+
+  padding: 0 2.4rem 2.4rem;
   background-color: ${({theme}) => theme.bgSoft};
 
-  .header {
+  > .header {
     height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     
-    > span {
+    span {
       cursor: pointer;
 
       &:hover{
@@ -22,8 +27,8 @@ export const Container = styled.div`
       }
     }
 
-    > .title {
-      width: 24.8rem;
+    .title {
+      width: 23.2rem;
       height: 4.8rem;
       overflow: hidden;
 
@@ -66,7 +71,8 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 2.4rem;
-
-    overflow-x: scroll;
+    
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
   }
 `

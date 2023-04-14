@@ -36,7 +36,7 @@ export function HomeProjects(){
         {mapping?.map((item, index) => (
           <HomeProject 
             key={index}
-            img={item.img}
+            img1={item.img1}
             title={item.title} 
           />
         ))}

@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 24.8rem;
+  width: 23.2rem;
   height: 28.8rem;
   border-radius: 24px;
 
   overflow: hidden;
   position: relative;
+
+  flex-shrink: 0;
+  scroll-snap-align: start;
 
   background-color: ${({theme}) => theme.bgSoft};
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -48,9 +51,7 @@ export const Container = styled.div`
   }
   
   > img {
-    width: 100%;
-    height: 100%;
-
+    min-width: 100%;
     object-fit: cover;
   }
 

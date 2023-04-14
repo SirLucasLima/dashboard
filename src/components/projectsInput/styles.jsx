@@ -29,7 +29,7 @@ export const Container = styled.div`
     }
 
     .title {
-      width: 24.8rem;
+      width: 23.2rem;
       height: 4.8rem;
       overflow: hidden;
 
