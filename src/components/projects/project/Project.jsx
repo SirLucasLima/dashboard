@@ -1,33 +1,33 @@
 import { Container } from "./styles"
 import 'remixicon/fonts/remixicon.css'
 
-export function Project({title, deploy, frontend, backend, figma, behance, description, techs}){
+export function Project({title, deploy, frontend, backend, figma, behance, img2, description, techs}){
   return(
     <Container>
       <div className="title">
         <div className="left">
           {(behance ? 
-            <a href={behance} data-hover="Behance">
+            <a href={behance} target="_blank" rel="noopener" data-hover="Behance">
               <i className="ri-palette-line"/>
             </a> : ""
           )}
           {(figma ? 
-            <a href={figma} data-hover="Figma Layout">
+            <a href={figma} target="_blank" rel="noopener" data-hover="Figma Layout">
               <i className="ri-palette-line"/>
             </a> : ""
           )}
           {(deploy ? 
-            <a href={deploy} data-hover="Deploy">
+            <a href={deploy} target="_blank" rel="noopener" data-hover="Deploy">
               <i className="ri-pages-line"/>
             </a> : ""
           )}
           {(frontend ? 
-            <a href={frontend} data-hover="Front-End Code">
+            <a href={frontend} target="_blank" rel="noopener" data-hover="Front-End Code">
               <i className="ri-reactjs-line"/>
             </a> : ""
           )}
           {(backend ? 
-            <a href={backend} data-hover="Back-End Code">
+            <a href={backend} target="_blank" rel="noopener" data-hover="Back-End Code">
               <i className="ri-git-repository-line"/>
             </a> : ""
           )}
@@ -36,7 +36,7 @@ export function Project({title, deploy, frontend, backend, figma, behance, descr
       </div>
       <div className="about">
         <div className="img">
-          <img src="/src/assets/display.png" alt="" />
+          <img src={img2} alt="" />
         </div>
         <div className="textarea">
           <div className="description">

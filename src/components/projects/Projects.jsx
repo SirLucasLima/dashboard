@@ -33,6 +33,7 @@ export function Projects(){
             behance={item.links.behance}
             figma={item.links.figma}
             title={item.title}
+            img2={item.img2}
             description={item.description}
             techs={item.techs}
           />

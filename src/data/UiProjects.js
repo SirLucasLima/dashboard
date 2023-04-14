@@ -39,8 +39,8 @@ export const UiProjects = [
     "techs": "Adobe Photoshop"
   },
   {
-    "img1": map1,
-    "img2": map2,
+    "img1": vovoCarolina1,
+    "img2": vovoCarolina2,
     "title": "Hand Drawn Map - Gramado",
     "links": {
       "behance": "https://www.behance.net/gallery/105279793/IDENTIDADE-VISUAL-E-LOGO-MARCIA-AURELIA-MASSOTERAPIA"
