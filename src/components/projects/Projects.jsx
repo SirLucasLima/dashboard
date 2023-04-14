@@ -31,6 +31,7 @@ export function Projects(){
             frontend={item.links.frontend}
             deploy={item.links.deploy}
             behance={item.links.behance}
+            figma={item.links.figma}
             title={item.title}
             description={item.description}
             techs={item.techs}
