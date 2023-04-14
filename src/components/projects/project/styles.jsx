@@ -114,7 +114,15 @@ export const Container = styled.div`
       flex-direction: column;
       justify-content: space-between;
       gap: 1.6rem;
-      
+
+      scroll-padding-left: 2rem;
+
+      span {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+
       .description {
         overflow: scroll;
 

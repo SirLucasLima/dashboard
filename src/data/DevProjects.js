@@ -28,12 +28,12 @@ export const DevProjects = [
     "title": "Notes - Full-Stack Project",
     "links": {
       "deploy": "https://metaversus-client.vercel.app/",
-      "frontend": "https://github.com/developerlucaslima/notesCLIENT",
-      "backend": "https://github.com/developerlucaslima/notesAPI",
+      "frontend": "https://github.dev/developerlucaslima/notesCLIENT",
+      "backend": "https://github.dev/developerlucaslima/notesAPI",
     },
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis consectetur labore, distinctio unde pariatur ratione! Totam distinctio corporis ipsam beatae quam rerum obcaecati quidem provident commodi quibusdam, maiores nostrum magnam ratione velit. Repudiandae doloremque fugit ut fuga distinctio, facilis voluptates earum deserunt ad ullam, vero esse necessitatibus velit et cum assumenda quasi id quidem? Ea obcaecati dolores cum aliquam, saepe nostrum quo! Iusto placeat nam reprehenderit rem consectetur. In repellat a atque quos explicabo iure incidunt quibusdam et possimus fuga. Ex vel assumenda ratione, ullam ea doloremque maxime! Animi neque adipisci aliquid, veniam rem exercitationem quisquam quas? Maxime laudantium obcaecati ex quidem nemo. Iusto incidunt delectus necessitatibus qui possimus explicabo, reiciendis voluptatibus magnam, facilis itaque corrupti debitis, tempore distinctio dolorem soluta iure aspernatur culpa nihil? Maxime fugit deleniti quis quasi. Cum, nulla corporis quam tempora impedit alias fuga optio possimus voluptates, deleniti eum assumenda sint est mollitia ipsa ducimus cumque!",
+    "description": "Este é o meu projeto final desenvolvido na trilha Explorer da RocketSeat. Foi meu primeiro projeto full-stack, onde tive meu primeiro contato com o lado do servidor e banco de dados, utilizando Node.js, SQLite e Knex.js. Durante o projeto, aprendi muito sobre programação orientada a objetos, arquitetura de software, rotas, criptografia, autenticação e utilização de query builders com suporte para vários bancos de dados SQL. No lado do cliente, utilizei React.js e também adquiri conhecimentos avançados sobre componentização, props e CSS-in-JS com Styled Components.",
     "date": "Outubro de 2022",
-    "techs": "JavaScript, Node.JS"
+    "techs": "React.js, Vite, Styled Components, Node.js, SQLite, Knex.js, Express.js, JWT, Bcrypt.js"
   },
   {
     "img1": socialMedia1,
@@ -41,11 +41,10 @@ export const DevProjects = [
     "title": "Projetinho Dev",
     "links": {
       "deploy": "https://web.whatsapp.com", 
-      "frontend": "https://app.rocketseat.com.br/dashboard", 
-      "backend": "https://github.com/sirlucaslima", 
-      "behance": "https://www.behance.net/"
+      "frontend": "https://app.rocketseat.com.br/dashboard",
+      "backend": "https://github.com/sirlucaslima",
     },
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis consectetur labore, distinctio unde pariatur ratione! Totam distinctio corporis ipsam beatae quam rerum obcaecati quidem provident commodi quibusdam, maiores nostrum magnam ratione velit. Repudiandae doloremque fugit ut fuga distinctio, facilis voluptates earum deserunt ad ullam, vero esse necessitatibus velit et cum assumenda quasi id quidem? Ea obcaecati dolores cum aliquam, saepe nostrum quo! Iusto placeat nam reprehenderit rem consectetur. In repellat a atque quos explicabo iure incidunt quibusdam et possimus fuga. Ex vel assumenda ratione, ullam ea doloremque maxime! Animi neque adipisci aliquid, veniam rem exercitationem quisquam quas? Maxime laudantium obcaecati ex quidem nemo. Iusto incidunt delectus necessitatibus qui possimus explicabo, reiciendis voluptatibus magnam, facilis itaque corrupti debitis, tempore distinctio dolorem soluta iure aspernatur culpa nihil? Maxime fugit deleniti quis quasi. Cum, nulla corporis quam tempora impedit alias fuga optio possimus voluptates, deleniti eum assumenda sint est mollitia ipsa ducimus cumque!",
+    "description": "Uma rede social baseada no facebook, comecei esse projeto a partir de uma video aula do canal do ",
     "techs": "JavaScript, Node.JS"
   },
   {
