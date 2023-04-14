@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 92.8rem;
-  height: 34.4rem;
+  height: 36.8rem;
 
-  padding: 0 2.4rem;
+  padding: 0 2.4rem 2.4rem;
   border-radius: 24px;
   
   display: flex;
