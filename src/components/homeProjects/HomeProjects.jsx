@@ -29,7 +29,7 @@ export function HomeProjects(){
           </select>
         </div>
         <Link to="/portofolio">
-          <span>See All</span>
+          <span>Veja mais...</span>
         </Link>
       </div>
       <div className="display">

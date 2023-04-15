@@ -7,7 +7,7 @@ export function About(){
       <div className="header">
         <h1>Sobre</h1>
         <div className="resume">
-          <span>Resume</span>
+          <span>CV</span>
           <a href={Gramado} download>
             <i className="ri-file-download-line" />
           </a>

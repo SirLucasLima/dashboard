@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom"
 import { Container } from "./styles"
 
 export function Banner(){
   return(
     <Container>
       <h1>
-        Transformando idéias em aplicações reais!
+        Transformando ideias em aplicações reais!
       </h1>
-      <button>
-        Hire me
-        <i className="ri-service-line" />
-      </button>
+      <Link to={"https://wa.me/5554996652594"}>
+        <div className="hire">
+          Cantrate-me
+          <i className="ri-service-line" />
+        </div>
+      </Link>
     </Container>
   )
 }

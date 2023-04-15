@@ -20,7 +20,7 @@ export const Container = styled.div`
     line-height: 7.2rem;
   }
 
-  button {
+  .hire {
     width: auto;
     padding: 0 2.4rem;
     height: 8rem;
