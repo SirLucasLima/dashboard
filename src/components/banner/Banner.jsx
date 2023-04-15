@@ -4,7 +4,7 @@ export function Banner(){
   return(
     <Container>
       <h1>
-        Turning your ideas into real applications!
+        Transformando idéias em aplicações reais!
       </h1>
       <button>
         Hire me

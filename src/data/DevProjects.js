@@ -13,7 +13,7 @@ export const DevProjects = [
   {
     "img1": metaversus1,
     "img2": metaversus2,
-    "title": "Metaversus - Front-End Project",
+    "title": "Metaversus - Front-End",
     "links": {
       "deploy": "https://metaversus-client.vercel.app/", 
       "frontend": "https://github.dev/developerlucaslima/metaversusCLIENT",
@@ -23,9 +23,21 @@ export const DevProjects = [
     "techs": "Next.js, Tailwind.Css, Framer Motion"
   },
   {
+    "img1": portofolio1,
+    "img2": portofolio2,
+    "title": "Portfolio - Front-End",
+    "links": {
+      "figma": "https://www.figma.com/file/PDaVtxDS6OrgqDCcf5mHf1/Untitled?node-id=0%3A1&t=Hf89f0Lkql7k1PyY-1",
+      "deploy": "https://devlucaslima.vercel.app/", 
+      "frontend": "https://github.dev/developerlucaslima/portfolioCLIENT/tree/master"
+    },
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis consectetur labore, distinctio unde pariatur ratione! Totam distinctio corporis ipsam beatae quam rerum obcaecati quidem provident commodi quibusdam, maiores nostrum magnam ratione velit. Repudiandae doloremque fugit ut fuga distinctio, facilis voluptates earum deserunt ad ullam, vero esse necessitatibus velit et cum assumenda quasi id quidem? Ea obcaecati dolores cum aliquam, saepe nostrum quo! Iusto placeat nam reprehenderit rem consectetur. In repellat a atque quos explicabo iure incidunt quibusdam et possimus fuga. Ex vel assumenda ratione, ullam ea doloremque maxime! Animi neque adipisci aliquid, veniam rem exercitationem quisquam quas? Maxime laudantium obcaecati ex quidem nemo. Iusto incidunt delectus necessitatibus qui possimus explicabo, reiciendis voluptatibus magnam, facilis itaque corrupti debitis, tempore distinctio dolorem soluta iure aspernatur culpa nihil? Maxime fugit deleniti quis quasi. Cum, nulla corporis quam tempora impedit alias fuga optio possimus voluptates, deleniti eum assumenda sint est mollitia ipsa ducimus cumque!",
+    "techs": "JavaScript, Node.JS"
+  },
+  {
     "img1": notes1,
     "img2": notes2,
-    "title": "Notes - Full-Stack Project",
+    "title": "Notes - Full-Stack",
     "links": {
       "deploy": "https://metaversus-client.vercel.app/",
       "frontend": "https://github.dev/developerlucaslima/notesCLIENT",
@@ -38,37 +50,21 @@ export const DevProjects = [
   {
     "img1": socialMedia1,
     "img2": socialMedia2,
-    "title": "Projetinho Dev",
+    "title": "Rede Social - Full-Stack (Incompleto)",
     "links": {
-      "deploy": "https://web.whatsapp.com", 
-      "frontend": "https://app.rocketseat.com.br/dashboard",
-      "backend": "https://github.com/sirlucaslima",
+      "deploy": "https://social-client-peach.vercel.app/", 
+      "frontend": "https://github.dev/developerlucaslima/socialCLIENT/tree/master"
     },
-    "description": "Uma rede social baseada no facebook, comecei esse projeto a partir de uma video aula do canal do ",
-    "techs": "JavaScript, Node.JS"
-  },
-  {
-    "img1": portofolio1,
-    "img2": portofolio2,
-    "title": "Projetinho Dev",
-    "links": {
-      "deploy": "https://web.whatsapp.com", 
-      "frontend": "https://app.rocketseat.com.br/dashboard", 
-      "backend": "https://github.com/sirlucaslima", 
-      "behance": "https://www.behance.net/"
-    },
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis consectetur labore, distinctio unde pariatur ratione! Totam distinctio corporis ipsam beatae quam rerum obcaecati quidem provident commodi quibusdam, maiores nostrum magnam ratione velit. Repudiandae doloremque fugit ut fuga distinctio, facilis voluptates earum deserunt ad ullam, vero esse necessitatibus velit et cum assumenda quasi id quidem? Ea obcaecati dolores cum aliquam, saepe nostrum quo! Iusto placeat nam reprehenderit rem consectetur. In repellat a atque quos explicabo iure incidunt quibusdam et possimus fuga. Ex vel assumenda ratione, ullam ea doloremque maxime! Animi neque adipisci aliquid, veniam rem exercitationem quisquam quas? Maxime laudantium obcaecati ex quidem nemo. Iusto incidunt delectus necessitatibus qui possimus explicabo, reiciendis voluptatibus magnam, facilis itaque corrupti debitis, tempore distinctio dolorem soluta iure aspernatur culpa nihil? Maxime fugit deleniti quis quasi. Cum, nulla corporis quam tempora impedit alias fuga optio possimus voluptates, deleniti eum assumenda sint est mollitia ipsa ducimus cumque!",
+    "description": "Estou trabalhando em um projeto de rede social semelhante ao Facebook. Inicialmente, segui uma videoaula no YouTube, mas fiz muitas modificações por conta própria, especialmente na estrutura de pastas e estilização, optei por usar uma arquitetura mais organizada com rotas separadas e uma paleta de cores diferente. Ainda estou trabalhando no back-end, já que a abordagem da videoaula que segui pareceu um pouco desatualizada. Isso também me permite colocar em prática meus conhecimentos e estou considerando o uso do Nest no back-end.",
     "techs": "JavaScript, Node.JS"
   },
   {
     "img1": airBnbClone1,
     "img2": airBnbClone2,
-    "title": "Projetinho Dev",
+    "title": "AirBnb Clone - Front-End",
     "links": {
-      "deploy": "https://web.whatsapp.com", 
-      "frontend": "https://app.rocketseat.com.br/dashboard", 
-      "backend": "https://github.com/sirlucaslima", 
-      "behance": "https://www.behance.net/"
+      "deploy": "https://vercel.com/developerlucaslima/airbnb-client", 
+      "frontend": "https://github.dev/developerlucaslima/airbnbCLIENT/tree/main"
     },
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis consectetur labore, distinctio unde pariatur ratione! Totam distinctio corporis ipsam beatae quam rerum obcaecati quidem provident commodi quibusdam, maiores nostrum magnam ratione velit. Repudiandae doloremque fugit ut fuga distinctio, facilis voluptates earum deserunt ad ullam, vero esse necessitatibus velit et cum assumenda quasi id quidem? Ea obcaecati dolores cum aliquam, saepe nostrum quo! Iusto placeat nam reprehenderit rem consectetur. In repellat a atque quos explicabo iure incidunt quibusdam et possimus fuga. Ex vel assumenda ratione, ullam ea doloremque maxime! Animi neque adipisci aliquid, veniam rem exercitationem quisquam quas? Maxime laudantium obcaecati ex quidem nemo. Iusto incidunt delectus necessitatibus qui possimus explicabo, reiciendis voluptatibus magnam, facilis itaque corrupti debitis, tempore distinctio dolorem soluta iure aspernatur culpa nihil? Maxime fugit deleniti quis quasi. Cum, nulla corporis quam tempora impedit alias fuga optio possimus voluptates, deleniti eum assumenda sint est mollitia ipsa ducimus cumque!",
     "techs": "JavaScript, Node.JS"

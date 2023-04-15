@@ -5,7 +5,7 @@ export function City(){
   return(
     <Container>
       <div className="header">
-        <span>Based In:</span>
+        <span>Cidade atual:</span>
       </div>
       <div className="map">
         <img src={Gramado} alt="" />

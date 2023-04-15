@@ -18,8 +18,8 @@ export const SkillContextProvider = ({ children }) => {
 
   //toggle skill select
   const options = [
-    {value: 'DevProjects', text: '🧑🏽‍💻 Dev Projects '},
-    {value: 'UiProjects', text: '🧑🏽‍🎨 UI Projects '}
+    {value: 'DevProjects', text: '🧑🏽‍💻 Projetos Dev '},
+    {value: 'UiProjects', text: '🧑🏽‍🎨 Projetos UI '}
   ]
 
   const [selected, setSelected] = useState(skill ? options[0].value : options[1].value )
