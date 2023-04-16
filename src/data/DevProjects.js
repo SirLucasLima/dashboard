@@ -61,12 +61,12 @@ export const DevProjects = [
   {
     "img1": airBnbClone1,
     "img2": airBnbClone2,
-    "title": "AirBnb Clone - Front-End",
+    "title": "AirBnb Clone - Front-End (Inconpleto)",
     "links": {
       "deploy": "https://vercel.com/developerlucaslima/airbnb-client", 
       "frontend": "https://github.dev/developerlucaslima/airbnbCLIENT/tree/main"
     },
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis consectetur labore, distinctio unde pariatur ratione! Totam distinctio corporis ipsam beatae quam rerum obcaecati quidem provident commodi quibusdam, maiores nostrum magnam ratione velit. Repudiandae doloremque fugit ut fuga distinctio, facilis voluptates earum deserunt ad ullam, vero esse necessitatibus velit et cum assumenda quasi id quidem? Ea obcaecati dolores cum aliquam, saepe nostrum quo! Iusto placeat nam reprehenderit rem consectetur. In repellat a atque quos explicabo iure incidunt quibusdam et possimus fuga. Ex vel assumenda ratione, ullam ea doloremque maxime! Animi neque adipisci aliquid, veniam rem exercitationem quisquam quas? Maxime laudantium obcaecati ex quidem nemo. Iusto incidunt delectus necessitatibus qui possimus explicabo, reiciendis voluptatibus magnam, facilis itaque corrupti debitis, tempore distinctio dolorem soluta iure aspernatur culpa nihil? Maxime fugit deleniti quis quasi. Cum, nulla corporis quam tempora impedit alias fuga optio possimus voluptates, deleniti eum assumenda sint est mollitia ipsa ducimus cumque!",
+    "description": "Durante este projeto, desenvolvi uma versão do site AirBnb com ênfase na responsividade, utilizando a biblioteca Tailwind para criar um site adaptável a diferentes tamanhos de tela. Além disso, para exibir mapas personalizados e interativos, utilizei a plataforma MapBox, que foi um dos grandes diferenciais do projeto. Para gerenciar os dados do back-end, optei por utilizar uma API externa para acesso a informações atualizadas em tempo real, e alguns dados foram armazenados localmente em um arquivo JSON para garantir a disponibilidade e rapidez no acesso às informações.",
     "techs": "JavaScript, Node.JS"
   }
 ]
