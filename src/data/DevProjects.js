@@ -32,7 +32,7 @@ export const DevProjects = [
       "frontend": "https://github.dev/developerlucaslima/portfolioCLIENT/tree/master"
     },
     "description": "Este é o meu portfólio em constante aprimoramento. Como designer, dediquei especial atenção à interface para criar uma experiência agradável e funcional ao usuário. O projeto foi concebido para visualização sem rolagem, também reconheço que a responsividade é essencial e, por isso, estou trabalhando para adequá-lo ao conceito mobile first. Utilizei a ferramenta Vite na criação do projeto, mas estou considerando mudar para o Next.js a fim de aprimorar a performance e escalabilidade. Apesar de não ter utilizado um backend, optei por armazenar todos os dados em um objeto JavaScript ou JSON local.",
-    "techs": "JavaScript, Node.JS"
+    "techs": "Figma, React.js, Vite, Styled Components"
   },
   {
     "img1": notes1,
@@ -56,7 +56,7 @@ export const DevProjects = [
       "frontend": "https://github.dev/developerlucaslima/socialCLIENT/tree/master"
     },
     "description": "Estou trabalhando em um projeto de rede social semelhante ao Facebook. Inicialmente, segui uma videoaula no YouTube, mas fiz muitas modificações por conta própria, especialmente na estrutura de pastas e estilização, optei por usar uma arquitetura mais organizada com rotas separadas e uma paleta de cores diferente. Ainda estou trabalhando no back-end, já que a abordagem da videoaula que segui pareceu um pouco desatualizada. Isso também me permite colocar em prática meus conhecimentos e estou considerando o uso do Nest no back-end.",
-    "techs": "JavaScript, Node.JS"
+    "techs": "React.js, Vite, Styled Components"
   },
   {
     "img1": airBnbClone1,
@@ -67,6 +67,6 @@ export const DevProjects = [
       "frontend": "https://github.dev/developerlucaslima/airbnbCLIENT/tree/main"
     },
     "description": "Durante este projeto, desenvolvi uma versão do site AirBnb com ênfase na responsividade, utilizando a biblioteca Tailwind para criar um site adaptável a diferentes tamanhos de tela. Além disso, para exibir mapas personalizados e interativos, utilizei a plataforma MapBox, que foi um dos grandes diferenciais do projeto. Para gerenciar os dados do back-end, optei por utilizar uma API externa para acesso a informações atualizadas em tempo real, e alguns dados foram armazenados localmente em um arquivo JSON para garantir a disponibilidade e rapidez no acesso às informações.",
-    "techs": "JavaScript, Node.JS"
+    "techs": "Next.js, Typescript, Tailwind, MapBox, Geolib"
   }
 ]
