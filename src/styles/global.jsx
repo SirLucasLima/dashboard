@@ -10,9 +10,15 @@ export default createGlobalStyle`
     color: ${({theme}) => theme.rose};
   }
 
-  //-------------- root
+  //-------------- root and media breakpoints
   :root{
     font-size: 62.5%;
+  }
+
+  @media screen and (max-width: 1400px) {
+    :root{
+      font-size: 43.75%;
+    }
   }
 
   //-------------- scrollbar google
