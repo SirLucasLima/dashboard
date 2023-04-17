@@ -33,9 +33,10 @@ export const UiProjects = [
   {
     "img1": portofolio1,
     "img2": portofolio2,
-    "title": "Portfolio - Web Design",
     "links": {
-      "figma": "https://www.behance.net/gallery/105279793/IDENTIDADE-VISUAL-E-LOGO-MARCIA-AURELIA-MASSOTERAPIA"
+      "figma": "https://www.figma.com/file/PDaVtxDS6OrgqDCcf5mHf1/Untitled?node-id=0%3A1&t=Hf89f0Lkql7k1PyY-1",
+      "deploy": "https://devlucaslima.vercel.app/", 
+      "frontend": "https://github.dev/developerlucaslima/portfolioCLIENT/tree/master"
     },
     "description": "Este é o portfólio que você está navegando agora. Ele foi desenvolvido com a intenção de proporcionar uma experiência visual agradável e funcional ao usuário. Para isso, dediquei atenção especial à interface, criando um layout moderno e com cores escuras que oferecem um contraste interessante. O design do portfólio foi desenvolvido de forma a permitir a visualização completa na tela inicial, sem a necessidade de rolagem do scroll. Entretanto, reconheço que a responsividade é essencial para uma navegação perfeita em diferentes dispositivos, como smartphones e tablets. Portanto, estou trabalhando arduamente para adaptá-lo ao conceito de mobile first. Apesar de ainda não ser responsivo, optei por lançar o portfólio o quanto antes, sem comprometer a qualidade da apresentação e das informações aqui contidas. Acredito que a apresentação de um trabalho bem-feito e bem-estruturado é fundamental para o sucesso profissional, e espero que este portfólio atenda às expectativas de quem o visita."
   },
@@ -44,7 +45,7 @@ export const UiProjects = [
     "img2": map2,
     "title": "Hand Drawn Map - Gramado",
     "links": {
-      "behance": "https://www.behance.net/gallery/105279793/IDENTIDADE-VISUAL-E-LOGO-MARCIA-AURELIA-MASSOTERAPIA"
+      "behance": "https://www.behance.net/gallery/105279633/MAPA-TURISTICO-GRAMADO-RS-POUSADA-VOVO-CAROLINA"
     },
     "description": "Desenvolvi este mapa manualmente, utilizando uma mesa digitalizadora. Foi meu primeiro trabalho utilizando essa ferramenta, e tive o cuidado de dar atenção aos detalhes e à qualidade do desenho. O mapa foi encomendado por uma pousada localizada em Gramado-RS, com o objetivo de orientar os turistas a apreciarem as belas paisagens e natureza da região. Para criar um mapa completo e preciso, pesquisei minuciosamente as rotas disponíveis e os principais pontos turísticos da cidade. A partir disso, tracei as rotas mais adequadas e destaquei os principais atrativos, utilizando cores vibrantes para chamar a atenção e tornar a leitura mais fácil. Com o mapa em mãos, os turistas conseguem se locomover com mais facilidade e segurança, descobrindo novos lugares e se encantando com as belezas naturais da região. Foi gratificante desenvolver um projeto que contribui para a experiência positiva dos visitantes e a divulgação do turismo local.",
     "techs": "Adobe Photoshop, Mesa Digitalizadora"
@@ -54,7 +55,7 @@ export const UiProjects = [
     "img2": vovoCarolina2,
     "title": "Realistic Digital Drawing - Hotel/Inn",
     "links": {
-      "behance": "https://www.behance.net/gallery/105279793/IDENTIDADE-VISUAL-E-LOGO-MARCIA-AURELIA-MASSOTERAPIA"
+      "behance": "https://www.behance.net/gallery/105279633/MAPA-TURISTICO-GRAMADO-RS-POUSADA-VOVO-CAROLINA"
     },
     "description": "Esses desenhos complementam o trabalho anterior de forma expressiva, contribuindo para uma apresentação mais completa e impressionante do projeto. Fiz questão de cuidar de cada detalhe para que tudo estivesse em perfeita harmonia. Para isso, dediquei-me a escolher as cores mais adequadas e a garantir que a iluminação e sombras dos desenhos estivessem em sintonia com o projeto original. Utilizei técnicas digitais e realistas para criar imagens impactantes e fiéis à proposta do projeto.",
     "techs": "Adobe Photoshop, Mesa Digitalizadora"
