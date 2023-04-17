@@ -18,7 +18,7 @@ export const DevProjects = [
       "deploy": "https://metaversus-client.vercel.app/", 
       "frontend": "https://github.dev/developerlucaslima/metaversusCLIENT",
     },
-    "description": "Este é um projeto moderno com belas animações, estilizações e uma paleta de cores atraente. Foi uma das minhas primeiras experiências com as tecnologias Next.js, Tailwind.css e Framer Motion. Fiquei impressionado com o Next.js por oferecer suporte a server rendering e pretendo utilizá-lo em meus projetos futuros. Ao combinar essas tecnologias, pude aproveitar a facilidade de desenvolvimento do Tailwind e a capacidade do Framer Motion para adicionar animações personalizadas e transições suaves em componentes React. Além disso, Tailwind é altamente configurável, permitindo a personalização das classes de estilo para atender às necessidades específicas de cada projeto.",
+    "description": "Landing page moderna com belas animações, estilizações e uma paleta de cores atraente. Foi uma das minhas primeiras experiências com as tecnologias Next.js, Tailwind.css e Framer Motion. Fiquei impressionado com o Next.js por oferecer suporte a server rendering e pretendo utilizá-lo em meus projetos futuros. Ao combinar essas tecnologias, pude aproveitar a facilidade de desenvolvimento do Tailwind e a capacidade do Framer Motion para adicionar animações personalizadas e transições suaves em componentes React. Além disso, Tailwind é altamente configurável, permitindo a personalização das classes de estilo para atender às necessidades específicas de cada projeto.",
     "date": "Janeiro de 2023",
     "techs": "Next.js, Tailwind.Css, Framer Motion"
   },
@@ -43,7 +43,7 @@ export const DevProjects = [
       "frontend": "https://github.dev/developerlucaslima/notesCLIENT",
       "backend": "https://github.dev/developerlucaslima/notesAPI",
     },
-    "description": "Este é o meu projeto final desenvolvido na trilha Explorer da RocketSeat. Foi meu primeiro projeto full-stack, onde tive meu primeiro contato com o lado do servidor e banco de dados, utilizando Node.js, SQLite e Knex.js. Durante o projeto, aprendi muito sobre programação orientada a objetos, arquitetura de software, rotas, criptografia, autenticação e utilização de query builders com suporte para vários bancos de dados SQL. No lado do cliente, utilizei React.js e também adquiri conhecimentos avançados sobre componentização, props e CSS-in-JS com Styled Components.",
+    "description": "Projeto final desenvolvido na trilha Explorer da RocketSeat. Foi meu primeiro projeto full-stack, onde tive meu primeiro contato com o lado do servidor e banco de dados, utilizando Node.js, SQLite e Knex.js. Durante o projeto, aprendi muito sobre programação orientada a objetos, arquitetura de software, rotas, criptografia, autenticação e utilização de query builders com suporte para vários bancos de dados SQL. No lado do cliente, utilizei React.js e também adquiri conhecimentos avançados sobre componentização, props e CSS-in-JS com Styled Components.",
     "date": "Outubro de 2022",
     "techs": "React.js, Vite, Styled Components, Node.js, SQLite, Knex.js, Express.js, JWT, Bcrypt.js"
   },

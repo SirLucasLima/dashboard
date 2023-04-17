@@ -31,6 +31,15 @@ export const UiProjects = [
     "techs": "Adobe illustrator, Adobe Photoshop"
   },
   {
+    "img1": portofolio1,
+    "img2": portofolio2,
+    "title": "Portfolio - Web Design",
+    "links": {
+      "figma": "https://www.behance.net/gallery/105279793/IDENTIDADE-VISUAL-E-LOGO-MARCIA-AURELIA-MASSOTERAPIA"
+    },
+    "description": "Este é o portfólio que você está navegando agora. Ele foi desenvolvido com a intenção de proporcionar uma experiência visual agradável e funcional ao usuário. Para isso, dediquei atenção especial à interface, criando um layout moderno e com cores escuras que oferecem um contraste interessante. O design do portfólio foi desenvolvido de forma a permitir a visualização completa na tela inicial, sem a necessidade de rolagem do scroll. Entretanto, reconheço que a responsividade é essencial para uma navegação perfeita em diferentes dispositivos, como smartphones e tablets. Portanto, estou trabalhando arduamente para adaptá-lo ao conceito de mobile first. Apesar de ainda não ser responsivo, optei por lançar o portfólio o quanto antes, sem comprometer a qualidade da apresentação e das informações aqui contidas. Acredito que a apresentação de um trabalho bem-feito e bem-estruturado é fundamental para o sucesso profissional, e espero que este portfólio atenda às expectativas de quem o visita."
+  },
+  {
     "img1": map1,
     "img2": map2,
     "title": "Hand Drawn Map - Gramado",
@@ -43,11 +52,11 @@ export const UiProjects = [
   {
     "img1": vovoCarolina1,
     "img2": vovoCarolina2,
-    "title": "Hand Drawn Map - Gramado",
+    "title": "Realistic Digital Drawing - Hotel/Inn",
     "links": {
       "behance": "https://www.behance.net/gallery/105279793/IDENTIDADE-VISUAL-E-LOGO-MARCIA-AURELIA-MASSOTERAPIA"
     },
-    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis consectetur labore, distinctio unde pariatur ratione! Totam distinctio corporis ipsam beatae quam rerum obcaecati quidem provident commodi quibusdam, maiores nostrum magnam ratione velit. Repudiandae doloremque fugit ut fuga distinctio, facilis voluptates earum deserunt ad ullam, vero esse necessitatibus velit et cum assumenda quasi id quidem? Ea obcaecati dolores cum aliquam, saepe nostrum quo! Iusto placeat nam reprehenderit rem consectetur. In repellat a atque quos explicabo iure incidunt quibusdam et possimus fuga. Ex vel assumenda ratione, ullam ea doloremque maxime! Animi neque adipisci aliquid, veniam rem exercitationem quisquam quas? Maxime laudantium obcaecati ex quidem nemo. Iusto incidunt delectus necessitatibus qui possimus explicabo, reiciendis voluptatibus magnam, facilis itaque corrupti debitis, tempore distinctio dolorem soluta iure aspernatur culpa nihil? Maxime fugit deleniti quis quasi. Cum, nulla corporis quam tempora impedit alias fuga optio possimus voluptates, deleniti eum assumenda sint est mollitia ipsa ducimus cumque!",
-    "techs": "Adobe Photoshop"
+    "description": "Esses desenhos complementam o trabalho anterior de forma expressiva, contribuindo para uma apresentação mais completa e impressionante do projeto. Fiz questão de cuidar de cada detalhe para que tudo estivesse em perfeita harmonia. Para isso, dediquei-me a escolher as cores mais adequadas e a garantir que a iluminação e sombras dos desenhos estivessem em sintonia com o projeto original. Utilizei técnicas digitais e realistas para criar imagens impactantes e fiéis à proposta do projeto.",
+    "techs": "Adobe Photoshop, Mesa Digitalizadora"
   }
 ]
