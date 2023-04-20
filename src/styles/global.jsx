@@ -21,10 +21,11 @@ export default createGlobalStyle`
     }
   }
 
-  //-------------- scrollbar google
+  //-------------- scrollbar
   ::-webkit-scrollbar {
     background: transparent;
-    width: .8rem
+    width: .8rem;
+    height: .8rem;
   }
 
   ::-webkit-scrollbar-track, ::-webkit-scrollbar-button, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner, ::-webkit-resizer {
