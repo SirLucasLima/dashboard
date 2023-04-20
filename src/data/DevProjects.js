@@ -63,10 +63,10 @@ export const DevProjects = [
     "img2": airBnbClone2,
     "title": "AirBnb Clone - Front-End (Inconpleto)",
     "links": {
-      "deploy": "https://vercel.com/developerlucaslima/airbnb-client", 
+      "deploy": "https://airbnb-client-seven.vercel.app/", 
       "frontend": "https://github.dev/developerlucaslima/airbnbCLIENT/tree/main"
     },
-    "description": "Durante este projeto, desenvolvi uma versão do site AirBnb com ênfase na responsividade, utilizando a biblioteca Tailwind para criar um site adaptável a diferentes tamanhos de tela. Além disso, para exibir mapas personalizados e interativos, utilizei a plataforma MapBox, que foi um dos grandes diferenciais do projeto. Para gerenciar os dados do back-end, optei por utilizar uma API externa para acesso a informações atualizadas em tempo real, e alguns dados foram armazenados localmente em um arquivo JSON para garantir a disponibilidade e rapidez no acesso às informações.",
+    "description": "Estou desenvolvendo uma versão do site AirBnb com ênfase na responsividade, utilizando a biblioteca Tailwind para criar um site adaptável a diferentes tamanhos de tela. Além disso, estou utilizando a plataforma MapBox para exibir mapas personalizados e interativos, o que é um dos grandes diferenciais do projeto. Para gerenciar os dados do back-end, estou optando por utilizar uma API externa para acesso a informações atualizadas em tempo real, e alguns dados estão sendo armazenados localmente em um arquivo JSON para garantir a disponibilidade e rapidez no acesso às informações.",
     "techs": "Next.js, Typescript, Tailwind, MapBox, Geolib"
   }
 ]
