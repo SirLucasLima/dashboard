@@ -55,7 +55,7 @@ export const DevProjects = [
       "deploy": "https://social-client-peach.vercel.app/", 
       "frontend": "https://github.dev/developerlucaslima/socialCLIENT/tree/master"
     },
-    "description": "Estou trabalhando em um projeto de rede social semelhante ao Facebook. Inicialmente, segui uma videoaula no YouTube, mas fiz muitas modificações por conta própria, especialmente na estrutura de pastas e estilização, optei por usar uma arquitetura mais organizada com rotas separadas e uma paleta de cores diferente. Ainda estou trabalhando no back-end, já que a abordagem da videoaula que segui pareceu um pouco desatualizada. Isso também me permite colocar em prática meus conhecimentos e estou considerando o uso do Nest no back-end.",
+    "description": "Estou trabalhando em um projeto de rede social semelhante ao Facebook. Inicialmente, segui uma videoaula no YouTube, mas fiz muitas modificações por conta própria, especialmente na estrutura de pastas e estilização, optei por usar uma arquitetura mais organizada com rotas separadas e uma paleta de cores diferente. Ainda estou trabalhando no back-end, já que a abordagem da videoaula que segui pareceu um pouco desatualizada. Isso também me permite colocar em prática meus conhecimentos e estou considerando o uso do Nest.js no back-end.",
     "techs": "React.js, Vite, Styled Components"
   },
   {
