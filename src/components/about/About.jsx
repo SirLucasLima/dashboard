@@ -15,17 +15,7 @@ export function About(){
       </div>
       <div className="textarea">
         <p>
-          Como desenvolvedor Full-Stack JavaScript com experiência em design, trago uma
-          perspectiva única e um conjunto de habilidades para o meu trabalho. Sou proficiente
-          no uso de ferramentas de design, como Illustrator, Photoshop e Figma, para criar
-          wireframes e protótipos que dão vida às ideias. Além disso, minhas habilidades
-          de desenvolvimento incluem HTML e CSS, JavaScript, TypeScript, React, Next.js,
-          Stitches.css, Tailwind.css, Styled Components, React Hooks, ContextAPI, Zustand,
-          entre outras. Também estou familiarizado com as necessidades de servidor e banco
-          de dados, trabalhando com Node.js, Nest.js, Express, Fastify, Knex.js, Prisma, Jest,
-          Vitest, SQLite e Postgres. Combinando essas habilidades, sou capaz de trabalhar em
-          estreita colaboração com equipes de design para garantir a implementação eficaz
-          da visão do projeto
+          I am a Full-Stack developer with design skills. I have experience using tools like Illustrator, Photoshop, and Figma for creating wireframes and prototypes. My development expertise spans web and mobile areas, with proficiency in Java (SpringBoot and Java Android) and JavaScript (Node.js/Nest.js and React/Next.js). The integration of these skills enables me to closely collaborate with design teams, ensuring the effective implementation of the project's vision. Additionally, I have knowledge in Docker, DDD, OOP, TDD, and SOLID. I am constantly updating my skill set to provide the best available solutions.
         </p>
       </div>
     </Container>
