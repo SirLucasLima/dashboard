@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 export const HeaderStyled = styled.a`
-  z-index: 10;
   position: fixed;
+  z-index: 10;
+  top: 0;
+
   height: 2.5rem;
   width: 100vw;
 
