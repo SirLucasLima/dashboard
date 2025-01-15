@@ -5,13 +5,14 @@ import type { ButtonVariant } from '../button-types'
 export const getBackgroundColor = (theme: DefaultTheme, $variant: ButtonVariant) => {
   const { primary, secondary, transparent, destructive } = theme.colors
 
-  const colorMap = {
+  const map = {
     primary: primary,
     secondary: secondary,
     outline: transparent,
     ghost: transparent,
     destructive: destructive,
+    icon: transparent,
   }
 
-  return colorMap[$variant]
+  return map[$variant]
 }
