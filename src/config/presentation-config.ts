@@ -1,3 +1,5 @@
+import { globalLinksConfig } from './globa-links-config'
+
 export interface PresentationConfig {
   presentation: {
     welcome: string
@@ -24,31 +26,31 @@ export const presentationConfig: PresentationConfig[] = [
         comment: '// my number',
         variable: 'cellphone',
         value: '+55 (54) 99665-2594',
-        href: 'https://wa.me/5554996652594',
+        href: globalLinksConfig.whatsApp,
       },
       // {
       //   comment: '// my e-mail',
       //   variable: 'email',
       //   value: 'developerlucaslima@gmail.com',
-      //   href: 'github.com/developerlucaslima',
+      //   href: globalLinksConfig.whatsApp,
       // },
       {
         comment: '// my GitHub',
         variable: 'github',
         value: 'github.com/developerlucaslima',
-        href: 'https://github.com/developerlucaslima',
+        href: globalLinksConfig.linkedIn,
       },
       {
         comment: '// my LinkedIn',
         variable: 'linkedIn',
         value: 'linkedin.com/in/developerlucaslima',
-        href: 'https://www.linkedin.com/in/developerlucaslima/',
+        href: globalLinksConfig.linkedIn,
       },
       {
         comment: '// my Behance',
         variable: 'behance',
         value: 'behance.net/developerlucaslima',
-        href: 'https://www.behance.net/developerlucaslima',
+        href: globalLinksConfig.behance,
       },
     ],
   },
