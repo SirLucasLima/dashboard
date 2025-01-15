@@ -18,9 +18,7 @@ export const Header = () => {
       </TitleContainerStyled>
       <TabsListContainerStyled>
         {config.tabs.map((tab, index) => (
-          <Text key={index} as="li" href={tab.href} variant="list" size="md">
-            {tab.text}
-          </Text>
+          <Text key={index} as="li" href={tab.href} variant="list" size="md" children={tab.text} />
         ))}
       </TabsListContainerStyled>
       <ContactContainerStyled>
