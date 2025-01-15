@@ -5,17 +5,30 @@ import { getIconSize } from './utils/get-icon-size'
 
 export const Button = ({
   variant = 'primary',
+  hover = undefined,
   disabled = false,
   loading = false,
   size = 'md',
   icon: Icon,
-  text,
+  children,
+  href,
+  target,
 }: ButtonProps) => {
   const iconSize = getIconSize(size)
+  const isLink = Boolean(href)
   return (
-    <ButtonStyled $variant={variant} $disabled={disabled} $loading={loading} $size={size}>
+    <ButtonStyled
+      as={isLink ? 'a' : 'button'}
+      href={isLink ? href : undefined}
+      target={isLink ? target : undefined}
+      $variant={variant}
+      $hover={hover}
+      $disabled={disabled}
+      $loading={loading}
+      $size={size}
+    >
       {loading ? <SpinningLoader size={iconSize} /> : Icon && <Icon size={iconSize} />}
-      {text}
+      {children}
     </ButtonStyled>
   )
 }
