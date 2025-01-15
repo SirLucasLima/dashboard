@@ -1,10 +1,10 @@
 import type { ButtonSize } from '../button-types'
 
 export const getHeight = ($size: ButtonSize) => {
-  const heightMap = {
+  const map = {
     sm: '32px',
     md: '40px',
     lg: '48px',
   }
-  return heightMap[$size]
+  return map[$size]
 }
