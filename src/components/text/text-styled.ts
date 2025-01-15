@@ -8,6 +8,10 @@ import { getHoverOpacity } from './utils/get-hover-opacity'
 import { getTextColor } from './utils/get-text-color'
 
 export const TextStyled = styled.div<TextStyledProps>`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
   ${({ theme, $variant }) => css`
     color: ${getTextColor(theme, $variant)};
     font-weight: ${getFontWeight(theme, $variant)};
@@ -16,9 +20,22 @@ export const TextStyled = styled.div<TextStyledProps>`
       color: ${getHoverColor(theme, $variant)};
       opacity: ${getHoverOpacity($variant)};
     }
+
+    > svg {
+      stroke: ${getTextColor(theme, $variant)};
+
+      &:hover {
+        stroke: ${getHoverColor(theme, $variant)};
+        opacity: ${getHoverOpacity($variant)};
+      }
+    }
   `}
 
   ${({ theme, $size }) => css`
     font-size: ${getFontSize(theme, $size)};
+
+    > svg {
+      width: ${getFontSize(theme, $size)};
+    }
   `}
 `
