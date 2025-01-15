@@ -1,6 +1,7 @@
+import { RouterProvider } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
-import { Home } from './pages/home/home'
+import { router } from './routes/router'
 import { useAppSelector } from './store/store'
 import { GlobalStyle } from './styles/global'
 import { darkTheme, lightTheme } from './styles/themes'
@@ -12,7 +13,7 @@ export const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Home />
+      <RouterProvider router={router} />
     </ThemeProvider>
   )
 }
