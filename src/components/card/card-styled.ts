@@ -5,7 +5,7 @@ import { getBackgroundColor } from './utils/get-background-color'
 import { getColor } from './utils/get-color'
 
 export const CardStyled = styled.div<CardStylesProps>`
-  border-radius: ${({ theme }) => theme.radius};
+  border-radius: ${({ theme }) => theme.round.radius};
   height: 100%;
   width: 100%;
   padding: 1rem;
