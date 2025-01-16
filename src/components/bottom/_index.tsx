@@ -18,16 +18,23 @@ export const Bottom = () => {
       </TitleContainerStyled>
       <TabsListContainerStyled>
         {config.tabs.map((tab, index) => (
-          <Text key={index} as="li" href={tab.href} variant="link" size="md">
-            <tab.icon />
-          </Text>
+          <li key={index}>
+            <Text as="a" href={tab.href} target="_blank" variant="link" size="md">
+              <tab.icon />
+            </Text>
+          </li>
         ))}
       </TabsListContainerStyled>
       <CurriculumContainerStyled>
-        <Text key={index} as="a" variant="link" size="md">
-          {config.language.text + ' '}
-          <config.language.icon />
-        </Text>
+        <Text
+          key={index}
+          as="a"
+          variant="link"
+          size="md"
+          appendIcon={<config.curriculum.icon />}
+          children={config.curriculum.text}
+          fullWidth
+        />
       </CurriculumContainerStyled>
     </BottomStyled>
   ))

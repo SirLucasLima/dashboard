@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const BottomStyled = styled.a`
+export const BottomStyled = styled.div`
   position: fixed;
   z-index: 10;
   bottom: 0;
@@ -13,12 +13,13 @@ export const BottomStyled = styled.a`
 `
 
 export const TitleContainerStyled = styled.div`
-  width: 20rem;
+  width: auto;
 
   padding: 1rem;
 
   display: flex;
   align-items: center;
+  justify-content: center;
 
   border-right: 0.5px solid ${({ theme }) => theme.colors.border};
 `

@@ -11,7 +11,7 @@ export interface BottomConfig {
     icon: LucideIcon
     href: string
   }[]
-  language: {
+  curriculum: {
     text: string
     icon: LucideIcon
   }
@@ -20,24 +20,24 @@ export interface BottomConfig {
 export const bottomConfig: BottomConfig[] = [
   {
     title: {
-      text: '/dev-lucas-lima',
-      href: '/',
+      text: 'find me in:',
+      href: '/about',
     },
     tabs: [
       {
-        icon: GithubIcon,
-        href: globalLinksConfig.github,
+        icon: InstagramIcon,
+        href: globalLinksConfig.instagram,
       },
       {
         icon: LinkedinIcon,
         href: globalLinksConfig.linkedIn,
       },
       {
-        icon: InstagramIcon,
-        href: globalLinksConfig.instagram,
+        icon: GithubIcon,
+        href: globalLinksConfig.github,
       },
     ],
-    language: {
+    curriculum: {
       text: 'curriculum.pdf',
       icon: FileUser,
     },
