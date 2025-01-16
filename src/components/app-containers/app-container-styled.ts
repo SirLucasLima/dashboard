@@ -1,8 +1,11 @@
 import styled from 'styled-components'
 
 export const AppContainersStyled = styled.div`
-  height: 100%;
-  width: 100vw;
+  width: 100wvh;
+  height: 100vh;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  overflow: hidden;
 
   display: flex;
   border-bottom: 0.5px solid ${({ theme }) => theme.colors.border};
