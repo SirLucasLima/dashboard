@@ -5,21 +5,12 @@ export const PresentationStyled = styled.div`
   position: fixed;
 
   top: 50%;
-  left: 20rem;
-  transform: translate(-10%, -50%);
+  left: 15rem;
+  transform: translate(0, -50%);
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
-`
-
-export const PresentationContent = styled.div`
-  width: 100%;
-  height: 100%;
-
-  display: flex;
-
-  justify-content: center;
 `
 
 export const PresentationName = styled.div`
