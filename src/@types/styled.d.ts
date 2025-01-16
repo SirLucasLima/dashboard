@@ -49,7 +49,7 @@ declare module 'styled-components' {
         xl: number
       }
     }
-    round: {
+    border: {
       radius: string
       circle: string
     }
