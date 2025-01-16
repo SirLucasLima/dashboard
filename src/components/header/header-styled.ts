@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const HeaderStyled = styled.a`
+export const HeaderStyled = styled.div`
   position: fixed;
   z-index: 10;
   top: 0;
@@ -13,8 +13,7 @@ export const HeaderStyled = styled.a`
 `
 
 export const TitleContainerStyled = styled.div`
-  width: 20rem;
-
+  width: 15rem;
   padding: 1rem;
 
   display: flex;
@@ -24,10 +23,11 @@ export const TitleContainerStyled = styled.div`
 `
 
 export const TabsListContainerStyled = styled.ul`
-  width: 100%;
+  flex: 1;
   overflow: hidden;
 
   display: flex;
+  justify-content: flex-start;
 
   border-right: 0.5px solid ${({ theme }) => theme.colors.border};
 
@@ -44,8 +44,8 @@ export const TabsListContainerStyled = styled.ul`
 `
 
 export const ContactContainerStyled = styled.a`
-  width: 15rem;
-
+  margin-left: auto;
+  width: auto;
   padding: 1rem;
 
   display: flex;
