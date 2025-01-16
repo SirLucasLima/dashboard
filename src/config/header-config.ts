@@ -25,12 +25,8 @@ export const headerConfig: HeaderConfig[] = [
         href: '/',
       },
       {
-        text: 'home.ts',
-        href: '/',
-      },
-      {
-        text: 'home.ts',
-        href: '/',
+        text: 'about.ts',
+        href: '/about',
       },
     ],
     contact: {
