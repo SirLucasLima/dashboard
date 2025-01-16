@@ -1,6 +1,6 @@
 import { FileUser, GithubIcon, InstagramIcon, LinkedinIcon, type LucideIcon } from 'lucide-react'
 
-import { globalLinksConfig } from './globa-links-config'
+import { globalLinksConfig } from './global-links-config'
 
 export interface BottomConfig {
   title: {

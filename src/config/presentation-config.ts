@@ -1,4 +1,4 @@
-import { globalLinksConfig } from './globa-links-config'
+import { globalLinksConfig } from './global-links-config'
 
 export interface PresentationConfig {
   presentation: {
