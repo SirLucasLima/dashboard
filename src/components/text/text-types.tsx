@@ -1,4 +1,5 @@
-import type { AnchorHTMLAttributes } from 'react'
+import type { LucideIcon } from 'lucide-react'
+import type { AnchorHTMLAttributes, ReactElement } from 'react'
 
 export type TextVariant =
   | 'text'
@@ -17,9 +18,13 @@ export interface TextProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: TextVariant
   size?: TextSize
   children: React.ReactNode
+  prependIcon?: ReactElement<LucideIcon>
+  appendIcon?: ReactElement<LucideIcon>
+  fullWidth?: boolean
 }
 
 export interface TextStyledProps {
   $variant: TextVariant
   $size: TextSize
+  $fullWidth: boolean
 }

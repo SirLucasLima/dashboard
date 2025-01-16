@@ -11,31 +11,41 @@ export const TextStyled = styled.div<TextStyledProps>`
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: ${({ $fullWidth }) => ($fullWidth ? '100%' : 'auto')};
 
-  ${({ theme, $variant }) => css`
-    color: ${getTextColor(theme, $variant)};
-    font-weight: ${getFontWeight(theme, $variant)};
-
-    &:hover {
-      color: ${getHoverColor(theme, $variant)};
-      opacity: ${getHoverOpacity($variant)};
+  ${({ theme, $size, $variant }) => css`
+    .content {
+      color: ${getTextColor(theme, $variant)};
+      font-weight: ${getFontWeight(theme, $variant)};
+      font-size: ${getFontSize(theme, $size)};
     }
 
-    > svg {
+    svg {
+      display: flex;
+      align-items: center;
       stroke: ${getTextColor(theme, $variant)};
+      width: ${getFontSize(theme, $size)};
+    }
 
-      &:hover {
+    &:hover {
+      .content {
+        color: ${getHoverColor(theme, $variant)};
+        opacity: ${getHoverOpacity($variant)};
+      }
+
+      svg {
         stroke: ${getHoverColor(theme, $variant)};
         opacity: ${getHoverOpacity($variant)};
       }
     }
   `}
 
-  ${({ theme, $size }) => css`
-    font-size: ${getFontSize(theme, $size)};
+  > .middle {
+    flex: 1;
+    text-align: left;
+  }
 
-    > svg {
-      width: ${getFontSize(theme, $size)};
-    }
-  `}
+  > .appendIcon {
+    margin-left: auto;
+  }
 `
