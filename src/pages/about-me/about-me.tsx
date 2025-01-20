@@ -1,7 +1,9 @@
+import { AboutMeContent } from '@/components/about-me-content/_index'
+
 export const AboutMe = () => {
   return (
     <>
-      <h1>About</h1>
+      <AboutMeContent />
     </>
   )
 }
