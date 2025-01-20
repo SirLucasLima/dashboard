@@ -37,6 +37,7 @@ declare module 'styled-components' {
     }
     typography: {
       fontSize: {
+        xs: string
         sm: string
         md: string
         lg: string
@@ -48,6 +49,7 @@ declare module 'styled-components' {
         bold: number
       }
       lineHeight: {
+        xs: string
         sm: string
         md: string
         lg: string

@@ -2,14 +2,14 @@ import type { DefaultTheme } from 'styled-components/dist/types'
 
 export const theme: DefaultTheme = {
   colors: {
-    background: 'hsl(246, 23.30%, 11.90%)',
-    foreground: 'hsl(0 0% 98%)',
-    primary: 'hsl(240 5.9% 10%)',
-    primaryForeground: 'hsl(0 0% 98%)',
+    background: 'hsl(247.5, 23.52941176470588%, 11%)',
+    foreground: 'hsl(248,15%,61%)',
+    primary: 'hsl(247.5, 23.52941176470588%, 20%)',
+    primaryForeground: 'hsl(248,15%,81%)',
     secondary: 'hsl(0 0% 98%)',
     secondaryForeground: 'hsl(240 5.9% 10%)',
     muted: 'hsl(240 5.9% 10%)',
-    mutedForeground: 'hsl(240 5 44.9)',
+    mutedForeground: 'hsl(248,15%,71%)',
     destructive: 'hsl(0, 62.8%, 30.6%)',
     destructiveForeground: 'hsl(0 0% 91)',
 
@@ -41,7 +41,7 @@ export const theme: DefaultTheme = {
   },
   typography: {
     fontSize: {
-      // xs: '0.75rem',
+      xs: '0.75rem',
       sm: '0.875rem',
       md: '1rem',
       lg: '1.125rem',
@@ -61,6 +61,7 @@ export const theme: DefaultTheme = {
       bold: 700,
     },
     lineHeight: {
+      xs: '1rem',
       sm: '1.25rem',
       md: '1.5rem',
       lg: '1.75rem',
