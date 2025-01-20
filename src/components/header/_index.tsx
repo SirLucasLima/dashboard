@@ -9,8 +9,8 @@ export const Header = () => {
         <button type="button" className="yellow-traffic-light" />
         <button type="button" className="green-traffic-light" />
       </div>
-      <span>fala-dev</span>
-      <div className="w-14">&nbsp;</div>
+      <span>dev-lucas-lima</span>
+      <div className="empty-space">&nbsp;</div>
     </HeaderStyled>
   )
 }

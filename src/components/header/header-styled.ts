@@ -9,6 +9,8 @@ export const HeaderStyled = styled.div`
   font-size: ${({ theme }) => theme.typography.fontSize.sm};
   line-height: ${({ theme }) => theme.typography.lineHeight.sm};
 
+  color: ${({ theme }) => theme.colors.mutedForeground};
+
   .traffic-light-wrapper {
     display: flex;
     align-items: center;
@@ -34,6 +36,6 @@ export const HeaderStyled = styled.div`
   }
 
   .empty-space {
-    width: 14px;
+    width: 3.5rem;
   }
 `
