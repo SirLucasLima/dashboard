@@ -1,4 +1,4 @@
-export interface GradientBGProps {
+export interface BackgroundGradientProps {
   children: React.ReactNode
 }
 

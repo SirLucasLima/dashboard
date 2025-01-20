@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { GradientBg, InteractiveBubble } from './bg-gradient-styled'
+import { BackgroundGradientStyled, InteractiveBubble } from './background-gradient-styled'
 
 export const BackgroundGradient = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
@@ -10,7 +10,7 @@ export const BackgroundGradient = () => {
   }
 
   return (
-    <GradientBg onMouseMove={handleMouseMove}>
+    <BackgroundGradientStyled onMouseMove={handleMouseMove}>
       <svg>
         <defs>
           <filter id="goo">
@@ -37,6 +37,6 @@ export const BackgroundGradient = () => {
 
         <InteractiveBubble $x={mousePos.x} $y={mousePos.y} />
       </div>
-    </GradientBg>
+    </BackgroundGradientStyled>
   )
 }

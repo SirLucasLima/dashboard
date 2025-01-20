@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
-import type { InteractiveStyledProps } from './bg-gradient-types'
+import type { InteractiveStyledProps } from './background-gradient-types'
 
 const moveInCircle = keyframes`
   0% {
@@ -38,26 +38,12 @@ const moveHorizontal = keyframes`
   }
 `
 
-export const ChildrenContainer = styled.div`
-  z-index: 10;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  justify-content: start;
-  align-items: center;
-  user-select: none;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
-`
-
-export const GradientBg = styled.div`
+export const BackgroundGradientStyled = styled.div`
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: fixed;
   overflow: hidden;
+  z-index: 0;
   top: 0;
   left: 0;
 
@@ -109,12 +95,12 @@ export const GradientBg = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.yellow.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.blue.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0.8)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.yellow.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.blue.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
@@ -135,12 +121,12 @@ export const GradientBg = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.rose.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.orange.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0.8)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.rose.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.orange.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
@@ -161,12 +147,12 @@ export const GradientBg = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.blue.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0.8)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.blue.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
@@ -188,12 +174,12 @@ export const InteractiveBubble = styled.div<InteractiveStyledProps>`
   background: radial-gradient(
       circle at center,
       ${({ theme }) => {
-          const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
+          const hsl = theme.colors.rose.replace('hsl(', '').replace(')', '')
           return `hsla(${hsl}, 0.8)`
         }}
         0%,
       ${({ theme }) => {
-          const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
+          const hsl = theme.colors.rose.replace('hsl(', '').replace(')', '')
           return `hsla(${hsl}, 0)`
         }}
         50%
