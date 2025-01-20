@@ -14,7 +14,6 @@ declare module 'styled-components' {
       destructive: string
       destructiveForeground: string
       shadow: string
-      shadowForeground: string
       border: string
       ring: string
       transparent: string
@@ -29,6 +28,12 @@ declare module 'styled-components' {
     border: {
       radius: string
       circle: string
+    }
+    breakpoints: {
+      sm: string
+      md: string
+      lg: string
+      xl: string
     }
     typography: {
       fontSize: {
