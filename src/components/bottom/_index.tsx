@@ -12,16 +12,19 @@ export const Bottom = () => {
   return bottomConfig.map((config, index) => (
     <BottomStyled key={index}>
       <TitleContainerStyled>
-        <Text as="a" href={config.title.href} variant="link" size="md">
-          {config.title.text}
-        </Text>
+        <Text variant="subtitle" children={config.title.text} />
       </TitleContainerStyled>
       <TabsListContainerStyled>
         {config.tabs.map((tab, index) => (
           <li key={index}>
-            <Text as="a" href={tab.href} target="_blank" variant="link" size="md">
-              <tab.icon />
-            </Text>
+            <Text
+              as="a"
+              href={tab.href}
+              target="_blank"
+              variant="link"
+              size="md"
+              children={<tab.icon />}
+            />
           </li>
         ))}
       </TabsListContainerStyled>

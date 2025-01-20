@@ -1,5 +1,6 @@
-import { headerConfig } from '@/config/header-config'
+import { Link } from 'react-router-dom'
 
+import { getHeaderConfig } from '../../config/header-config'
 import { Text } from '../text/_index'
 import {
   ContactContainerStyled,
@@ -9,25 +10,28 @@ import {
 } from './header-styled'
 
 export const Header = () => {
-  return headerConfig.map((config, index) => (
-    <HeaderStyled key={index}>
+  const { title, tabs, contact } = getHeaderConfig()
+  return (
+    <HeaderStyled>
       <TitleContainerStyled>
-        <Text as="a" href={config.title.href} variant="link" size="md">
-          {config.title.text}
-        </Text>
+        <Link to={title.href}>
+          <Text variant="subtitle" children={title.text} />
+        </Link>
       </TitleContainerStyled>
       <TabsListContainerStyled>
-        {config.tabs.map((tab, index) => (
+        {tabs.map((tab, index) => (
           <li key={index}>
-            <Text as="a" href={tab.href} variant="list" size="md" children={tab.text} />
+            <Link to={tab.href}>
+              <Text variant="list" children={tab.text} />
+            </Link>
           </li>
         ))}
       </TabsListContainerStyled>
       <ContactContainerStyled>
-        <Text as="a" href={config.contact.href} variant="link" size="md">
-          {config.contact.text}
-        </Text>
+        <Link to={contact.href}>
+          <Text variant="link" children={contact.text} />
+        </Link>
       </ContactContainerStyled>
     </HeaderStyled>
-  ))
+  )
 }
