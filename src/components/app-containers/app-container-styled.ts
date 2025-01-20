@@ -15,6 +15,8 @@ export const SideBarContainerStyled = styled.div`
   width: 15rem;
 
   display: flex;
+  /* visibility: hidden;
+  position: fixed; */
 
   border-right: 0.5px solid ${({ theme }) => theme.colors.border};
 `
