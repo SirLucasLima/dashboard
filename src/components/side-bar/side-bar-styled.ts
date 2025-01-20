@@ -17,7 +17,8 @@ export const SideBarGroupStyled = styled.div`
 export const SideBarItemStyled = styled.div<SideBarStyledProps>`
   width: 100%;
   display: flex;
-  justify-content: space-between;
   padding: 0.25rem 1rem;
   padding-left: ${({ $isFile }) => ($isFile ? '3rem' : '1rem')};
+  background-color: ${({ $isCurrent, theme }) =>
+    $isCurrent ? theme.colors.muted : theme.colors.transparent};
 `

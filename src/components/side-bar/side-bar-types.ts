@@ -6,4 +6,5 @@ export interface SideBarProps {
 
 export interface SideBarStyledProps {
   $isFile?: boolean
+  $isCurrent?: boolean
 }
