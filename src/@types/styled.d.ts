@@ -49,9 +49,5 @@ declare module 'styled-components' {
         xl: number
       }
     }
-    border: {
-      radius: string
-      circle: string
-    }
   }
 }
