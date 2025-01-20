@@ -2,7 +2,7 @@ import type { DefaultTheme } from 'styled-components/dist/types'
 
 export const theme: DefaultTheme = {
   colors: {
-    background: 'hsl(240 10% 3.9%)',
+    background: 'hsl(246, 23.30%, 11.90%)',
     foreground: 'hsl(0 0% 98%)',
     primary: 'hsl(240 5.9% 10%)',
     primaryForeground: 'hsl(0 0% 98%)',
@@ -29,7 +29,7 @@ export const theme: DefaultTheme = {
     purple: 'hsl(263, 69.00%, 52.00%)',
   },
   border: {
-    radius: '1rem',
+    radius: '0.5rem',
     circle: '50%',
   },
 
@@ -44,8 +44,8 @@ export const theme: DefaultTheme = {
       // xs: '0.75rem',
       sm: '0.875rem',
       md: '1rem',
-      lg: '1.5rem',
-      xl: '3rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
       // '2xl': '1.5rem',
       // '3xl': '1.875rem',
       // '4xl': '2.25rem',
@@ -56,17 +56,15 @@ export const theme: DefaultTheme = {
       // '9xl': '8rem',
     },
     fontWeight: {
-      // light: 300,
       normal: 400,
       medium: 500,
-      // semibold: 600,
       bold: 700,
     },
     lineHeight: {
-      sm: 1,
-      md: 1.4,
-      lg: 1.5,
-      xl: 1.6,
+      sm: '1.25rem',
+      md: '1.5rem',
+      lg: '1.75rem',
+      xl: '1.75rem',
     },
   },
 }
