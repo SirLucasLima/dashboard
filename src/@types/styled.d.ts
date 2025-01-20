@@ -48,10 +48,10 @@ declare module 'styled-components' {
         bold: number
       }
       lineHeight: {
-        sm: number
-        md: number
-        lg: number
-        xl: number
+        sm: string
+        md: string
+        lg: string
+        xl: string
       }
     }
   }
