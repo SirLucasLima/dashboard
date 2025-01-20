@@ -12,8 +12,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.mutedForeground};
+    background: ${({ theme }) => theme.colors.cyan};
+    color: ${({ theme }) => theme.colors.foreground};
     font-family: "Fira Mono", serif;
     font-size: ${({ theme }) => theme.typography.fontSize.md};
     font-weight: ${({ theme }) => theme.typography.fontWeight.medium};
@@ -35,5 +35,13 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: 18px;
     outline: none;
+  }
+
+  button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
   }
 `
