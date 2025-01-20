@@ -5,7 +5,6 @@ import { globalLinksConfig } from './global-links-config'
 export interface BottomConfig {
   title: {
     text: string
-    href: string
   }
   tabs: {
     icon: LucideIcon
@@ -21,7 +20,6 @@ export const bottomConfig: BottomConfig[] = [
   {
     title: {
       text: 'find me in:',
-      href: '/about',
     },
     tabs: [
       {

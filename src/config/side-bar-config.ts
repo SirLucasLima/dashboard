@@ -1,3 +1,7 @@
+import { buildHref } from '@/utils/build-href'
+
+import { routeConfig } from './routes-config'
+
 export interface SideBarConfig {
   folder: {
     text: string
@@ -8,53 +12,27 @@ export interface SideBarConfig {
   }[]
 }
 
-export const sideBarConfig: SideBarConfig[] = [
-  {
-    folder: {
-      text: 'about-me',
-    },
-    file: [
-      {
-        text: 'about.ts',
-        href: '/me/about',
-      },
-      {
-        text: 'hobbies.ts',
-        href: '/me/hobbies',
-      },
-    ],
-  },
-  {
-    folder: {
-      text: 'contact-me',
-    },
-    file: [
-      {
-        text: 'contact-me.ts',
-        href: '/contact-me',
-      },
-    ],
-  },
-  {
-    folder: {
-      text: 'last-jobs',
-    },
-    file: [
-      {
-        text: 'originate.ts',
-        href: 'jobs/originate',
-      },
-    ],
-  },
-  {
-    folder: {
-      text: 'my-articles',
-    },
-    file: [
-      {
-        text: 'type-or-interface.ts',
-        href: 'articles/type-or-interface',
-      },
-    ],
-  },
-]
+export function getSideBarConfig(): SideBarConfig[] {
+  return routeConfig
+    .filter(group => group.showFolderInSidebar)
+    .map(group => {
+      const basePath = group.path
+
+      const files = (group.children || [])
+        .filter(child => child.showInSidebar)
+        .map(child => {
+          const href = buildHref(basePath, child.path)
+          return {
+            text: child.text,
+            href,
+          }
+        })
+
+      return {
+        folder: {
+          text: group.folderText || '',
+        },
+        file: files,
+      }
+    })
+}
