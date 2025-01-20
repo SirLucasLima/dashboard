@@ -1,54 +1,39 @@
 import styled from 'styled-components'
 
 export const HeaderStyled = styled.div`
-  position: fixed;
-  z-index: 10;
-  top: 0;
-
-  height: 2.5rem;
-  width: 100vw;
-
-  display: flex;
-  border-bottom: 0.5px solid ${({ theme }) => theme.colors.border};
-`
-
-export const TitleContainerStyled = styled.div`
-  width: 15rem;
-  padding: 1rem;
-
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-left: 0.5rem;
 
-  border-right: 0.5px solid ${({ theme }) => theme.colors.border};
-`
+  font-size: ${({ theme }) => theme.typography.fontSize.sm};
+  line-height: ${({ theme }) => theme.typography.lineHeight.sm};
 
-export const TabsListContainerStyled = styled.ul`
-  flex: 1;
-  overflow: hidden;
-
-  display: flex;
-  justify-content: flex-start;
-
-  border-right: 0.5px solid ${({ theme }) => theme.colors.border};
-
-  > li {
-    width: auto;
-    overflow: hidden;
-    padding: 1rem;
-
+  .traffic-light-wrapper {
     display: flex;
     align-items: center;
-
-    border-right: 0.5px solid ${({ theme }) => theme.colors.border};
+    gap: 0.5rem;
   }
-`
 
-export const ContactContainerStyled = styled.a`
-  margin-left: auto;
-  width: auto;
-  padding: 1rem;
+  .red-traffic-light,
+  .yellow-traffic-light,
+  .green-traffic-light {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: ${({ theme }) => theme.border.circle};
+  }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .red-traffic-light {
+    background-color: #ed6a5e;
+  }
+  .yellow-traffic-light {
+    background-color: #f4bf4f;
+  }
+  .green-traffic-light {
+    background-color: #61c554;
+  }
+
+  .empty-space {
+    width: 14px;
+  }
 `
