@@ -8,7 +8,7 @@ import { getHoverOpacity } from './utils/get-hover-opacity'
 import { getTextColor } from './utils/get-text-color'
 
 export const TextStyled = styled.div<TextStyledProps>`
-  display: flex;
+  display: ${({ as }) => (as === 'span' ? 'inline' : 'flex')};
   align-items: center;
   gap: 1rem;
   width: ${({ $fullWidth }) => ($fullWidth ? '100%' : 'auto')};

@@ -11,10 +11,11 @@ export const Text = ({
   fullWidth = false,
   ...rest
 }: TextProps) => {
+  const ContentTag = Tag === 'span' ? 'span' : 'div'
   return (
     <TextStyled $variant={variant} $size={size} $fullWidth={fullWidth} as={Tag} {...rest}>
       {prependIcon && <div className="content prependIcon">{prependIcon}</div>}
-      <div className="content middle">{children}</div>
+      <ContentTag className="content middle">{children}</ContentTag>
       {appendIcon && <div className="content appendIcon">{appendIcon}</div>}
     </TextStyled>
   )
