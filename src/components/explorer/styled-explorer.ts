@@ -54,7 +54,6 @@ export const StyledExplorerFolder = styled.button<ExplorerStyledProps>`
   > span {
     font-size: ${({ theme }) => theme.typography.fontSize.xs};
     line-height: ${({ theme }) => theme.typography.lineHeight.xs};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.semibold};
   }
 `
 export const StyledExplorerFile = styled.div<ExplorerStyledProps>`
@@ -94,6 +93,5 @@ export const StyledExplorerFile = styled.div<ExplorerStyledProps>`
   > span {
     font-size: ${({ theme }) => theme.typography.fontSize.xs};
     line-height: ${({ theme }) => theme.typography.lineHeight.xs};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.semibold};
   }
 `
