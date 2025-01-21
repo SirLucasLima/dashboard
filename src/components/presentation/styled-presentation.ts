@@ -35,14 +35,22 @@ export const StyledPresentation = styled.div`
         font-size: ${theme.typography.fontSize.md};
         font-weight: ${theme.typography.fontWeight.medium};
         line-height: ${theme.typography.lineHeight.md};
-        text-shadow: 0px 0.3px 0.3px ${theme.colors.shadow};
+        text-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),
+          0 0 4px rgba(0, 0, 0, 0.2),
+          0 0 6px rgba(0, 0, 0, 0.2),
+          0 0 8px rgba(0, 0, 0, 0.2);
         color: ${theme.colors.primaryForeground};
       }
 
       > h1 {
         font-size: ${theme.typography.fontSize['6xl']};
         font-weight: ${theme.typography.fontWeight.bold};
-        text-shadow: 0px 0.3px 0.3px ${theme.colors.shadow};
+        text-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),
+          0 0 4px rgba(0, 0, 0, 0.2),
+          0 0 6px rgba(0, 0, 0, 0.2),
+          0 0 8px rgba(0, 0, 0, 0.2);
         line-height: 1;
         color: ${theme.colors.foreground};
         word-spacing: -0.3em;
@@ -51,8 +59,12 @@ export const StyledPresentation = styled.div`
 
       > h2 {
         font-size: ${theme.typography.fontSize['3xl']};
-        font-weight: ${theme.typography.fontWeight.medium};
-        text-shadow: 0px 0.3px 0.3px ${theme.colors.shadow};
+        font-weight: ${theme.typography.fontWeight.semibold};
+        text-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),
+          0 0 4px rgba(0, 0, 0, 0.2),
+          0 0 6px rgba(0, 0, 0, 0.2),
+          0 0 8px rgba(0, 0, 0, 0.2);
         color: ${theme.colors.green};
         line-height: 1;
         word-spacing: -0.2em;
@@ -61,8 +73,12 @@ export const StyledPresentation = styled.div`
 
       > section {
         font-size: ${theme.typography.fontSize['3xl']};
-        font-weight: ${theme.typography.fontWeight.medium};
-        text-shadow: 0px 0.3px 0.3px ${theme.colors.shadow};
+        font-weight: ${theme.typography.fontWeight.semibold};
+        text-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),
+          0 0 4px rgba(0, 0, 0, 0.2),
+          0 0 6px rgba(0, 0, 0, 0.2),
+          0 0 8px rgba(0, 0, 0, 0.2);
         color: ${theme.colors.primaryForeground};
         line-height: 1;
         text-align: center;
@@ -88,7 +104,11 @@ export const StyledPresentation = styled.div`
         &::after {
           transform: scale(1);
         }
-        box-shadow: 0px 1px 4px ${theme.colors.shadow};
+        box-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),
+          0 0 4px rgba(0, 0, 0, 0.2),
+          0 0 6px rgba(0, 0, 0, 0.2),
+          0 0 8px rgba(0, 0, 0, 0.2);
       }
     }
 
