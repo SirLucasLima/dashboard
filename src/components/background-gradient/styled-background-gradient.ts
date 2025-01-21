@@ -147,12 +147,12 @@ export const StyledBackgroundGradient = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.yellow.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0.8)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.yellow.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
