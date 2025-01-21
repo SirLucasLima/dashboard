@@ -10,10 +10,7 @@ export const StyledHeader = styled.div`
   line-height: ${({ theme }) => theme.typography.lineHeight.sm};
 
   color: ${({ theme }) => theme.colors.mutedForeground};
-  background-color: ${({ theme }) => {
-    const hsl = theme.colors.background.replace('hsl(', '').replace(')', '')
-    return `hsla(${hsl}, 0.8)`
-  }};
+  background-color: ${({ theme }) => theme.colors.background};
 
   .empty-space {
     width: 1rem;
