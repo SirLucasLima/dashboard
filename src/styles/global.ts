@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.cyan};
+    background: ${({ theme }) => theme.colors.orange};
     color: ${({ theme }) => theme.colors.foreground};
     font-family: "Fira Mono", serif;
     font-size: ${({ theme }) => theme.typography.fontSize.md};
