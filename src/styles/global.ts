@@ -12,8 +12,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.colors.orange};
-    color: ${({ theme }) => theme.colors.foreground};
+    background: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.primaryForeground};
     font-family: "Fira Mono", serif;
     font-size: ${({ theme }) => theme.typography.fontSize.md};
     font-weight: ${({ theme }) => theme.typography.fontWeight.medium};

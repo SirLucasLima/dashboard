@@ -2,31 +2,31 @@ import type { DefaultTheme } from 'styled-components/dist/types'
 
 export const theme: DefaultTheme = {
   colors: {
-    background: 'hsl(248, 23%, 11%)',
-    foreground: 'hsl(248,15%,61%)',
-    primary: 'hsl(248, 23%, 20%)',
-    primaryForeground: 'hsl(243,43%,91%)',
+    background: 'hsl(0 0% 3%)',
+    foreground: 'hsl(0 0% 98%)',
+    primary: 'hsl(0 0% 10%)',
+    primaryForeground: 'hsl(0 0% 75%)',
     secondary: 'hsl(0 0% 98%)',
-    secondaryForeground: 'hsl(240 5.9% 10%)',
-    muted: 'hsl(240 5.9% 10%)',
-    mutedForeground: 'hsl(248,15%,71%)',
-    destructive: 'hsl(0, 62.8%, 30.6%)',
-    destructiveForeground: 'hsl(0 0% 91)',
+    secondaryForeground: 'hsl(0 0% 10%)',
+    muted: 'hsl(0 0% 15%)',
+    mutedForeground: 'hsl(0 0% 98%)',
+    destructive: 'hsl(0, 60%, 30%)',
+    destructiveForeground: 'hsl(0 0% 98%)',
 
     // others
-    border: 'hsla(249, 13%, 54%, 0.15)',
+    border: 'hsl(0 0% 15%)',
     shadow: 'hsl(240 5.9% 10%)',
     transparent: 'transparent',
-    ring: 'hsl(251, 17%, 63%)',
+    ring: 'hsl(0 0% 30%)',
 
     // colorful
+    yellow: 'hsl(45, 90%, 50%)',
+    rose: 'hsl(355, 80%, 70%)',
+    orange: 'hsl(20, 80%, 55%)',
     green: 'hsl(160, 60%, 45%)',
-    blue: 'hsl(214, 69.00%, 52.00%)',
-    cyan: 'hsl(197, 37%, 24%)',
-    yellow: 'hsl(45, 89.70%, 50.40%)',
-    orange: 'hsl(19, 82.50%, 55.10%)',
-    rose: 'hsl(349, 82.60%, 70.80%)',
-    purple: 'hsl(263, 69.00%, 52.00%)',
+    blue: 'hsl(215, 70%, 50%)',
+    cyan: 'hsl(195, 40%, 25%)',
+    purple: 'hsl(260, 70%, 50%)',
   },
   border: {
     'rounded-full': '9999px',
@@ -34,7 +34,6 @@ export const theme: DefaultTheme = {
     'rounded-md': '0.375rem',
     'rounded-lg': '0.5rem',
   },
-
   breakpoints: {
     sm: '480px',
     md: '768px',
