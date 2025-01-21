@@ -1,6 +1,6 @@
 import type { RouteObject } from 'react-router-dom'
 
-import { routeConfig } from '@/config/routes-config'
+import { routeConfig } from '@/routes/routes-config'
 
 export const appRoutes: RouteObject[] = routeConfig.map(group => {
   const children: RouteObject[] = (group.children || []).map(child => ({
