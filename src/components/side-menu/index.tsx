@@ -1,8 +1,9 @@
-import { Files, User } from 'lucide-react'
+import { Files } from 'lucide-react'
 
 import { useExplorerStore } from '@/store/use-explorer-store'
 
 import { ExplorerButton } from './explorer-button'
+import { SocialLinksButton } from './social-links-button'
 import { StyledSideMenu } from './styled-side-menu'
 
 export const SideMenu = () => {
@@ -14,7 +15,7 @@ export const SideMenu = () => {
         <ExplorerButton icon={Files} isActive={isExplorerOpened} />
       </div>
       <div className="wrapper-buttons">
-        <ExplorerButton icon={User} />
+        <SocialLinksButton />
       </div>
     </StyledSideMenu>
   )
