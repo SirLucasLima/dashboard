@@ -14,12 +14,17 @@ export const StyledEditorLayout = styled.div`
   display: grid;
   grid-template-columns: 3.5rem 1fr;
   max-height: 100%;
+  overflow: hidden;
 `
 
 export const StyledContent = styled.div<StyledContentProps>`
-  ${({ theme, $isExplorerOpened }) => css`
-    overflow-y: scroll;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
 
+  ${({ theme, $isExplorerOpened }) => css`
     @media (min-width: ${theme.breakpoints.xl}) {
       margin-left: ${$isExplorerOpened ? '16rem' : '0'};
       transition: margin-left 0.3s ease-in-out;
