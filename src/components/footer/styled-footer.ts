@@ -10,10 +10,7 @@ export const StyledFooter = styled.div`
   font-size: ${({ theme }) => theme.typography.fontSize.xs};
   line-height: ${({ theme }) => theme.typography.lineHeight.xs};
 
-  background-color: ${({ theme }) => {
-    const hsl = theme.colors.background.replace('hsl(', '').replace(')', '')
-    return `hsla(${hsl}, 0.4)`
-  }};
+  background-color: ${({ theme }) => theme.colors.background};
 
   a {
     color: ${({ theme }) => theme.colors.mutedForeground};
