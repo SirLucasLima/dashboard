@@ -8,7 +8,8 @@ export const StyledAppLayout = styled.div`
 `
 
 export const EditorLayoutStyled = styled.div`
+  position: relative;
   display: grid;
-  grid-template-columns: 3.5rem 16rem 1fr;
+  grid-template-columns: 3.5rem 1fr;
   max-height: 100%;
 `
