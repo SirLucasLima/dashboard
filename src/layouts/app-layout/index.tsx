@@ -5,22 +5,25 @@ import { Explorer } from '@/components/explorer'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { SideMenu } from '@/components/side-menu'
+import { useExplorerStore } from '@/store/use-explorer-store'
 
-import { EditorLayoutStyled, StyledAppLayout } from './styled-app-layout'
+import { StyledAppLayout, StyledContent, StyledEditorLayout } from './styled-app-layout'
 
 export function AppLayout() {
+  const isExplorerOpened = useExplorerStore(state => state.isExplorerOpened)
+
   return (
     <>
       <StyledAppContainer>
         <StyledAppLayout>
           <Header />
-          <EditorLayoutStyled>
+          <StyledEditorLayout>
             <SideMenu />
             <Explorer />
-            <div>
+            <StyledContent $isExplorerOpened={isExplorerOpened}>
               <Outlet />
-            </div>
-          </EditorLayoutStyled>
+            </StyledContent>
+          </StyledEditorLayout>
           <Footer />
         </StyledAppLayout>
       </StyledAppContainer>

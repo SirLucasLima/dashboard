@@ -11,7 +11,7 @@ export const StyledExplorer = styled.div<StyledExplorerProps>`
   left: 0;
   position: absolute;
   z-index: 10;
-  transform: translateX(${({ $isOpen }) => ($isOpen ? '0' : '-100%')});
+  transform: translateX(${({ $isExplorerOpened }) => ($isExplorerOpened ? '0' : '-100%')});
   transition: transform 0.3s ease-in-out;
 
   background-color: ${({ theme }) => theme.colors.primary};

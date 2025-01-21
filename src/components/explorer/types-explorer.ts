@@ -10,5 +10,5 @@ export interface StyledExplorerFolderProps {
 }
 
 export interface StyledExplorerProps {
-  $isOpen: boolean
+  $isExplorerOpened: boolean
 }

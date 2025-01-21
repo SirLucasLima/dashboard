@@ -47,7 +47,7 @@ export const Explorer = () => {
   const isExplorerOpened = useExplorerStore(state => state.isExplorerOpened)
 
   return (
-    <StyledExplorer $isOpen={isExplorerOpened}>
+    <StyledExplorer $isExplorerOpened={isExplorerOpened}>
       {explorerConfig.map(({ folder, file }, index) => {
         const isOpen = !!openGroups[index]
 

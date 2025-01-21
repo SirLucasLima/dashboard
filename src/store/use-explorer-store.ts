@@ -7,8 +7,10 @@ interface ExplorerStore {
   openExplorer: () => void
 }
 
+const isLargeScreen = typeof window !== 'undefined' && window.innerWidth > 1200
+
 export const useExplorerStore = create<ExplorerStore>(set => ({
-  isExplorerOpened: false,
+  isExplorerOpened: isLargeScreen,
 
   toggleExplorer: () => set(state => ({ isExplorerOpened: !state.isExplorerOpened })),
 
