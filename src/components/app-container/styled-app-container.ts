@@ -1,4 +1,43 @@
 import styled, { css } from 'styled-components'
+import { keyframes } from 'styled-components'
+
+const genieOpen = keyframes`
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0;
+    /* Optional: start with a distorted shape using clip-path */
+    clip-path: ellipse(10% 30% at 50% 50%);
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+    clip-path: ellipse(120% 120% at 50% 50%);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    clip-path: none;
+  }
+`
+
+// animation: ${isClosing ? genieClose : genieOpen} 1s ease-out forwards;
+// const genieClose = keyframes`
+//   0% {
+//     transform: translate(-50%, -50%) scale(1);
+//     opacity: 1;
+//     clip-path: none;
+//   }
+//   40% {
+//     transform: translate(-50%, -50%) scale(1.05);
+//     opacity: 1;
+//     clip-path: ellipse(120% 120% at 50% 50%);
+//   }
+//   100% {
+//     transform: translate(-50%, -50%) scale(0.1);
+//     opacity: 0;
+//     clip-path: ellipse(10% 30% at 50% 50%);
+//   }
+// `
 
 export const StyledAppContainer = styled.div`
   ${({ theme }) => css`
@@ -62,5 +101,7 @@ export const StyledAppContainer = styled.div`
       max-width: 1480px;
       aspect-ratio: 16 / 9;
     }
+
+    animation: ${genieOpen} 1s ease-out forwards;
   `}
 `
