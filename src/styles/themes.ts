@@ -2,10 +2,10 @@ import type { DefaultTheme } from 'styled-components/dist/types'
 
 export const theme: DefaultTheme = {
   colors: {
-    background: 'hsl(247.5, 23.52941176470588%, 11%)',
+    background: 'hsl(248, 23%, 11%)',
     foreground: 'hsl(248,15%,61%)',
-    primary: 'hsl(247.5, 23.52941176470588%, 20%)',
-    primaryForeground: 'hsl(248,15%,81%)',
+    primary: 'hsl(248, 23%, 20%)',
+    primaryForeground: 'hsl(243,43%,91%)',
     secondary: 'hsl(0 0% 98%)',
     secondaryForeground: 'hsl(240 5.9% 10%)',
     muted: 'hsl(240 5.9% 10%)',
@@ -14,10 +14,10 @@ export const theme: DefaultTheme = {
     destructiveForeground: 'hsl(0 0% 91)',
 
     // others
-    border: 'hsl(240 5% 14.9%)',
+    border: 'hsla(249, 13%, 54%, 0.15)',
     shadow: 'hsl(240 5.9% 10%)',
     transparent: 'transparent',
-    ring: 'hsl(240 4.9% 83.9%)',
+    ring: 'hsl(251, 17%, 63%)',
 
     // colorful
     green: 'hsl(160, 60%, 45%)',
@@ -29,8 +29,10 @@ export const theme: DefaultTheme = {
     purple: 'hsl(263, 69.00%, 52.00%)',
   },
   border: {
-    radius: '0.5rem',
-    circle: '50%',
+    'rounded-full': '9999px',
+    'rounded-sm': '0.125rem',
+    'rounded-md': '0.375rem',
+    'rounded-lg': '0.5rem',
   },
 
   breakpoints: {
@@ -53,11 +55,12 @@ export const theme: DefaultTheme = {
       // '6xl': '3.75rem',
       // '7xl': '4.5rem',
       // '8xl': '6rem',
-      // '9xl': '8rem',
+      '9xl': '8rem',
     },
     fontWeight: {
       normal: 400,
       medium: 500,
+      semibold: 600,
       bold: 700,
     },
     lineHeight: {

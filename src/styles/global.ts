@@ -29,6 +29,8 @@ export const GlobalStyle = createGlobalStyle`
   l1, a {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
+    background-color: inherit;
   }
 
   body, input, textarea, button {
@@ -38,6 +40,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button {
+    color: inherit;
+    background-color: inherit;
     border: none;
     padding: 0;
     margin: 0;
