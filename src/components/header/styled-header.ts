@@ -12,34 +12,35 @@ export const StyledHeader = styled.div`
   color: ${({ theme }) => theme.colors.mutedForeground};
   background-color: ${({ theme }) => {
     const hsl = theme.colors.background.replace('hsl(', '').replace(')', '')
-    return `hsla(${hsl}, 0.4)`
+    return `hsla(${hsl}, 0.8)`
   }};
 
-  .traffic-light-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .red-traffic-light,
-  .yellow-traffic-light,
-  .green-traffic-light {
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: ${({ theme }) => theme.border['rounded-full']};
-  }
-
-  .red-traffic-light {
-    background-color: #ed6a5e;
-  }
-  .yellow-traffic-light {
-    background-color: #f4bf4f;
-  }
-  .green-traffic-light {
-    background-color: #61c554;
-  }
-
   .empty-space {
-    width: 3.5rem;
+    width: 1rem;
+  }
+`
+
+export const StyledCloseButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  background-color: transparent;
+  border-radius: ${({ theme }) => theme.border['rounded-lg']};
+
+  transition: transform 0.2s ease;
+
+  &:active {
+    transform: scale(1.3);
+  }
+
+  &:hover {
+    background-color: ${({ theme }) => {
+      const hsl = theme.colors.primary.replace('hsl(', '').replace(')', '')
+      return `hsla(${hsl}, 0.4)`
+    }};
+    color: ${({ theme }) => theme.colors.primaryForeground};
   }
 `
