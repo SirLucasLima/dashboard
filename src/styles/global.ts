@@ -47,5 +47,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     outline: none;
     cursor: pointer;
+    font-family: "Fira Mono", serif;
   }
 `

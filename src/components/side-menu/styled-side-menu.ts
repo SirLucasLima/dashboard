@@ -9,7 +9,7 @@ export const StyledSideMenu = styled.div`
   z-index: 20;
 
   background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.primaryForeground};
+  color: ${({ theme }) => theme.colors.mutedForeground};
   border-right: 1px solid ${({ theme }) => theme.colors.border};
 
   .wrapper-buttons {

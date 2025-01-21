@@ -15,7 +15,7 @@ export const StyledExplorer = styled.div<StyledExplorerProps>`
   transition: transform 0.3s ease-in-out;
 
   background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.primaryForeground};
+  color: ${({ theme }) => theme.colors.mutedForeground};
   border-right: 1px solid ${({ theme }) => theme.colors.border};
 
   > nav {
@@ -66,7 +66,7 @@ export const StyledExplorerFile = styled.div<StyledExplorerFolderProps>`
 
   background-color: ${({ $isCurrent, theme }) => ($isCurrent ? theme.colors.muted : 'transparent')};
   color: ${({ $isCurrent, theme }) =>
-    $isCurrent ? theme.colors.foreground : theme.colors.primaryForeground};
+    $isCurrent ? theme.colors.foreground : theme.colors.mutedForeground};
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.muted};

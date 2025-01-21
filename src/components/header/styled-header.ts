@@ -10,7 +10,7 @@ export const StyledHeader = styled.div`
   line-height: ${({ theme }) => theme.typography.lineHeight.sm};
 
   background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.primaryForeground};
+  color: ${({ theme }) => theme.colors.mutedForeground};
 
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 
@@ -26,17 +26,17 @@ export const StyledCloseButton = styled.div`
   padding: 0.5rem;
   cursor: pointer;
 
-  color: ${({ theme }) => theme.colors.primaryForeground};
+  color: ${({ theme }) => theme.colors.mutedForeground};
 
   border-radius: ${({ theme }) => theme.border['rounded-lg']};
 
   transition: transform 0.2s ease;
   &:active {
-    transform: scale(1.1);
+    transform: scale(0.98);
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.destructive};
-    color: ${({ theme }) => theme.colors.destructiveForeground};
+    background-color: ${({ theme }) => theme.colors.purple};
+    color: ${({ theme }) => theme.colors.primaryForeground};
   }
 `
