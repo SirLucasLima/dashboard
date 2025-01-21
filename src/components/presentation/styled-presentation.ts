@@ -1,4 +1,10 @@
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
+
+const blink = keyframes`
+  50% {
+    opacity: 0;
+  }
+`
 
 export const StyledPresentation = styled.div`
   ${({ theme }) => css`
@@ -14,6 +20,11 @@ export const StyledPresentation = styled.div`
     max-width: 29rem;
     overflow: hidden;
 
+    .cursor {
+      display: inline-block;
+      animation: ${blink} 0.7s steps(1) infinite;
+    }
+
     .wrapper-presentation {
       display: flex;
       flex-direction: column;
@@ -21,9 +32,9 @@ export const StyledPresentation = styled.div`
       padding: 1rem;
 
       > p {
-        font-size: ${theme.typography.fontSize.lg};
+        font-size: ${theme.typography.fontSize.md};
         font-weight: ${theme.typography.fontWeight.medium};
-        line-height: ${theme.typography.lineHeight.lg};
+        line-height: ${theme.typography.lineHeight.md};
         text-shadow: 0px 0.3px 0.3px ${theme.colors.shadow};
         color: ${theme.colors.primaryForeground};
       }
@@ -42,7 +53,7 @@ export const StyledPresentation = styled.div`
         font-size: ${theme.typography.fontSize['3xl']};
         font-weight: ${theme.typography.fontWeight.medium};
         text-shadow: 0px 0.3px 0.3px ${theme.colors.shadow};
-        color: ${theme.colors.purple};
+        color: ${theme.colors.green};
         line-height: 1;
         word-spacing: -0.2em;
         letter-spacing: -0.03em;
@@ -64,11 +75,12 @@ export const StyledPresentation = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 1rem 2rem;
-        font-size: ${theme.typography.fontSize.xl};
-        background-color: ${theme.colors.purple};
-        color: ${theme.colors.foreground};
+        padding: 0.5rem 1rem;
+        font-size: ${theme.typography.fontSize.md};
+        background-color: ${theme.colors.primary};
+        color: ${theme.colors.primaryForeground};
         border-radius: ${theme.border['rounded-lg']};
+        border: 1px solid ${theme.colors.ring};
         transition: transform 0.2s ease;
         &:active {
           transform: scale(0.98);

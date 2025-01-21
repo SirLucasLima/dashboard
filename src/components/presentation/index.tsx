@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import { StyledPresentation } from './styled-presentation'
+import { Typewriter } from './typewriter'
 
 export const Presentation = () => {
   return (
@@ -8,8 +9,15 @@ export const Presentation = () => {
       <div className="wrapper-presentation">
         <p>Hi folks! I am</p>
         <h1>Dev Lucas Lima</h1>
-        <h2>{'>'} Full Stack Developer</h2>
-        {/* <h2>{'>'} Full Stack Developer & UI Designer</h2> */}
+        <h2>
+          {'>'}{' '}
+          <Typewriter
+            texts={['Full Stack Developer', 'UI Designer']}
+            typingSpeed={140}
+            deletingSpeed={100}
+            pauseBetween={1000}
+          />
+        </h2>
       </div>
 
       <div className="wrapper-presentation">
