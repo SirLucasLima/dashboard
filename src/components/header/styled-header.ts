@@ -36,7 +36,7 @@ export const StyledCloseButton = styled.div`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.purple};
+    background-color: ${({ theme }) => theme.colors.muted};
     color: ${({ theme }) => theme.colors.primaryForeground};
   }
 `

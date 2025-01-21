@@ -23,6 +23,6 @@ export const StyledFooter = styled.div`
 
   &:hover,
   a:hover {
-    color: ${({ theme }) => theme.colors.purple};
+    color: ${({ theme }) => theme.colors.green};
   }
 `

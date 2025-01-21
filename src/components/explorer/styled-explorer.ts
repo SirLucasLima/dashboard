@@ -33,7 +33,7 @@ export const StyledExplorerFolder = styled.button<StyledExplorerFolderProps>`
   align-items: center;
   gap: 0.5rem;
 
-  border-radius: ${({ theme }) => theme.border['rounded-sm']};
+  border-radius: ${({ theme }) => theme.border['rounded-lg']};
   cursor: pointer;
 
   &:hover {
@@ -67,6 +67,7 @@ export const StyledExplorerFile = styled.div<StyledExplorerFolderProps>`
   background-color: ${({ $isCurrent, theme }) => ($isCurrent ? theme.colors.muted : 'transparent')};
   color: ${({ $isCurrent, theme }) =>
     $isCurrent ? theme.colors.foreground : theme.colors.mutedForeground};
+  border-radius: ${({ theme }) => theme.border['rounded-lg']};
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.muted};
