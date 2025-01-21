@@ -121,12 +121,12 @@ export const StyledBackgroundGradient = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.orange.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0.8)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.orange.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
@@ -147,12 +147,12 @@ export const StyledBackgroundGradient = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.yellow.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.cyan.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0.8)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.yellow.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.cyan.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
