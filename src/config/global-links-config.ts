@@ -1,5 +1,6 @@
 export interface GlobalLinksConfig {
-  github: string
+  gitHub: string
+  projectGitHub: string
   linkedIn: string
   instagram: string
   whatsApp: string
@@ -7,7 +8,8 @@ export interface GlobalLinksConfig {
 }
 
 export const globalLinksConfig: GlobalLinksConfig = {
-  github: 'https://github.com/developerlucaslima',
+  gitHub: 'https://github.com/developerlucaslima',
+  projectGitHub: 'https://github.com/developerlucaslima/portfolio-client',
   linkedIn: 'https://www.linkedin.com/in/developerlucaslima/',
   instagram: 'https://www.instagram.com/devlucaslima/',
   whatsApp: 'https://wa.me/555499665259',
