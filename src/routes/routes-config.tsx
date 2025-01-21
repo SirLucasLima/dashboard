@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 
 import { AppLayout } from '@/layouts/app-layout'
+import { HomeLayout } from '@/layouts/home-layout'
 import { AboutMe } from '@/pages/about-me/about-me'
 import { ContactMe } from '@/pages/contact-me/contact-me'
 import { Home } from '@/pages/home/home'
@@ -26,7 +27,7 @@ export const routeConfig: RouteGroupConfig[] = [
   {
     path: '',
     folderText: 'home-folder',
-    element: <AppLayout />,
+    element: <HomeLayout />,
     showFolderInExplorer: false,
     children: [
       {

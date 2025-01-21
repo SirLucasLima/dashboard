@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom'
 
 import { StyledAppContainer } from '@/components/app-container/styled-app-container'
-import { BackgroundGradient } from '@/components/background-gradient'
 import { Explorer } from '@/components/explorer'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
@@ -25,7 +24,6 @@ export function AppLayout() {
           <Footer />
         </StyledAppLayout>
       </StyledAppContainer>
-      <BackgroundGradient />
     </>
   )
 }
