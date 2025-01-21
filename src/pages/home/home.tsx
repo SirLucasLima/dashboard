@@ -1,7 +1,9 @@
+import { Presentation } from '@/components/presentation'
+
 export const Home = () => {
   return (
     <>
-      <h1>home</h1>
+      <Presentation />
     </>
   )
 }
