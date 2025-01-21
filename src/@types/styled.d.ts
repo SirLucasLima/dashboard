@@ -26,8 +26,10 @@ declare module 'styled-components' {
       purple: string
     }
     border: {
-      radius: string
-      circle: string
+      'rounded-full': string
+      'rounded-sm': string
+      'rounded-md': string
+      'rounded-lg': string
     }
     breakpoints: {
       sm: string
@@ -42,10 +44,12 @@ declare module 'styled-components' {
         md: string
         lg: string
         xl: string
+        '9xl': string
       }
       fontWeight: {
         normal: number
         medium: number
+        semibold: number
         bold: number
       }
       lineHeight: {
