@@ -4,7 +4,11 @@ export interface ExplorerProps {
   children: React.ReactNode
 }
 
-export interface ExplorerStyledProps {
+export interface StyledExplorerFolderProps {
   $isFile?: boolean
   $isCurrent?: boolean
+}
+
+export interface StyledExplorerProps {
+  $isOpen: boolean
 }

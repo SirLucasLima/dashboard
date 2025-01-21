@@ -1,13 +1,8 @@
-import {
-  ChevronDown,
-  ChevronRight,
-  FileCode,
-  Folder,
-  FolderOpen,
-  MoreHorizontal,
-} from 'lucide-react'
+import { ChevronDown, ChevronRight, FileCode, Folder, FolderOpen } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+
+import { useExplorerStore } from '@/store/use-explorer-store'
 
 import { Collapsible } from '../collapsible'
 import { getExplorerConfig } from './config-explorer'
@@ -49,13 +44,10 @@ export const Explorer = () => {
     }))
   }
 
-  return (
-    <StyledExplorer>
-      <strong>
-        EXPLORER: DEV-LUCAS-LIMA
-        <MoreHorizontal size={16} strokeWidth={1.5} />
-      </strong>
+  const isExplorerOpened = useExplorerStore(state => state.isExplorerOpened)
 
+  return (
+    <StyledExplorer $isOpen={isExplorerOpened}>
       {explorerConfig.map(({ folder, file }, index) => {
         const isOpen = !!openGroups[index]
 
