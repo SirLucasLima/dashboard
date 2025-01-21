@@ -15,6 +15,7 @@ export const StyledAppContainer = styled.div`
 
     backdrop-filter: blur(200px);
     border-radius: ${theme.border['rounded-lg']};
+    border: 1px solid ${({ theme }) => theme.colors.ring};
     box-shadow: 0px 2px 4px ${theme.colors.shadow};
 
     /* Pseudo-element for backdrop effect */
@@ -40,7 +41,7 @@ export const StyledAppContainer = styled.div`
       bottom: 0;
       z-index: -1;
       opacity: 0.6;
-      background: ${theme.colors.background};
+      background: ${theme.colors.primary};
     }
 
     /* Responsive breakpoints */

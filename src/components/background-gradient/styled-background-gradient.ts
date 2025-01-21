@@ -66,12 +66,12 @@ export const StyledBackgroundGradient = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.green.replace('hsl(', '').replace(')', '')
-            return `hsla(${hsl}, 0.8)`
+            const hsl = theme.colors.yellow.replace('hsl(', '').replace(')', '')
+            return `hsla(${hsl}, 0.6)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.green.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.yellow.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
@@ -86,8 +86,6 @@ export const StyledBackgroundGradient = styled.div`
 
     transform-origin: center center;
     animation: ${moveVertical} 30s ease infinite;
-
-    opacity: 0.4;
   }
 
   .g2 {
@@ -95,12 +93,12 @@ export const StyledBackgroundGradient = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.blue.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.rose.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0.8)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.blue.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.rose.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
@@ -113,7 +111,6 @@ export const StyledBackgroundGradient = styled.div`
     left: calc(50% - 80% / 2);
     transform-origin: calc(50% - 400px);
     animation: ${moveInCircle} 20s reverse infinite;
-    opacity: 0.4;
   }
 
   .g3 {
@@ -121,12 +118,12 @@ export const StyledBackgroundGradient = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
-            return `hsla(${hsl}, 0.8)`
+            const hsl = theme.colors.orange.replace('hsl(', '').replace(')', '')
+            return `hsla(${hsl}, 0.6)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.orange.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
@@ -139,7 +136,6 @@ export const StyledBackgroundGradient = styled.div`
     left: calc(50% - 80% / 2 - 500px);
     transform-origin: calc(50% + 400px);
     animation: ${moveInCircle} 40s linear infinite;
-    opacity: 0.4;
   }
 
   .g4 {
@@ -147,12 +143,12 @@ export const StyledBackgroundGradient = styled.div`
     background: radial-gradient(
         circle at center,
         ${({ theme }) => {
-            const hsl = theme.colors.cyan.replace('hsl(', '').replace(')', '')
-            return `hsla(${hsl}, 0.8)`
+            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
+            return `hsla(${hsl}, 0.6)`
           }}
           0%,
         ${({ theme }) => {
-            const hsl = theme.colors.cyan.replace('hsl(', '').replace(')', '')
+            const hsl = theme.colors.purple.replace('hsl(', '').replace(')', '')
             return `hsla(${hsl}, 0)`
           }}
           50%
@@ -165,7 +161,31 @@ export const StyledBackgroundGradient = styled.div`
     left: calc(50% - 80% / 2);
     transform-origin: calc(50% - 200px);
     animation: ${moveHorizontal} 40s ease infinite;
-    opacity: 0.4;
+  }
+
+  .g5 {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        ${({ theme }) => {
+            const hsl = theme.colors.blue.replace('hsl(', '').replace(')', '')
+            return `hsla(${hsl}, 0.6)`
+          }}
+          0%,
+        ${({ theme }) => {
+            const hsl = theme.colors.blue.replace('hsl(', '').replace(')', '')
+            return `hsla(${hsl}, 0)`
+          }}
+          50%
+      )
+      no-repeat;
+    mix-blend-mode: hard-light;
+    width: 80%;
+    height: 80%;
+    top: calc(50% - 80%);
+    left: calc(50% - 80%);
+    transform-origin: calc(50% - 800px) calc(50% + 200px);
+    animation: ${moveInCircle} 40s ease infinite;
   }
 `
 
@@ -174,12 +194,12 @@ export const InteractiveBubble = styled.div<StyledInteractiveProps>`
   background: radial-gradient(
       circle at center,
       ${({ theme }) => {
-          const hsl = theme.colors.rose.replace('hsl(', '').replace(')', '')
-          return `hsla(${hsl}, 0.8)`
+          const hsl = theme.colors.green.replace('hsl(', '').replace(')', '')
+          return `hsla(${hsl}, 0.6)`
         }}
         0%,
       ${({ theme }) => {
-          const hsl = theme.colors.rose.replace('hsl(', '').replace(')', '')
+          const hsl = theme.colors.green.replace('hsl(', '').replace(')', '')
           return `hsla(${hsl}, 0)`
         }}
         50%
@@ -191,5 +211,4 @@ export const InteractiveBubble = styled.div<StyledInteractiveProps>`
   top: calc(50% - 80%);
   left: calc(50% - 80%);
   transform: translate(${p => p.$x - 100}px, ${p => p.$y - 100}px);
-  opacity: 0.4;
 `

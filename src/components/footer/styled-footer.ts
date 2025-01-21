@@ -10,16 +10,19 @@ export const StyledFooter = styled.div`
   font-size: ${({ theme }) => theme.typography.fontSize.xs};
   line-height: ${({ theme }) => theme.typography.lineHeight.xs};
 
-  background-color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.primary};
+
+  border-top: 1px solid ${({ theme }) => theme.colors.border};
 
   a {
-    color: ${({ theme }) => theme.colors.mutedForeground};
+    color: ${({ theme }) => theme.colors.primaryForeground};
     display: flex;
     gap: 0.5rem;
     align-items: center;
   }
 
-  &:hover {
-    color: ${({ theme }) => theme.colors.primaryForeground};
+  &:hover,
+  a:hover {
+    color: ${({ theme }) => theme.colors.foreground};
   }
 `

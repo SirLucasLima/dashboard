@@ -13,7 +13,10 @@ export const StyledExplorer = styled.div<StyledExplorerProps>`
   z-index: 10;
   transform: translateX(${({ $isOpen }) => ($isOpen ? '0' : '-100%')});
   transition: transform 0.3s ease-in-out;
-  background-color: ${({ theme }) => theme.colors.background};
+
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primaryForeground};
+  border-right: 1px solid ${({ theme }) => theme.colors.border};
 
   > nav {
     display: flex;
@@ -34,18 +37,11 @@ export const StyledExplorerFolder = styled.button<StyledExplorerFolderProps>`
   cursor: pointer;
 
   &:hover {
-    background-color: ${({ theme }) => {
-      const hsl = theme.colors.primary.replace('hsl(', '').replace(')', '')
-      return `hsla(${hsl}, 0.4)`
-    }};
+    background-color: ${({ theme }) => theme.colors.muted};
   }
 
   &:focus {
-    background-color: ${({ theme }) => {
-      const hsl = theme.colors.primary.replace('hsl(', '').replace(')', '')
-      return `hsla(${hsl}, 0.4)`
-    }};
-
+    background-color: ${({ theme }) => theme.colors.muted};
     border: 1px solid ${({ theme }) => theme.colors.ring};
   }
 
@@ -54,6 +50,7 @@ export const StyledExplorerFolder = styled.button<StyledExplorerFolderProps>`
     line-height: ${({ theme }) => theme.typography.lineHeight.sm};
   }
 `
+
 export const StyledExplorerFile = styled.div<StyledExplorerFolderProps>`
   width: 100%;
 
@@ -66,25 +63,17 @@ export const StyledExplorerFile = styled.div<StyledExplorerFolderProps>`
 
   padding: 0.25rem 1rem;
   padding-left: 3rem;
-  background-color: ${({ $isCurrent, theme }) => {
-    const hsl = theme.colors.primary.replace('hsl(', '').replace(')', '')
-    return $isCurrent ? `hsla(${hsl}, 0.4)` : undefined
-  }};
-  color: ${({ $isCurrent, theme }) => ($isCurrent ? theme.colors.primaryForeground : undefined)};
+
+  background-color: ${({ $isCurrent, theme }) => ($isCurrent ? theme.colors.muted : 'transparent')};
+  color: ${({ $isCurrent, theme }) =>
+    $isCurrent ? theme.colors.foreground : theme.colors.primaryForeground};
 
   &:hover {
-    background-color: ${({ theme }) => {
-      const hsl = theme.colors.primary.replace('hsl(', '').replace(')', '')
-      return `hsla(${hsl}, 0.4)`
-    }};
+    background-color: ${({ theme }) => theme.colors.muted};
   }
 
   &:focus {
-    background-color: ${({ theme }) => {
-      const hsl = theme.colors.primary.replace('hsl(', '').replace(')', '')
-      return `hsla(${hsl}, 0.4)`
-    }};
-
+    background-color: ${({ theme }) => theme.colors.muted};
     border: 1px solid ${({ theme }) => theme.colors.ring};
   }
 

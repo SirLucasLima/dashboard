@@ -7,7 +7,10 @@ export const StyledSideMenu = styled.div`
   flex-direction: column;
   justify-content: space-between;
   z-index: 20;
-  background-color: ${({ theme }) => theme.colors.background};
+
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primaryForeground};
+  border-right: 1px solid ${({ theme }) => theme.colors.border};
 
   .wrapper-buttons {
     display: flex;
@@ -22,11 +25,11 @@ export const StyledExplorerButton = styled.button<SideMenuButtonTypes>`
     align-items: center;
     justify-content: center;
 
-    border-left: 2px solid ${$isActive ? theme.colors.primaryForeground : theme.colors.transparent};
-    color: ${$isActive ? theme.colors.primaryForeground : undefined};
+    border-left: 2px solid ${$isActive ? theme.colors.foreground : theme.colors.transparent};
+    color: ${$isActive ? theme.colors.foreground : undefined};
 
     &:hover {
-      color: ${theme.colors.primaryForeground};
+      color: ${theme.colors.foreground};
     }
   `}
 `
