@@ -12,7 +12,6 @@ export interface RouteChildConfig {
   text: string
   element: ReactNode
   showInExplorer?: boolean
-  // showInHeader?: boolean
 }
 
 export interface RouteGroupConfig {
