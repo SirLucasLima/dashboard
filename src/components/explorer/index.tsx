@@ -1,5 +1,5 @@
 import { ChevronDown, ChevronRight, FileCode, Folder, FolderOpen } from 'lucide-react'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 import { useExplorerStore } from '@/store/use-explorer-store'
@@ -12,30 +12,29 @@ export const Explorer = () => {
   const location = useLocation()
   const [openGroups, setOpenGroups] = useState<Record<number, boolean>>({})
   const explorerConfig = useMemo(() => getExplorerConfig(), [])
-  const prevPathnameRef = useRef<string | null>(null)
+  const setCurrentPageName = useExplorerStore(state => state.setCurrentPageName)
 
   useEffect(() => {
     const currentPath = location.pathname
-    const prevPath = prevPathnameRef.current
+    let currentPageText = ''
+    const nextState: Record<number, boolean> = {}
 
-    if (currentPath !== prevPath) {
-      setOpenGroups(prev => {
-        const nextState = { ...prev }
-
-        explorerConfig.forEach((group, index) => {
-          const hasCurrentPath = group.file.some(({ href }) => href === currentPath)
-
-          if (hasCurrentPath) {
-            nextState[index] = true
-          }
-        })
-
-        return nextState
+    explorerConfig.forEach((group, index) => {
+      const hasCurrentPath = group.file.some(({ href, text }) => {
+        if (href === currentPath) {
+          currentPageText = text
+          return true
+        }
+        return false
       })
-    }
+      if (hasCurrentPath) {
+        nextState[index] = true
+      }
+    })
 
-    prevPathnameRef.current = currentPath
-  }, [location.pathname, explorerConfig])
+    setOpenGroups(nextState)
+    setCurrentPageName(currentPageText)
+  }, [location.pathname, explorerConfig, setCurrentPageName])
 
   const handleToggle = (index: number) => {
     setOpenGroups(prev => ({
