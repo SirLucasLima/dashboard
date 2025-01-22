@@ -5,13 +5,13 @@ import { Link, useLocation } from 'react-router-dom'
 import { useExplorerStore } from '@/store/use-explorer-store'
 
 import { Collapsible } from '../collapsible'
-import { getExplorerConfig } from './config-explorer'
+import { getConfigExplorer } from './config-explorer'
 import { StyledExplorer, StyledExplorerFile, StyledExplorerFolder } from './styled-explorer'
 
 export const Explorer = () => {
   const location = useLocation()
   const [openGroups, setOpenGroups] = useState<Record<number, boolean>>({})
-  const explorerConfig = useMemo(() => getExplorerConfig(), [])
+  const configExplorer = useMemo(() => getConfigExplorer(), [])
   const setCurrentPageName = useExplorerStore(state => state.setCurrentPageName)
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export const Explorer = () => {
     let currentPageText = ''
     const nextState: Record<number, boolean> = {}
 
-    explorerConfig.forEach((group, index) => {
+    configExplorer.forEach((group, index) => {
       const hasCurrentPath = group.file.some(({ href, text }) => {
         if (href === currentPath) {
           currentPageText = text
@@ -34,7 +34,7 @@ export const Explorer = () => {
 
     setOpenGroups(nextState)
     setCurrentPageName(currentPageText)
-  }, [location.pathname, explorerConfig, setCurrentPageName])
+  }, [location.pathname, configExplorer, setCurrentPageName])
 
   const handleToggle = (index: number) => {
     setOpenGroups(prev => ({
@@ -47,7 +47,7 @@ export const Explorer = () => {
 
   return (
     <StyledExplorer $isExplorerOpened={isExplorerOpened}>
-      {explorerConfig.map(({ folder, file }, index) => {
+      {configExplorer.map(({ folder, file }, index) => {
         const isOpen = !!openGroups[index]
 
         return (

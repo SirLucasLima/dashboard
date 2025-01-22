@@ -28,6 +28,8 @@ export const StyledExplorer = styled.div<StyledExplorerProps>`
 export const StyledExplorerFolder = styled.button<StyledExplorerFolderProps>`
   width: 100%;
   padding: 0.25rem 0.5rem;
+  overflow-y: hidden;
+  height: 1.75rem;
 
   display: flex;
   align-items: center;
@@ -52,6 +54,10 @@ export const StyledExplorerFolder = styled.button<StyledExplorerFolderProps>`
 
 export const StyledExplorerFile = styled.div<StyledExplorerFolderProps>`
   width: 100%;
+  padding: 0.25rem 1rem;
+  padding-left: 3rem;
+  overflow-y: hidden;
+  height: 1.75rem;
 
   display: flex;
   align-items: center;
@@ -59,9 +65,6 @@ export const StyledExplorerFile = styled.div<StyledExplorerFolderProps>`
 
   border-radius: ${({ theme }) => theme.border['rounded-sm']};
   cursor: pointer;
-
-  padding: 0.25rem 1rem;
-  padding-left: 3rem;
 
   background-color: ${({ $isCurrent, theme }) => ($isCurrent ? theme.colors.muted : 'transparent')};
   color: ${({ $isCurrent, theme }) =>

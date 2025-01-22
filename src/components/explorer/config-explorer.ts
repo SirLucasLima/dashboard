@@ -1,7 +1,7 @@
 import { routeConfig } from '@/routes/routes-config'
 import { buildHref } from '@/utils/build-href'
 
-export interface ExplorerConfig {
+export interface ConfigExplorer {
   folder: {
     text: string
   }
@@ -11,7 +11,7 @@ export interface ExplorerConfig {
   }[]
 }
 
-export function getExplorerConfig(): ExplorerConfig[] {
+export function getConfigExplorer(): ConfigExplorer[] {
   return routeConfig
     .filter(group => group.showFolderInExplorer)
     .map(group => {
