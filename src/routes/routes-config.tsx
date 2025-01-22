@@ -2,10 +2,11 @@ import type { ReactNode } from 'react'
 
 import { AppLayout } from '@/layouts/app-layout'
 import { HomeLayout } from '@/layouts/home-layout'
-import { AboutMe } from '@/pages/about-me/about-me'
-import { ContactMe } from '@/pages/contact-me/contact-me'
-import { Home } from '@/pages/home/home'
-import { MyHobbies } from '@/pages/my-hobbies/my-hobbies'
+import { AboutMe } from '@/pages/about-me'
+import { Blank } from '@/pages/blank'
+import { ContactMe } from '@/pages/contact-me'
+import { Home } from '@/pages/home'
+import { MyHobbies } from '@/pages/my-hobbies'
 
 export interface RouteChildConfig {
   path: string
@@ -58,7 +59,7 @@ export const routeConfig: RouteGroupConfig[] = [
     ],
   },
   {
-    path: 'she',
+    path: 'me',
     folderText: 'contact-me',
     element: <AppLayout />,
     showFolderInExplorer: true,
@@ -68,6 +69,20 @@ export const routeConfig: RouteGroupConfig[] = [
         text: 'contact-me.ts',
         element: <ContactMe />,
         showInExplorer: true,
+      },
+    ],
+  },
+  {
+    path: '',
+    folderText: '',
+    element: <AppLayout />,
+    showFolderInExplorer: false,
+    children: [
+      {
+        path: '/blank',
+        text: '',
+        element: <Blank />,
+        showInExplorer: false,
       },
     ],
   },
