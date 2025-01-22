@@ -13,6 +13,7 @@ export const OpenFilesTabs = () => {
 
   const [openFiles, setOpenFiles] = useState<string[]>([])
 
+  // TODO bug when close tabs
   useEffect(() => {
     const currentPath = location.pathname
 
@@ -52,11 +53,11 @@ export const OpenFilesTabs = () => {
           <StyledOpenFileTab as={Link} to={filePath} key={filePath} $isCurrent={isCurrent}>
             <FileCode size={16} />
             <span>{fileDisplayText}</span>
-
             <X
               className="close-button"
               size={16}
               onClick={e => {
+                e.preventDefault()
                 e.stopPropagation()
                 handleClose(index)
               }}

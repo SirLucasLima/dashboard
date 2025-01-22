@@ -14,6 +14,7 @@ export const Explorer = () => {
   const configExplorer = useMemo(() => getConfigExplorer(), [])
   const setCurrentPageName = useExplorerStore(state => state.setCurrentPageName)
 
+  // TODO onClick must not close non current folder
   useEffect(() => {
     const currentPath = location.pathname
     let currentPageText = ''
