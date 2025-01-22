@@ -20,8 +20,8 @@ export const StyledEditorLayout = styled.div`
 export const StyledContent = styled.div<StyledContentProps>`
   height: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1.75rem 1fr;
   overflow-y: hidden;
 
   ${({ theme, $isExplorerOpened }) => css`
@@ -30,4 +30,8 @@ export const StyledContent = styled.div<StyledContentProps>`
       transition: margin-left 0.3s ease-in-out;
     }
   `}
+`
+
+export const StyledOutlet = styled.div`
+  overflow-y: auto;
 `
