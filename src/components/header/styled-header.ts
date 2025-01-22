@@ -10,7 +10,7 @@ export const StyledHeader = styled.div`
   line-height: ${({ theme }) => theme.typography.lineHeight.sm};
 
   background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.mutedForeground};
+  color: ${({ theme }) => theme.colors.primaryForeground};
 
   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 

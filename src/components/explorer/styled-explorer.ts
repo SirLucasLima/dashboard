@@ -41,7 +41,6 @@ export const StyledExplorerFolder = styled.button<StyledExplorerFolderProps>`
   }
 
   &:focus {
-    background-color: ${({ theme }) => theme.colors.muted};
     border: 1px solid ${({ theme }) => theme.colors.ring};
   }
 
@@ -74,7 +73,6 @@ export const StyledExplorerFile = styled.div<StyledExplorerFolderProps>`
   }
 
   &:focus {
-    background-color: ${({ theme }) => theme.colors.muted};
     border: 1px solid ${({ theme }) => theme.colors.ring};
   }
 
