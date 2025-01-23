@@ -17,13 +17,13 @@ declare module 'styled-components' {
       border: string
       ring: string
       transparent: string
-      green: string
-      blue: string
-      cyan: string
-      yellow: string
-      orange: string
-      rose: string
-      purple: string
+      'colorful-1': string
+      'colorful-2': string
+      'colorful-3': string
+      'colorful-4': string
+      'colorful-5': string
+      'colorful-6': string
+      'colorful-7': string
     }
     border: {
       'rounded-full': string

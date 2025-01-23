@@ -49,4 +49,35 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     font-family: "Fira Mono", serif;
   }
+
+  .shiki {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    counter-reset: line;
+  }
+
+  .shiki .line {
+    display: inline-block;
+    position: relative;
+    padding-left: 2rem;
+    counter-increment: line;
+  }
+
+  .shiki .line::before {
+    content: counter(line);
+    position: absolute;
+    left: 0;                   /* line number in the left gutter */
+    top: 0;                    /* align with the top of the line */
+    width: 1.5rem;               /* gutter width for line number */
+    text-align: right;
+    color: ${({ theme }) => theme.colors.mutedForeground};
+  }
+
+  code {
+    font-family: "Fira Mono", serif;
+    font-size: ${({ theme }) => theme.typography.fontSize.sm};
+    line-height: ${({ theme }) => theme.typography.lineHeight.md};
+    font-weight: ${({ theme }) => theme.typography.fontWeight.normal};
+  }
+
 `

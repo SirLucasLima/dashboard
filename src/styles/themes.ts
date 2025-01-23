@@ -9,7 +9,7 @@ export const theme: DefaultTheme = {
     secondary: 'hsl(0 0% 98%)',
     secondaryForeground: 'hsl(0 0% 10%)',
     muted: 'hsl(0 0% 15%)',
-    mutedForeground: 'hsl(0 0% 75%)',
+    mutedForeground: 'hsl(0 0% 65%)',
     destructive: 'hsl(0, 60%, 30%)',
     destructiveForeground: 'hsl(0 0% 98%)',
 
@@ -20,13 +20,21 @@ export const theme: DefaultTheme = {
     ring: 'hsl(0 0% 30%)',
 
     // colorful
-    yellow: 'hsl(45, 90%, 50%)',
-    rose: 'hsl(355, 80%, 70%)',
-    orange: 'hsl(20, 80%, 55%)',
-    green: 'hsl(160, 60%, 45%)',
-    blue: 'hsl(215, 70%, 50%)',
-    cyan: 'hsl(195, 40%, 25%)',
-    purple: 'hsl(260, 65%, 60%)',
+    // 'colorful-1': 'hsl(45, 90%, 50%)',
+    // 'colorful-2': 'hsl(285, 80%, 70%)',
+    // 'colorful-3': 'hsl(20, 80%, 55%)',
+    // 'colorful-4': 'hsl(160, 60%, 45%)',
+    // 'colorful-5': 'hsl(215, 70%, 50%)',
+    // 'colorful-6': 'hsl(195, 40%, 25%)',
+    // 'colorful-7': 'hsl(260, 65%, 60%)',
+
+    'colorful-1': 'hsl(260, 65%, 60%)',
+    'colorful-2': 'hsl(265, 65%, 30%)',
+    'colorful-3': 'hsl(265, 80%, 25%)',
+    'colorful-4': 'hsl(260, 100%, 70%)',
+    'colorful-5': 'hsl(270, 85%, 60%)',
+    'colorful-6': 'hsl(260, 100%, 60%)',
+    'colorful-7': 'hsl(160, 60%, 45%)',
   },
   border: {
     'rounded-full': '9999px',
