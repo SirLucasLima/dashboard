@@ -16,8 +16,10 @@ export const StyledPresentation = styled.div`
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 4rem;
-    max-width: 27rem;
+    max-width: fit-content;
     overflow: hidden;
 
     .cursor {
@@ -26,15 +28,13 @@ export const StyledPresentation = styled.div`
     }
 
     .wrapper-presentation {
+      width: fit-content;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
       padding: 1rem;
 
       > p {
-        font-size: ${theme.typography.fontSize.md};
-        font-weight: ${theme.typography.fontWeight.medium};
-        line-height: ${theme.typography.lineHeight.md};
         text-shadow:
           0 0 2px rgba(0, 0, 0, 0.2),
           0 0 4px rgba(0, 0, 0, 0.2),
@@ -44,8 +44,6 @@ export const StyledPresentation = styled.div`
       }
 
       > h1 {
-        font-size: ${theme.typography.fontSize['5xl']};
-        font-weight: ${theme.typography.fontWeight.bold};
         text-shadow:
           0 0 2px rgba(0, 0, 0, 0.2),
           0 0 4px rgba(0, 0, 0, 0.2),
@@ -58,8 +56,6 @@ export const StyledPresentation = styled.div`
       }
 
       > h2 {
-        font-size: ${theme.typography.fontSize['3xl']};
-        font-weight: ${theme.typography.fontWeight.semibold};
         text-shadow:
           0 0 2px rgba(0, 0, 0, 0.2),
           0 0 4px rgba(0, 0, 0, 0.2),
@@ -72,8 +68,6 @@ export const StyledPresentation = styled.div`
       }
 
       > section {
-        font-size: ${theme.typography.fontSize['3xl']};
-        font-weight: ${theme.typography.fontWeight.medium};
         /* text-shadow:
           0 0 2px rgba(119, 50, 155, 0.2),
           0 0 4px rgba(119, 50, 155, 0.2),
@@ -109,6 +103,54 @@ export const StyledPresentation = styled.div`
           0 0 4px rgba(0, 0, 0, 0.2),
           0 0 6px rgba(0, 0, 0, 0.2),
           0 0 8px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (min-width: ${theme.breakpoints.sm}) {
+        > h1 {
+          font-size: ${theme.typography.fontSize['4xl']};
+          font-weight: ${theme.typography.fontWeight.bold};
+        }
+
+        > h2 {
+          font-size: ${theme.typography.fontSize['xl']};
+          font-weight: ${theme.typography.fontWeight.semibold};
+        }
+
+        > section {
+          font-size: ${theme.typography.fontSize['xl']};
+          font-weight: ${theme.typography.fontWeight.medium};
+          max-width: 18rem;
+        }
+
+        > p,
+        a {
+          font-size: ${theme.typography.fontSize.xs};
+          font-weight: ${theme.typography.fontWeight.normal};
+        }
+      }
+
+      @media (min-width: ${theme.breakpoints.lg}) {
+        > h1 {
+          font-size: ${theme.typography.fontSize['5xl']};
+          font-weight: ${theme.typography.fontWeight.bold};
+        }
+
+        > h2 {
+          font-size: ${theme.typography.fontSize['2xl']};
+          font-weight: ${theme.typography.fontWeight.semibold};
+        }
+
+        > section {
+          font-size: ${theme.typography.fontSize['2xl']};
+          font-weight: ${theme.typography.fontWeight.medium};
+          max-width: 22rem;
+        }
+
+        > p,
+        a {
+          font-size: ${theme.typography.fontSize.md};
+          font-weight: ${theme.typography.fontWeight.normal};
+        }
       }
     }
 
