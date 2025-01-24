@@ -113,7 +113,7 @@ export const StyledPresentation = styled.div`
 
         > h2 {
           font-size: ${theme.typography.fontSize['lg']};
-          font-weight: ${theme.typography.fontWeight.semibold};
+          font-weight: ${theme.typography.fontWeight.medium};
           word-spacing: -0.2em;
           letter-spacing: -0.03em;
         }
