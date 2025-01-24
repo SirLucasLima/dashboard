@@ -60,6 +60,7 @@ export const GlobalStyle = createGlobalStyle`
     display: inline-block;
     position: relative;
     padding-left: 2rem;
+    padding-right: 0.25rem;
     counter-increment: line;
   }
 
