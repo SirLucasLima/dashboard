@@ -18,7 +18,7 @@ export const StyledPresentation = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 8rem;
     max-width: fit-content;
     overflow: hidden;
 
@@ -112,8 +112,10 @@ export const StyledPresentation = styled.div`
         }
 
         > h2 {
-          font-size: ${theme.typography.fontSize['xl']};
+          font-size: ${theme.typography.fontSize['lg']};
           font-weight: ${theme.typography.fontWeight.semibold};
+          word-spacing: -0.2em;
+          letter-spacing: -0.03em;
         }
 
         > section {
@@ -156,7 +158,7 @@ export const StyledPresentation = styled.div`
 
     .wrapper-presentation:nth-of-type(2) {
       align-items: center;
-      gap: 2rem;
+      gap: 3rem;
     }
   `}
 `
