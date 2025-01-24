@@ -59,8 +59,7 @@ export const GlobalStyle = createGlobalStyle`
   .shiki .line {
     display: inline-block;
     position: relative;
-    padding-left: 2rem;
-    padding-right: 0.25rem;
+    padding-left: 2.5rem;
     counter-increment: line;
   }
 
