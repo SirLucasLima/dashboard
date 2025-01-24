@@ -47,10 +47,10 @@ export const StyledAppContainer = styled.div`
     transform: translate(-50%, -50%);
     z-index: 10;
 
-    height: 100vh;
-    max-height: 800px;
-    padding: 0.5rem;
+    height: 100%;
+    max-height: 50rem;
     width: 100%;
+    overflow: hidden;
     overflow: hidden;
 
     backdrop-filter: blur(200px);
