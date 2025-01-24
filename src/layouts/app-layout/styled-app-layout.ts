@@ -31,7 +31,3 @@ export const StyledContent = styled.div<StyledContentProps>`
     }
   `}
 `
-
-export const StyledOutlet = styled.div`
-  overflow-y: auto;
-`

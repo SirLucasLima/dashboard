@@ -8,12 +8,7 @@ import { OpenFilesTabs } from '@/components/open-files-tabs'
 import { SideMenu } from '@/components/side-menu'
 import { useExplorerStore } from '@/store/use-explorer-store'
 
-import {
-  StyledAppLayout,
-  StyledContent,
-  StyledEditorLayout,
-  StyledOutlet,
-} from './styled-app-layout'
+import { StyledAppLayout, StyledContent, StyledEditorLayout } from './styled-app-layout'
 
 export function AppLayout() {
   const isExplorerOpened = useExplorerStore(state => state.isExplorerOpened)
@@ -28,9 +23,7 @@ export function AppLayout() {
             <Explorer />
             <StyledContent $isExplorerOpened={isExplorerOpened}>
               <OpenFilesTabs />
-              <StyledOutlet>
-                <Outlet />
-              </StyledOutlet>
+              <Outlet />
             </StyledContent>
           </StyledEditorLayout>
           <Footer />
