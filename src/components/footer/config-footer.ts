@@ -1,6 +1,6 @@
 import { FileUser, GithubIcon, InstagramIcon, LinkedinIcon, type LucideIcon } from 'lucide-react'
 
-import { globalLinksConfig } from '../../config/global-links-config'
+import { configLinks } from '../../config/config-links'
 
 export interface ConfigFooter {
   title: {
@@ -24,15 +24,15 @@ export const configFooter: ConfigFooter[] = [
     tabs: [
       {
         icon: InstagramIcon,
-        href: globalLinksConfig.instagram,
+        href: configLinks.instagram,
       },
       {
         icon: LinkedinIcon,
-        href: globalLinksConfig.linkedIn,
+        href: configLinks.linkedIn,
       },
       {
         icon: GithubIcon,
-        href: globalLinksConfig.gitHub,
+        href: configLinks.gitHub,
       },
     ],
     curriculum: {
