@@ -1,9 +1,7 @@
-import { AboutMeContent } from '@/components/about-me-content/_index'
+import { CodePreview } from '@/components/code-preview'
 
-export const AboutMe = () => {
-  return (
-    <>
-      <AboutMeContent />
-    </>
-  )
+import { content } from './content'
+
+export function AboutMe() {
+  return <CodePreview content={content} />
 }
