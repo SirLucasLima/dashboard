@@ -17,7 +17,7 @@ export const StyledPresentation = styled.div`
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    max-width: 29rem;
+    max-width: 27rem;
     overflow: hidden;
 
     .cursor {
@@ -44,7 +44,7 @@ export const StyledPresentation = styled.div`
       }
 
       > h1 {
-        font-size: ${theme.typography.fontSize['6xl']};
+        font-size: ${theme.typography.fontSize['5xl']};
         font-weight: ${theme.typography.fontWeight.bold};
         text-shadow:
           0 0 2px rgba(0, 0, 0, 0.2),
@@ -53,8 +53,8 @@ export const StyledPresentation = styled.div`
           0 0 8px rgba(0, 0, 0, 0.2);
         line-height: 1;
         color: ${theme.colors.foreground};
-        word-spacing: -0.3em;
-        letter-spacing: -0.03em;
+        /* word-spacing: -0.3em;
+        letter-spacing: -0.01em; */
       }
 
       > h2 {
@@ -65,21 +65,21 @@ export const StyledPresentation = styled.div`
           0 0 4px rgba(0, 0, 0, 0.2),
           0 0 6px rgba(0, 0, 0, 0.2),
           0 0 8px rgba(0, 0, 0, 0.2);
-        color: ${theme.colors.green};
+        color: ${theme.colors['colorful-7']};
         line-height: 1;
-        word-spacing: -0.2em;
-        letter-spacing: -0.03em;
+        /* word-spacing: -0.2em;
+        letter-spacing: -0.03em; */
       }
 
       > section {
         font-size: ${theme.typography.fontSize['3xl']};
-        font-weight: ${theme.typography.fontWeight.semibold};
-        text-shadow:
-          0 0 2px rgba(0, 0, 0, 0.2),
-          0 0 4px rgba(0, 0, 0, 0.2),
-          0 0 6px rgba(0, 0, 0, 0.2),
-          0 0 8px rgba(0, 0, 0, 0.2);
-        color: ${theme.colors.primaryForeground};
+        font-weight: ${theme.typography.fontWeight.medium};
+        /* text-shadow:
+          0 0 2px rgba(119, 50, 155, 0.2),
+          0 0 4px rgba(119, 50, 155, 0.2),
+          0 0 6px rgba(119, 50, 155, 0.2),
+          0 0 8px rgba(119, 50, 155, 0.2); */
+        color: ${theme.colors.secondaryForeground};
         line-height: 1;
         text-align: center;
         white-space: normal;
