@@ -1,6 +1,6 @@
 import { Github, Instagram, Linkedin, LucideIcon, Pencil, Phone } from 'lucide-react'
 
-import { globalLinksConfig } from '../../config/global-links-config'
+import { configLinks } from '../../config/config-links'
 
 export type SocialLink = {
   icon: LucideIcon
@@ -14,30 +14,30 @@ export const socialLinks: SocialLink[] = [
     name: 'WhatsApp',
     icon: Phone,
     size: 16,
-    href: globalLinksConfig.whatsApp,
+    href: configLinks.whatsApp,
   },
   {
     name: 'GitHub',
     icon: Github,
     size: 16,
-    href: globalLinksConfig.gitHub,
+    href: configLinks.gitHub,
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
     size: 16,
-    href: globalLinksConfig.linkedIn,
+    href: configLinks.linkedIn,
   },
   {
     name: 'Behance',
     icon: Pencil,
     size: 16,
-    href: globalLinksConfig.behance,
+    href: configLinks.behance,
   },
   {
     name: 'Instagram',
     icon: Instagram,
     size: 16,
-    href: globalLinksConfig.instagram,
+    href: configLinks.instagram,
   },
 ]
