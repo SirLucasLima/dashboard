@@ -59,8 +59,7 @@ export const GlobalStyle = createGlobalStyle`
   .shiki .line {
     display: inline-block;
     position: relative;
-    padding-left: 2rem;
-    padding-right: 0.25rem;
+    padding-left: 2.5rem;
     counter-increment: line;
   }
 
@@ -72,6 +71,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 1.5rem;               /* gutter width for line number */
     text-align: right;
     color: ${({ theme }) => theme.colors.mutedForeground};
+    opacity: 0.3;
   }
 
   code {

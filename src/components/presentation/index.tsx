@@ -22,7 +22,7 @@ export const Presentation = () => {
 
       <div className="wrapper-presentation">
         <section>Turning ideas into real applications</section>
-        <Link to={'/me/about'}>Comece aqui</Link>
+        <Link to={'/about'}>Comece aqui</Link>
       </div>
     </StyledPresentation>
   )

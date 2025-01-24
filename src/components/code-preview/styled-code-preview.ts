@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const StyledCodePreview = styled.div`
-  padding-right: 0.5rem;
+  padding-right: 0.75rem;
   max-height: 100%;
   height: 100;
   max-width: 100%;
