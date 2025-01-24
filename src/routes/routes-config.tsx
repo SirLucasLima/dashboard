@@ -5,8 +5,9 @@ import { HomeLayout } from '@/layouts/home-layout'
 import { AboutMe } from '@/pages/about-me'
 import { Blank } from '@/pages/blank'
 import { ContactMe } from '@/pages/contact-me'
+import { Education } from '@/pages/education'
 import { Home } from '@/pages/home'
-import { MyHobbies } from '@/pages/my-hobbies'
+import { Hobbies } from '@/pages/my-hobbies'
 
 export interface RouteChildConfig {
   path: string
@@ -39,7 +40,7 @@ export const routeConfig: RouteGroupConfig[] = [
     ],
   },
   {
-    path: 'me',
+    path: '',
     folderText: 'about-me',
     element: <AppLayout />,
     showFolderInExplorer: true,
@@ -51,9 +52,15 @@ export const routeConfig: RouteGroupConfig[] = [
         showInExplorer: true,
       },
       {
+        path: 'education',
+        text: 'education.ts',
+        element: <Education />,
+        showInExplorer: true,
+      },
+      {
         path: 'hobbies',
-        text: 'my-hobbies.ts',
-        element: <MyHobbies />,
+        text: 'hobbies.ts',
+        element: <Hobbies />,
         showInExplorer: true,
       },
     ],
