@@ -71,6 +71,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 1.5rem;               /* gutter width for line number */
     text-align: right;
     color: ${({ theme }) => theme.colors.mutedForeground};
+    opacity: 0.3;
   }
 
   code {
