@@ -6,20 +6,20 @@ import { myTheme } from '@/config/my-theme'
 import { StyledCodePreview } from './styled-code-preview'
 import type { CodePreviewProps } from './types-code-preview'
 
-export function CodePreview({ content }: CodePreviewProps) {
+export function CodePreview({ content, lang = 'markdown' }: CodePreviewProps) {
   const [codeHtml, setCodeHtml] = useState('')
 
   useEffect(() => {
     async function getTheme() {
       const html = await codeToHtml(content, {
-        lang: 'markdown',
+        lang: lang,
         theme: myTheme,
       })
 
       setCodeHtml(html)
     }
     getTheme()
-  }, [content])
+  }, [content, lang])
 
   return (
     <>
