@@ -6,8 +6,8 @@ import { AboutMe } from '@/pages/about-me'
 import { Blank } from '@/pages/blank'
 import { ContactMe } from '@/pages/contact-me'
 import { Education } from '@/pages/education'
+import { Hobbies } from '@/pages/hobbies'
 import { Home } from '@/pages/home'
-import { Hobbies } from '@/pages/my-hobbies'
 
 export interface RouteChildConfig {
   path: string
