@@ -68,11 +68,11 @@ export const StyledPresentation = styled.div`
       }
 
       > section {
-        /* text-shadow:
-          0 0 2px rgba(119, 50, 155, 0.2),
-          0 0 4px rgba(119, 50, 155, 0.2),
-          0 0 6px rgba(119, 50, 155, 0.2),
-          0 0 8px rgba(119, 50, 155, 0.2); */
+        text-shadow:
+          0 0 1px rgba(0, 0, 0, 0.1),
+          0 0 2px rgba(0, 0, 0, 0.1),
+          0 0 3px rgba(0, 0, 0, 0.1),
+          0 0 4px rgba(0, 0, 0, 0.1);
         color: ${theme.colors.secondaryForeground};
         line-height: 1;
         text-align: center;
