@@ -4,10 +4,11 @@ import { AppLayout } from '@/layouts/app-layout'
 import { HomeLayout } from '@/layouts/home-layout'
 import { AboutMe } from '@/pages/about-me'
 import { Blank } from '@/pages/blank'
-import { ContactMe } from '@/pages/contact-me'
 import { Education } from '@/pages/education'
 import { Hobbies } from '@/pages/hobbies'
 import { Home } from '@/pages/home'
+import { ProfessionalExperience } from '@/pages/prefessional-experience'
+import { Techs } from '@/pages/techs'
 
 export interface RouteChildConfig {
   path: string
@@ -52,9 +53,21 @@ export const routeConfig: RouteGroupConfig[] = [
         showInExplorer: true,
       },
       {
+        path: 'professional-xp',
+        text: 'professional-xp.ts',
+        element: <ProfessionalExperience />,
+        showInExplorer: true,
+      },
+      {
         path: 'education',
         text: 'education.ts',
         element: <Education />,
+        showInExplorer: true,
+      },
+      {
+        path: 'techs',
+        text: 'techs.ts',
+        element: <Techs />,
         showInExplorer: true,
       },
       {
@@ -63,28 +76,6 @@ export const routeConfig: RouteGroupConfig[] = [
         element: <Hobbies />,
         showInExplorer: true,
       },
-    ],
-  },
-  {
-    path: 'me',
-    folderText: 'contact-me',
-    element: <AppLayout />,
-    showFolderInExplorer: true,
-    children: [
-      {
-        path: 'contact',
-        text: 'contact-me.ts',
-        element: <ContactMe />,
-        showInExplorer: true,
-      },
-    ],
-  },
-  {
-    path: '',
-    folderText: '',
-    element: <AppLayout />,
-    showFolderInExplorer: false,
-    children: [
       {
         path: '/blank',
         text: '',
@@ -99,18 +90,6 @@ export const routeConfig: RouteGroupConfig[] = [
   //   element: <AppLayout />,
   //   showFolderInExplorer: true,
   //   children: [
-  //     {
-  //       path: 'about',
-  //       text: 'about-me.ts',
-  //       element: <AboutMe />,
-  //       showInExplorer: true,
-  //     },
-  //     {
-  //       path: 'hobbies',
-  //       text: 'my-hobbies.ts',
-  //       element: <MyHobbies />,
-  //       showInExplorer: true,
-  //     },
   //     {
   //       path: 'contact',
   //       text: 'contact-me.ts',
