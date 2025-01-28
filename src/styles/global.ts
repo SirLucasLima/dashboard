@@ -77,7 +77,7 @@ export const GlobalStyle = createGlobalStyle`
   code {
     font-family: "Fira Mono", serif;
     font-size: ${({ theme }) => theme.typography.fontSize.sm};
-    line-height: ${({ theme }) => theme.typography.lineHeight.md};
+    line-height: ${({ theme }) => theme.typography.lineHeight.xl};
     font-weight: ${({ theme }) => theme.typography.fontWeight.normal};
   }
 

@@ -75,7 +75,7 @@ export const theme: DefaultTheme = {
       sm: '1.25rem',
       md: '1.5rem',
       lg: '1.75rem',
-      xl: '1',
+      xl: '1.875rem',
     },
   },
 }
