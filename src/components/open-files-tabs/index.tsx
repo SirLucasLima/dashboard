@@ -1,5 +1,5 @@
 import { FileCode, X } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 import { getConfigOpenFilesTabs } from './config-open-files-tabs'
@@ -9,11 +9,11 @@ export const OpenFilesTabs = () => {
   const navigate = useNavigate()
   const location = useLocation()
 
-  const configOpenFilesTabs = getConfigOpenFilesTabs()
+  // const configOpenFilesTabs = getConfigOpenFilesTabs()
+  const configOpenFilesTabs = useMemo(() => getConfigOpenFilesTabs(), [])
 
   const [openFiles, setOpenFiles] = useState<string[]>([])
 
-  // TODO bug when close tabs
   useEffect(() => {
     const currentPath = location.pathname
 
@@ -25,7 +25,7 @@ export const OpenFilesTabs = () => {
         return prevFiles
       })
     }
-  }, [location.pathname, configOpenFilesTabs])
+  }, [configOpenFilesTabs, location.pathname])
 
   const handleClose = (index: number) => {
     const currentPath = location.pathname
