@@ -12,7 +12,7 @@ export const SideMenu = () => {
   return (
     <StyledSideMenu>
       <div className="wrapper-buttons">
-        <ExplorerButton icon={Files} isActive={isExplorerOpened} />
+        <ExplorerButton icon={Files} isOpen={isExplorerOpened} />
       </div>
       <div className="wrapper-buttons">
         <SocialLinksButton />

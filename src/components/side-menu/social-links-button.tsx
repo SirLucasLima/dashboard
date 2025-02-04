@@ -30,7 +30,7 @@ export function SocialLinksButton() {
 
   return (
     <>
-      <StyledMenuButton ref={buttonRef} $isActive={isOpen} onClick={() => setIsOpen(prev => !prev)}>
+      <StyledMenuButton ref={buttonRef} $isOpen={isOpen} onClick={() => setIsOpen(prev => !prev)}>
         <User strokeWidth={1.5} size={28} />
       </StyledMenuButton>
 
