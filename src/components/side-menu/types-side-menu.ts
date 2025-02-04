@@ -1,13 +1,13 @@
 import type { LucideIcon } from 'lucide-react'
 
-export interface StyledMenuButtonProps {
-  $isActive: boolean
-}
-
 export interface MenuButtonProps {
   icon: LucideIcon
-  isActive?: boolean
+  isOpen?: boolean
   onClick?: () => void
+}
+
+export interface StyledMenuButtonProps {
+  $isOpen: boolean
 }
 
 export interface StyledSocialLinksProps {

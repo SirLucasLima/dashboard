@@ -1,6 +1,27 @@
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 
 import type { StyledMenuButtonProps, StyledSocialLinksProps } from './types-side-menu'
+
+const shake = keyframes`
+  0% {
+    transform: translateX(0);
+  }
+  5% {
+    transform: translateX(-5px);
+  }
+  10% {
+    transform: translateX(5px);
+  }
+  15% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+`
 
 export const StyledSideMenu = styled.div`
   display: flex;
@@ -19,14 +40,20 @@ export const StyledSideMenu = styled.div`
 `
 
 export const StyledMenuButton = styled.button<StyledMenuButtonProps>`
-  ${({ theme, $isActive }) => css`
+  ${({ theme, $isOpen }) => css`
     height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-left: 2px solid ${$isActive ? theme.colors.foreground : theme.colors.transparent};
-    color: ${$isActive ? theme.colors.foreground : undefined};
+    border-left: 2px solid ${$isOpen ? theme.colors.foreground : theme.colors.transparent};
+    color: ${$isOpen ? theme.colors.foreground : undefined};
+
+    animation: ${!$isOpen
+      ? css`
+          ${shake} 3s infinite
+        `
+      : 'none'};
 
     &:hover {
       color: ${theme.colors.foreground};
